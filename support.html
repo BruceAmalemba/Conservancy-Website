@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support the Ambururu Waterfall Conservancy by donating, volunteering, or sharing our mission to preserve the natural heritage of Siaya, Kenya.">
+    <meta name="keywords" content="Ambururu Waterfall Conservancy, donate, volunteer, support, conservation, Siaya, Kenya">
+    <meta name="author" content="Ambururu Waterfall Conservancy">
+    <title>Support Our Mission - Ambururu Waterfall Conservancy</title>
+    <style>
+        :root {
+            --primary-color: #0a2f27; /* Deep forest teal */
+            --accent-color: #3d8b40; /* Lush green */
+            --text-color: #1a1a1a; /* Rich black for contrast */
+            --bg-color: #f5f7f5; /* Neutral light green */
+            --card-bg: #ffffff; /* Crisp white */
+            --highlight-bg: rgba(61, 139, 64, 0.1); /* Subtle green tint */
+            --shadow-color: rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.9;
+            color: var(--text-color);
+            background: linear-gradient(180deg, var(--bg-color), #e8f0e8);
+            padding: 0 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+
+        .hero-section {
+            position: relative;
+            height: 500px;
+            background: url('/images/ambururu-waterfall.jpg') no-repeat center/cover fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            border-radius: 20px;
+            margin-bottom: 3em;
+            overflow: hidden;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 47, 39, 0.6);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin-bottom: 0.5em;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5em;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin: 2em 0 0.8em;
+            font-weight: 600;
+            padding-left: 20px;
+            border-left: 5px solid var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        h2:hover {
+            transform: translateX(5px);
+        }
+
+        p {
+            margin-bottom: 1.6em;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        .watermark {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0.08;
+            font-size: 5rem;
+            color: var(--accent-color);
+            transform: rotate(-45deg);
+            pointer-events: none;
+            font-family: 'Playfair Display', serif;
+            z-index: 0;
+        }
+
+        .support-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 3em;
+        }
+
+        .support-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .support-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px var(--shadow-color);
+        }
+
+        .support-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--primary-color);
+            margin-bottom: 1em;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: var(--accent-color);
+            color: var(--card-bg);
+            border-radius: 8px;
+            font-weight: 600;
+            position: relative;
+            overflow: hidden;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s ease, height 0.6s ease;
+        }
+
+        .cta-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        .donation-form {
+            background: var(--highlight-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 2em;
+        }
+
+        .donation-tiers {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 2em;
+        }
+
+        .donation-tier {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(61, 139, 64, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .donation-tier:hover {
+            transform: scale(1.03);
+        }
+
+        .donation-tier h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5em;
+        }
+
+        .donation-tier p {
+            font-size: 0.9rem;
+            color: #4a4a4a;
+        }
+
+        .progress-bar {
+            margin: 2em 0;
+            background: #e0e0e0;
+            border-radius: 10px;
+            height: 20px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-fill {
+            width: 60%; /* Adjust dynamically via backend */
+            height: 100%;
+            background: var(--accent-color);
+            transition: width 1s ease;
+        }
+
+        .progress-text {
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 0.5em;
+            color: var(--primary-color);
+        }
+
+        .volunteer-form {
+            background: var(--highlight-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 2em;
+        }
+
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+            color: var(--primary-color);
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid rgba(61, 139, 64, 0.3);
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+
+        .impact-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 3em;
+        }
+
+        .impact-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .impact-item img {
+            width: 100%;
+            max-height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1em;
+        }
+
+        .social-share {
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .social-share a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .disclaimer {
+            font-size: 0.9rem;
+            color: #4a4a4a;
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 3em;
+            padding: 30px;
+            background: var(--highlight-bg);
+            border-radius: 12px;
+            border: 1px solid rgba(61, 139, 64, 0.15);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .hero-section {
+                height: 300px;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .watermark {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Accessibility Enhancements */
+        a:focus, .cta-button:focus, input:focus, select:focus, textarea:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+
+        [role="main"] {
+            outline: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" role="main" aria-labelledby="support-title">
+        <div class="watermark">Ambururu</div>
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 id="support-title">Be a Guardian of Ambururu Waterfall</h1>
+                <p>Your support protects the heart of Siaya, Kenya, preserving its natural beauty and ecological vitality for generations.</p>
+                <a href="#support-options" class="cta-button" aria-label="Explore ways to support">Join the Movement</a>
+            </div>
+        </div>
+
+        <div id="support-options" class="support-options">
+            <div class="support-card">
+                <h3>Donate</h3>
+                <p>Fund critical conservation efforts, from habitat restoration to community education.</p>
+                <a href="#donate" class="cta-button" aria-label="Donate to Ambururu Waterfall Conservancy">Give Now</a>
+            </div>
+            <div class="support-card">
+                <h3>Volunteer</h3>
+                <p>Join us on the ground for cleanups, tree planting, or advocacy to protect Ambururu.</p>
+                <a href="#volunteer" class="cta-button" aria-label="Volunteer with Ambururu Waterfall Conservancy">Get Involved</a>
+            </div>
+            <div class="support-card">
+                <h3>Share</h3>
+                <p>Spread our mission on social media to inspire global support for our cause.</p>
+                <a href="#share" class="cta-button" aria-label="Share our mission">Share Now</a>
+            </div>
+        </div>
+
+        <h2 id="donate">Make a Donation</h2>
+        <div class="donation-form">
+            <p>Your donation directly supports conservation projects, community initiatives, and sustainable development around Ambururu Waterfall.</p>
+            <div class="donation-tiers">
+                <div class="donation-tier">
+                    <h4>Waterfall Friend</h4>
+                    <p>KES 1,000 - Supports educational workshops for local communities.</p>
+                    <a href="#donate" class="cta-button" data-amount="1000" aria-label="Donate KES 1,000">Select</a>
+                </div>
+                <div class="donation-tier">
+                    <h4>Stream Supporter</h4>
+                    <p>KES 5,000 - Funds tree planting to protect the watershed.</p>
+                    <a href="#donate" class="cta-button" data-amount="5000" aria-label="Donate KES 5,000">Select</a>
+                </div>
+                <div class="donation-tier">
+                    <h4>Waterfall Guardian</h4>
+                    <p>KES 10,000+ - Enables large-scale conservation projects.</p>
+                    <a href="#donate" class="cta-button" data-amount="10000" aria-label="Donate KES 10,000">Select</a>
+                </div>
+            </div>
+            <form action="/donate" method="POST" aria-label="Donation form">
+                <div class="form-group">
+                    <label for="donation-amount">Donation Amount (KES)</label>
+                    <input type="number" id="donation-amount" name="amount" min="1000" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="donor-name">Full Name</label>
+                    <input type="text" id="donor-name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="donor-email">Email Address</label>
+                    <input type="email" id="donor-email" name="email" required aria-required="true">
+                </div>
+                <button type="submit" class="cta-button" aria-label="Submit donation">Donate Securely</button>
+            </form>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <p class="progress-text">60% of our 2025 conservation goal reached. Help us get there!</p>
+            <p class="disclaimer">Donations are processed securely via third-party providers (e.g., M-Pesa, PayPal). Please review our <a href="terms.html" aria-label="View our Terms and Conditions">Terms and Conditions</a> and <a href="/privacy" aria-label="View our Privacy Policy">Privacy Policy</a>. Donations are non-refundable unless required by law.</p>
+        </div>
+
+        <h2 id="volunteer">Volunteer With Us</h2>
+        <div class="volunteer-form">
+            <p>Be part of our conservation efforts through cleanups, tree planting, or community outreach. Your time makes a lasting impact.</p>
+            <form action="/volunteer" method="POST" aria-label="Volunteer sign-up form">
+                <div class="form-group">
+                    <label for="volunteer-name">Full Name</label>
+                    <input type="text" id="volunteer-name" name="name" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-email">Email Address</label>
+                    <input type="email" id="volunteer-email" name="email" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="volunteer-message">Why do you want to volunteer?</label>
+                    <textarea id="volunteer-message" name="message" rows="4" aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="cta-button" aria-label="Sign up to volunteer">Join Our Team</button>
+            </form>
+            <p class="disclaimer">Volunteers must adhere to our safety guidelines and <a href="/terms.html" aria-label="View our Terms and Conditions">Terms and Conditions</a>.</p>
+        </div>
+
+        <h2 id="impact">Our Impact</h2>
+        <div class="impact-gallery">
+            <div class="impact-item">
+                <img src="/images/9.jpg" alt="Volunteers planting trees near Ambururu Waterfall">
+                <p>Over 1500 trees planted to protect the watershed in 2024.</p>
+            </div>
+            <div class="impact-item">
+                <img src="/images/2.jpg" alt="Community education workshop">
+                <p>Educated 1,200 local students on conservation practices.</p>
+            </div>
+            <div class="impact-item">
+                <img src="/images/6.jpg" alt="Cleanup event at Ambururu Waterfall">
+                <p>Removed 2 tons of waste through community cleanups.</p>
+            </div>
+        </div>
+
+        <h2 id="share">Share Our Mission</h2>
+        <div class="social-share">
+            <p>Inspire others by sharing our mission to protect Ambururu Waterfall.</p>
+            <a href="https://x.com/Ambururu_W" target="_blank" rel="noopener" aria-label="Share on X"><i class="fab fa-x"></i> Share on X</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.ambururuwaterfall.org" target="_blank" rel="noopener" aria-label="Share on Facebook"><i class="fab fa-facebook"></i> Share on Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Share on Instagram"><i class="fab fa-instagram"></i> Share on Instagram</a>
+        </div>
+
+        <div class="contact-info">
+            <p>Have questions about supporting our mission? Reach out:</p>
+            <p>
+                <strong>Ambururu Waterfall Conservancy</strong><br>
+                Email: <a href="mailto:ambururuwaterfall@gmail.com" aria-label="Email Ambururu Waterfall Conservancy">ambururuwaterfall@gmail.com</a><br>
+                Address: Musanda-ruwe, Siaya, Kenya 40600<br>
+                Phone: <a href="tel:+254741609862" aria-label="Call Ambururu Waterfall Conservancy">+254 741 609 862</a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Pre-fill donation amount from tier selection
+        document.querySelectorAll('.donation-tier .cta-button').forEach(button => {
+            button.addEventListener('click', function () {
+                const amount = this.getAttribute('data-amount');
+                document.getElementById('donation-amount').value = amount;
+            });
+        });
+    </script>
+    <!-- Font Awesome for social media icons (replace with actual CDN or local assets) -->
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>

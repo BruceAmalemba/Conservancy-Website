@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambururu Waterfalls Conservancy Culinary Compendium</title>
+    <meta name="description" content="Experience the pinnacle of gourmet dining at Ambururu Waterfalls Conservancy, Siaya, Kenya, where Luo heritage meets eco-luxury in an exquisite culinary journey.">
+    <meta name="keywords" content="Ambururu Waterfalls Conservancy, Siaya, Kenya, gourmet dining, luxury menu, eco-luxury, Luo heritage, fine dining, conservation">
+    <meta name="author" content="Ambururu Waterfalls Conservancy">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Roboto+Slab:wght@300;400;700&family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --primary: #0f2d27; /* Deep emerald */
+            --secondary: #f8e8d2; /* Parchment ivory */
+            --accent: #b89b2f; /* Gold leaf */
+            --dark: #1c2526; /* Charcoal black */
+            --luo-gold: #d4a017; /* Luo gold */
+            --luo-red: #6b2135; /* Luo red */
+            --shadow: rgba(0, 0, 0, 0.25);
+            --gradient: linear-gradient(135deg, #0f2d27 0%, #1a4a3e 100%);
+            --leather-bg: url('https://source.unsplash.com/random/1920x1080?leather,black') center/cover no-repeat;
+            --watermark: url('https://source.unsplash.com/random/100x100?pattern,african') center/contain no-repeat;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto Slab', serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background: var(--secondary);
+            color: var(--dark);
+            font-size: 11pt;
+            line-height: 1.5;
+            overflow-x: hidden;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 8px 15px;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 2px 8px var(--shadow);
+        }
+
+        .nav-bar a {
+            color: var(--luo-gold);
+            text-decoration: none;
+            font-family: 'Cinzel', serif;
+            font-size: 12pt;
+            margin: 0 12px;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: var(--luo-red);
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm; /* A4 height */
+            max-width: 100%;
+            margin: 15mm auto;
+            padding: 12mm;
+            background: var(--secondary);
+            border: 2px solid var(--luo-gold);
+            border-radius: 10px;
+            box-shadow: 0 8px 24px var(--shadow), 5px 5px 10px rgba(0, 0, 0, 0.1); /* Page curl effect */
+            position: relative;
+            animation: fadeIn 1s ease-in;
+            overflow: hidden; /* Prevent content overflow */
+        }
+
+        .leather-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--leather-bg);
+            opacity: 0.06;
+            z-index: -1;
+        }
+
+        .gold-border {
+            position: absolute;
+            top: 4mm;
+            left: 4mm;
+            right: 4mm;
+            bottom: 4mm;
+            border: 2px solid var(--luo-gold);
+            border-image: linear-gradient(45deg, var(--luo-gold), var(--accent)) 1;
+            border-radius: 8px;
+            pointer-events: none;
+            animation: shimmer 5s infinite alternate;
+        }
+
+        .page::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--watermark);
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .cover {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: var(--gradient);
+            color: var(--secondary);
+            padding: 20mm;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/random/1920x1080?waterfall,kenya') center/cover no-repeat;
+            opacity: 0.15;
+            border-radius: 10px;
+        }
+
+        .cover img.logo {
+            width: 70mm;
+            margin-bottom: 10mm;
+            filter: drop-shadow(0 4px 10px var(--shadow));
+        }
+
+        .cover h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 48pt;
+            font-weight: 700;
+            margin-bottom: 6mm;
+            color: var(--accent);
+            text-shadow: 2px 2px 5px var(--shadow);
+        }
+
+        .cover h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 30pt;
+            font-weight: 600;
+            margin-bottom: 12mm;
+        }
+
+        .cover p {
+            font-size: 14pt;
+            font-weight: 400;
+            max-width: 160mm;
+            margin-bottom: 8mm;
+            overflow-wrap: break-word;
+        }
+
+        .toc, .section, .welcome-letter, .heritage, .qr-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 12mm;
+            border-radius: 8px;
+            margin-bottom: 10mm;
+            box-shadow: 0 4px 12px var(--shadow);
+            position: relative;
+            z-index: 1;
+        }
+
+        .toc h3, .section h3, .welcome-letter h3, .heritage h3, .qr-section h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 24pt;
+            color: var(--primary);
+            margin-bottom: 8mm;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            position: relative;
+        }
+
+        .toc h3::after, .section h3::after, .welcome-letter h3::after, .heritage h3::after, .qr-section h3::after {
+            content: '';
+            width: 50mm;
+            height: 2px;
+            background: var(--luo-gold);
+            position: absolute;
+            bottom: -4mm;
+            left: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            font-size: 12pt;
+            color: var(--dark);
+        }
+
+        .toc ul li {
+            margin-bottom: 6mm;
+        }
+
+        .toc ul li a {
+            color: var(--primary);
+            text-decoration: none;
+            border-bottom: 1px solid var(--luo-gold);
+            transition: color 0.3s;
+        }
+
+        .toc ul li a:hover {
+            color: var(--luo-red);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10mm;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 8mm;
+            position: relative;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        .menu-item img {
+            width: 45mm;
+            height: 35mm;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid var(--luo-gold);
+            box-shadow: 0 3px 8px var(--shadow);
+            margin-right: 10mm;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item-content {
+            max-width: 90mm;
+        }
+
+        .menu-item-content h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 18pt;
+            color: var(--primary);
+            margin-bottom: 4mm;
+            font-weight: 600;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .menu-item-content h4:hover {
+            color: var(--luo-gold);
+        }
+
+        .menu-item-content p {
+            font-size: 10pt;
+            color: var(--dark);
+            margin-bottom: 4mm;
+            overflow-wrap: break-word;
+        }
+
+        .menu-item-content .pairing {
+            font-size: 9pt;
+            color: var(--luo-red);
+            font-style: italic;
+            margin-bottom: 4mm;
+        }
+
+        .menu-item-content .price {
+            font-weight: 600;
+            color: var(--luo-red);
+            font-size: 11pt;
+            margin-right: 6mm;
+        }
+
+        .menu-item-content .dietary {
+            font-size: 9pt;
+            color: var(--accent);
+            font-style: italic;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .menu-item-content .dietary:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 8pt;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .menu-item-content a.button {
+            display: inline-block;
+            padding: 4mm 6mm;
+            background: var(--primary);
+            color: var(--secondary);
+            text-decoration: none;
+            font-size: 9pt;
+            border-radius: 5px;
+            border: 1px solid var(--luo-gold);
+            margin-top: 4mm;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .menu-item-content a.button:hover {
+            background: var(--luo-red);
+            transform: translateY(-2px);
+        }
+
+        .welcome-letter p, .heritage p {
+            font-size: 10pt;
+            color: var(--dark);
+            max-width: 170mm;
+            margin: 0 auto;
+            overflow-wrap: break-word;
+        }
+
+        .welcome-letter p.signature {
+            font-family: 'Playfair Display', serif;
+            font-size: 14pt;
+            font-style: italic;
+            margin-top: 8mm;
+            color: var(--luo-red);
+        }
+
+        .qr-section {
+            text-align: center;
+            background: var(--gradient);
+            color: var(--secondary);
+            padding: 15mm;
+            border-radius: 8px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .qr-section img {
+            width: 50mm;
+            height: 50mm;
+            margin: 8mm auto;
+            background: var(--secondary);
+            padding: 4mm;
+            border: 2px solid var(--luo-gold);
+            border-radius: 6px;
+            box-shadow: 0 3px 8px var(--shadow);
+        }
+
+        .qr-section a.button {
+            display: inline-block;
+            padding: 4mm 10mm;
+            background: var(--luo-gold);
+            color: var(--dark);
+            text-decoration: none;
+            font-size: 11pt;
+            border-radius: 5px;
+            font-weight: 600;
+            border: 1px solid var(--primary);
+            transition: transform 0.3s;
+        }
+
+        .qr-section a.button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            width: calc(100% - 24mm);
+            margin: 15mm auto 0;
+            text-align: center;
+            font-size: 9pt;
+            color: var(--dark);
+            border-top: 1px solid var(--luo-gold);
+            padding-top: 6mm;
+        }
+
+        footer img.logo {
+            width: 35mm;
+            margin-bottom: 4mm;
+        }
+
+        footer .social-icons a {
+            margin: 0 5mm;
+            color: var(--luo-gold);
+            font-size: 14pt;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: var(--luo-red);
+        }
+
+        .featured-dish {
+            background: var(--luo-red);
+            color: var(--secondary);
+            padding: 8px;
+            text-align: center;
+            margin-bottom: 10mm;
+            border-radius: 5px;
+            font-family: 'Cinzel', serif;
+            font-size: 12pt;
+            animation: pulse 3s infinite;
+        }
+
+        .page-break {
+            page-break-before: always;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes shimmer {
+            0% { border-image: linear-gradient(45deg, var(--luo-gold), var(--accent)) 1; }
+            50% { border-image: linear-gradient(45deg, var(--accent), var(--luo-gold)) 1; }
+            100% { border-image: linear-gradient(45deg, var(--luo-gold), var(--accent)) 1; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        @media screen and (max-width: 768px) {
+            .page {
+                width: 90%;
+                height: auto; /* Allow dynamic height for mobile */
+                margin: 10px auto;
+                padding: 8px;
+            }
+            .cover h1 { font-size: 32pt; }
+            .cover h2 { font-size: 20pt; }
+            .cover p { font-size: 11pt; }
+            .menu-grid { grid-template-columns: 1fr; gap: 8mm; }
+            .menu-item { flex-direction: column; }
+            .menu-item img { width: 100%; height: auto; margin-bottom: 8px; }
+            .menu-item-content { max-width: 100%; }
+            .nav-bar a { font-size: 10pt; margin: 0 6px; }
+            .section h3 { font-size: 18pt; }
+            .qr-section img { width: 40mm; height: 40mm; }
+        }
+
+        @media print {
+            body { margin: 0; padding: 0; background: none; }
+            .page {
+                box-shadow: none;
+                break-inside: avoid;
+                margin: 0;
+                width: 210mm;
+                height: 297mm;
+            }
+            .section, .cover, .qr-section, .welcome-letter, .heritage {
+                box-shadow: none;
+                break-inside: avoid;
+            }
+            .gold-border { border: 1px solid var(--luo-gold); }
+            a.button { text-decoration: underline; background: none; color: var(--luo-gold); border: none; }
+            .leather-overlay { opacity: 0.03; }
+            .nav-bar { display: none; }
+            .page-break { margin-top: 0; }
+            .menu-item img { width: 40mm; height: 30mm; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <a href="#welcome">Welcome</a>
+        <a href="#starters">Starters</a>
+        <a href="#mains">Mains</a>
+        <a href="#desserts">Desserts</a>
+        <a href="#beverages">Beverages</a>
+        <a href="#chef-special">Chef’s Special</a>
+        <a href="#heritage">Heritage</a>
+        <a href="#reserve">Reserve</a>
+    </div>
+
+    <!-- Cover Page -->
+    <div class="page cover">
+        <div class="leather-overlay"></div>
+        <div class="gold-border"></div>
+        <img src="logo/RL3.png" alt="Ambururu Waterfalls Conservancy Logo" class="logo">
+        <h1>Ambururu Waterfalls Conservancy</h1>
+        <h2>Culinary Compendium</h2>
+        <p>An Exquisite Journey Through Kenya’s Yala Valley and Luo Heritage</p>
+        <p>Musanda, Siaya, Kenya | +254-721-202-551 | <a href="mailto:ambururuwaterfalls@gmail.com" style="color: var(--luo-gold);">ambururuwaterfalls@gmail.com</a></p>
+        <p> – Food is joy, peace is beauty</p>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="page-break">
+        <div class="page">
+            <div class="leather-overlay"></div>
+            <div class="gold-border"></div>
+            <div class="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#welcome">A Message from Our Chef</a></li>
+                    <li><a href="#starters">Starters</a></li>
+                    <li><a href="#mains">Mains</a></li>
+                    <li><a href="#desserts">Desserts</a></li>
+                    <li><a href="#beverages">Beverages</a></li>
+                    <li><a href="#chef-special">Chef’s Special</a></li>
+                    <li><a href="#heritage">Our Heritage & Sustainability</a></li>
+                    <li><a href="#reserve">Reserve Your Experience</a></li>
+                </ul>
+            </div>
+            <div class="welcome-letter" id="welcome">
+                <h3>A Message from Our Chef</h3>
+                <p>At Ambururu Waterfalls Conservancy, dining transcends mere sustenance—it is a celebration of Kenya’s vibrant ecosystems and the timeless traditions of the Luo people. Each dish is a masterpiece, crafted with ingredients sourced from Siaya’s fertile lands and Lake Victoria’s pristine waters, honoring our commitment to conservation and heritage. We invite you to embark on this culinary odyssey, where every bite weaves a story of luxury, legacy, and environmental stewardship.</p>
+                <p class="signature">– Chef ...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Starters -->
+    <div class="page-break">
+        <div class="page">
+            <div class="leather-overlay"></div>
+            <div class="gold-border"></div>
+            <div class="section" id="starters">
+                <h3>Starters</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/kuon-soup.webp" alt="Kuon Soup">
+                        <div class="menu-item-content">
+                            <h4>Kuon Soup</h4>
+                            <p>A velvety maize flour soup infused with local herbs, served with a warm cornbread wedge.</p>
+                            <p class="pairing">Pairing: Sauvignon Blanc, South Africa</p>
+                            <span class="price">$18.00</span> <span class="dietary" data-tooltip="Suitable for vegetarians">Vegetarian</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#kuon-soup" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/vegetable-samosa.webp" alt="Vegetable Samosa">
+                        <div class="menu-item-content">
+                            <h4>Vegetable Samosa</h4>
+                            <p>Crispy pastries filled with spiced seasonal vegetables, served with tamarind chutney.</p>
+                            <p class="pairing">Pairing: Chenin Blanc, Kenya</p>
+                            <span class="price">$15.00</span> <span class="dietary" data-tooltip="Plant-based and cruelty-free">Vegan</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#vegetable-samosa" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mains -->
+    <div class="page-break">
+        <div class="page">
+            <div class="leather-overlay"></div>
+            <div class="gold-border"></div>
+            <div class="section" id="mains">
+                <h3>Mains</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/32.jpg" alt="Grilled Tilapia with Ugali and Kachumbari">
+                        <div class="menu-item-content">
+                            <h4>Grilled Tilapia & Ugali</h4>
+                            <p>Fresh Lake Victoria tilapia, sustainably sourced and grilled to perfection, served with creamy ugali and vibrant kachumbari.</p>
+                            <p class="pairing">Pairing: Pinot Noir, South Africa</p>
+                            <span class="price">$25.00</span> <span class="dietary" data-tooltip="No gluten-containing ingredients">Gluten-Free</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#grilled-tilapia" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/13.jpg" alt="Nyama Choma with Sukuma Wiki">
+                        <div class="menu-item-content">
+                            <h4>Nyama Choma & Sukuma Wiki</h4>
+                            <p>Succulent grilled goat, ethically raised, paired with vibrant sukuma wiki and a side of spicy pili pili sauce.</p>
+                            <p class="pairing">Pairing: Cabernet Sauvignon, Kenya</p>
+                            <span class="price">$30.00</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#nyama-choma" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/vegetable-stew.webp" alt="Kenyan Vegetable Stew">
+                        <div class="menu-item-content">
+                            <h4>Kenyan Vegetable Stew</h4>
+                            <p>A hearty blend of seasonal vegetables in a savory broth, served with warm chapati.</p>
+                            <p class="pairing">Pairing: Chardonnay, South Africa</p>
+                            <span class="price">$20.00</span> <span class="dietary" data-tooltip="Plant-based and gluten-free">Vegetarian, Gluten-Free</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#vegetable-stew" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/kuku-kienyeji.webp" alt="Kuku Kienyeji">
+                        <div class="menu-item-content">
+                            <h4>Kuku Kienyeji</h4>
+                            <p>Free-range chicken slow-cooked in a rich tomato and herb sauce, served with fragrant rice.</p>
+                            <p class="pairing">Pairing: Merlot, Kenya</p>
+                            <span class="price">$28.00</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#kuku-kienyeji" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desserts and Beverages -->
+    <div class="page-break">
+        <div class="page">
+            <div class="leather-overlay"></div>
+            <div class="gold-border"></div>
+            <div class="featured-dish">Featured Dish of the Week: Kenyan Coastal Prawn Curry</div>
+            <div class="section" id="desserts">
+                <h3>Desserts</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/34.jpg" alt="Mango Coconut Panna Cotta">
+                        <div class="menu-item-content">
+                            <h4>Mango Coconut Panna Cotta</h4>
+                            <p>A silky dessert infused with local mangoes and creamy coconut, topped with passion fruit coulis.</p>
+                            <p class="pairing">Pairing: Late Harvest Riesling, South Africa</p>
+                            <span class="price">$15.00</span> <span class="dietary" data-tooltip="No gluten-containing ingredients">Gluten-Free</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#tropical-dessert" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/sorbet.webp" alt="Passion Fruit Sorbet">
+                        <div class="menu-item-content">
+                            <h4>Passion Fruit Sorbet</h4>
+                            <p>Refreshing sorbet made with local passion fruit, garnished with fresh mint and edible flowers.</p>
+                            <p class="pairing">Pairing: Sparkling Rosé, Kenya</p>
+                            <span class="price">$12.00</span> <span class="dietary" data-tooltip="Plant-based and gluten-free">Gluten-Free, Vegan</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#passion-sorbet" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="beverages">
+                <h3>Beverages</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/hibiscus-tea.webp" alt="Hibiscus Iced Tea">
+                        <div class="menu-item-content">
+                            <h4>Hibiscus Iced Tea</h4>
+                            <p>Chilled tea brewed from local hibiscus flowers, lightly sweetened with organic honey.</p>
+                            <span class="price">$8.00</span> <span class="dietary" data-tooltip="Plant-based">Vegan</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#hibiscus-tea" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/mango-juice.webp" alt="Fresh Mango Juice">
+                        <div class="menu-item-content">
+                            <h4>Fresh Mango Juice</h4>
+                            <p>Pure, hand-squeezed juice from Siaya’s sweetest mangoes, served chilled.</p>
+                            <span class="price">$7.00</span> <span class="dietary" data-tooltip="Plant-based and gluten-free">Vegan, Gluten-Free</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#mango-juice" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/coffee.webp" alt="Kenyan AA Coffee">
+                        <div class="menu-item-content">
+                            <h4>Kenyan AA Coffee</h4>
+                            <p>Single-origin coffee from Kenya’s highlands, brewed to perfection.</p>
+                            <span class="price">$9.00</span> <span class="dietary" data-tooltip="Plant-based">Vegan</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#coffee" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chef’s Special and Heritage -->
+    <div class="page-break">
+        <div class="page">
+            <div class="leather-overlay"></div>
+            <div class="gold-border"></div>
+            <div class="section" id="chef-special">
+                <h3>Chef’s Special – Limited Edition</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="images/prawn-curry.webp" alt="Kenyan Coastal Prawn Curry">
+                        <div class="menu-item-content">
+                            <h4>Kenyan Coastal Prawn Curry</h4>
+                            <p>Succulent prawns in a rich coconut curry, infused with coastal spices, served with fragrant basmati rice. Available until June 30, 2025.</p>
+                            <p class="pairing">Pairing: Viognier, South Africa</p>
+                            <span class="price">$35.00</span><br>
+                            <a href="https://www.ambururuconservancy.com/dining.html#chef-special" class="button">View AR Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heritage" id="heritage">
+                <h3>Our Heritage & Conservation Mission</h3>
+                <p>Ambururu Waterfalls Conservancy is a sanctuary where Luo traditions intertwine with a profound commitment to preserving Siaya’s natural beauty. Our cuisine celebrates the Luo people’s deep connection to Lake Victoria and the Yala Valley’s fertile lands. We source 90% of our ingredients from local farmers and fishermen, practicing zero-waste cooking and using biodegradable packaging. Every dish reflects our dedication to sustainability, supporting conservation efforts to protect Kenya’s ecosystems for future generations.</p>
+                <p style="font-style: italic; margin-top: 6mm;">“Piny ber ka wach ber.” – The world is beautiful when words are kind (Luo proverb)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation -->
+    <div class="page-break">
+        <div class="page">
+            <div class="leather-overlay"></div>
+            <div class="gold-border"></div>
+            <div class="qr-section" id="reserve">
+                <h3>Reserve Your Culinary Odyssey</h3>
+                <p>Embark on an unparalleled dining experience amidst the serene beauty of Ambururu Waterfalls Conservancy. Book your table today.</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.ambururuconservancy.com/dining.html%23book-table&color=0f2d27&bgcolor=f8e8d2&logo=https://source.unsplash.com/random/100x100?logo" alt="QR Code for Booking">
+                <p><a href="https://www.ambururuconservancy.com" class="button">Visit Our Website</a></p>
+                <p>Email: <a href="mailto:reservations@ambururuconservancy.com">reservations@ambururuconservancy.com</a></p>
+                <p>Phone: +254-721-202-551 | Musanda, Siaya, Kenya</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="logo/l5.png" alt="Ambururu Waterfalls Conservancy Logo" class="logo">
+        <p>“Chiemo en mor, kwe en ber.” – Food is joy, peace is beauty (Luo proverb)</p>
+        <p>© 2025 Ambururu Waterfalls Conservancy. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/ambururu1/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/ambururuconservancy" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/ambururu1" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

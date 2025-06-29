@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cookie Policy for Ambururu Waterfalls Conservancy. Discover how we use cookies to enhance your experience while safeguarding your privacy.">
+    <meta name="keywords" content="cookie policy, Ambururu Waterfalls, privacy, cookies, conservancy">
+    <meta name="author" content="Ambururu Waterfalls Conservancy">
+    <title>Cookie Policy - Ambururu Waterfalls Conservancy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+    <style>
+        /* Enhanced Modern and Nature-Inspired CSS */
+        :root {
+            --primary: #004d4d;
+            --secondary: #b8e0d2;
+            --accent: #006666;
+            --text: #2d2d2d;
+            --white: #ffffff;
+            --shadow: rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e6f3f0 0%, #a8d5c8 100%);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        /* Sticky Header */
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--primary);
+            color: var(--white);
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px var(--shadow);
+            z-index: 1000;
+            animation: slideIn 0.5s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: var(--white);
+            padding: 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px var(--shadow);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.2rem;
+            font-weight: 300;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 1.2rem 0;
+        }
+
+        ul li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        ul li::before {
+            content: '🌿';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .cookie-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 1rem;
+        }
+
+        .cookie-table th, .cookie-table td {
+            border: 1px solid #e0e0e0;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        .cookie-table th {
+            background: var(--primary);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .cookie-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .cookie-table tr:hover {
+            background: var(--secondary);
+            transition: background 0.3s ease;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            background: var(--accent);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 1.5rem;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px var(--shadow);
+        }
+
+        /* Cookie Consent Modal */
+        .cookie-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cookie-modal-content {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .cookie-modal-content h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .cookie-modal-content .btn {
+            margin: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            background: var(--primary);
+            color: var(--white);
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--secondary);
+            text-decoration: none;
+            margin: 0 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--white);
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Waterfall Animation Background */
+        .waterfall-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+            background: url('https://source.unsplash.com/random/1920x1080?waterfall') center/cover no-repeat;
+            animation: subtleZoom 20s infinite;
+        }
+
+        @keyframes subtleZoom {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .container { padding: 0 1.5rem; }
+            .cookie-table { font-size: 0.9rem; }
+        }
+
+        @media (max-width: 480px) {
+            header h1 { font-size: 1.6rem; }
+            header p { font-size: 1rem; }
+            h2 { font-size: 1.4rem; }
+            .btn { padding: 0.7rem 1.5rem; }
+            .cookie-modal-content { max-width: 90%; }
+        }
+
+        /* Accessibility */
+        a:focus, .btn:focus {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="waterfall-bg"></div>
+    <header>
+        <h1>Cookie Policy</h1>
+        <p>Ambururu Waterfalls Conservancy</p>
+    </header>
+
+    <div class="container">
+        <section style="--i: 1">
+            <h2>Introduction</h2>
+            <p>At Ambururu Waterfalls Conservancy, we are committed to protecting your privacy while providing an exceptional online experience. This Cookie Policy outlines how we use cookies and similar technologies to enhance your visit to our website, ensuring transparency and trust. By continuing to browse our site, you agree to our cookie practices as described below.</p>
+        </section>
+
+        <section style="--i: 2">
+            <h2>What Are Cookies?</h2>
+            <p>Cookies are small text files placed on your device (computer, tablet, or smartphone) when you visit our website. They enable us to optimize site functionality, analyze user behavior, and deliver a personalized experience tailored to your preferences.</p>
+        </section>
+
+        <section style="--i: 3">
+            <h2>Types of Cookies We Use</h2>
+            <p>We utilize various cookies to ensure a seamless and secure experience, including:</p>
+            <ul>
+                <li><strong>Essential Cookies:</strong> Critical for core website functionality, such as navigation and secure access.</li>
+                <li><strong>Analytical Cookies:</strong> Allow us to analyze site usage to improve performance and content.</li>
+                <li><strong>Functional Cookies:</strong> Enhance usability by remembering your preferences, such as language settings.</li>
+                <li><strong>Marketing Cookies:</strong> Enable targeted advertising and campaign tracking (where applicable).</li>
+            </ul>
+        </section>
+
+        <section style="--i: 4">
+            <h2>Cookies We Use</h2>
+            <table class="cookie-table">
+                <thead>
+                    <tr>
+                        <th>Cookie Name</th>
+                        <th>Purpose</th>
+                        <th>Duration</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>_session_id</td>
+                        <td>Ensures seamless navigation by maintaining your session</td>
+                        <td>Session</td>
+                        <td>Essential</td>
+                    </tr>
+                    <tr>
+                        <td>_ga</td>
+                        <td>Tracks site usage via Google Analytics for performance insights</td>
+                        <td>2 years</td>
+                        <td>Analytical</td>
+                    </tr>
+                    <tr>
+                        <td>pref_lang</td>
+                        <td>Stores your preferred language for a personalized experience</td>
+                        <td>1 year</td>
+                        <td>Functional</td>
+                    </tr>
+                    <tr>
+                        <td>_ad_track</td>
+                        <td>Monitors advertising performance (if applicable)</td>
+                        <td>30 days</td>
+                        <td>Marketing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="--i: 5">
+            <h2>How We Use Cookies</h2>
+            <p>Our cookies serve the following purposes:</p>
+            <ul>
+                <li>Maintain efficient website operation and functionality.</li>
+                <li>Analyze visitor interactions to enhance content and user experience.</li>
+                <li>Personalize your visit by remembering your preferences.</li>
+                <li>Deliver relevant advertisements (where applicable).</li>
+            </ul>
+        </section>
+
+        <section style="--i: 6">
+            <h2>Managing Your Cookies</h2>
+            <p>You have full control over cookies through your browser settings or our consent tool. Disabling essential cookies may impact website functionality. To manage your cookies:</p>
+            <ul>
+                <li><strong>Browser Settings:</strong> Adjust preferences in browsers like Chrome, Firefox, Safari, or Edge.</li>
+                <li><strong>Opt-Out Tools:</strong> Visit the <a href="http://optout.networkadvertising.org/" target="_blank">Network Advertising Initiative</a> or <a href="http://www.youradchoices.com/" target="_blank">Digital Advertising Alliance</a> to opt out of marketing cookies.</li>
+                <li><strong>Our Consent Tool:</strong> Customize your preferences via our cookie consent popup upon visiting our site.</li>
+            </ul>
+            <a href="#manage-cookies" class="btn" onclick="showCookieModal()">Manage Cookie Preferences</a>
+        </section>
+
+        <section style="--i: 7">
+            <h2>Third-Party Cookies</h2>
+            <p>We partner with trusted third-party services, such as Google Analytics, which may set cookies to analyze site performance. For details, please review their privacy policies:</p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank">Google Analytics Privacy Policy</a></li>
+            </ul>
+        </section>
+
+        <section style="--i: 8">
+            <h2>Policy Updates</h2>
+            <p>We may periodically update this Cookie Policy to reflect changes in technology, regulations, or our practices. Updates will be posted here with the effective date. Last updated: <strong>June 27, 2025</strong>.</p>
+        </section>
+
+        <section style="--i: 9">
+            <h2>Contact Us</h2>
+            <p>For inquiries about our cookie practices or this policy, please reach out to:</p>
+            <p><strong>Ambururu Waterfalls Conservancy</strong><br>
+            Email: <a href="mailto:privacy@ambururufalls.org">privacy@ambururufalls.org</a><br>
+            Address: Ambururu Waterfalls Conservancy, [Your Address], [City, Country]</p>
+        </section>
+    </div>
+
+    <!-- Cookie Consent Modal -->
+    <div class="cookie-modal" id="cookieModal">
+        <div class="cookie-modal-content">
+            <h3>Manage Cookie Preferences</h3>
+            <p>Customize how we use cookies to enhance your experience. You can change these settings at any time.</p>
+            <label><input type="checkbox" checked disabled> Essential Cookies (Always Active)</label><br>
+            <label><input type="checkbox"> Analytical Cookies</label><br>
+            <label><input type="checkbox"> Functional Cookies</label><br>
+            <label><input type="checkbox"> Marketing Cookies</label><br>
+            <a href="#" class="btn" onclick="saveCookiePreferences()">Save Preferences</a>
+            <a href="#" class="btn" onclick="closeCookieModal()">Close</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Ambururu Waterfalls Conservancy. All rights reserved. <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Use</a> | <a href="/contact.html">Contact</a></p>
+    </footer>
+
+    <script>
+        // Basic Cookie Modal Functionality
+        function showCookieModal() {
+            document.getElementById('cookieModal').style.display = 'flex';
+        }
+
+        function closeCookieModal() {
+            document.getElementById('cookieModal').style.display = 'none';
+        }
+
+        function saveCookiePreferences() {
+            alert('Preferences saved! (Note: This is a placeholder. Integrate with a cookie management system.)');
+            closeCookieModal();
+        }
+
+        // Accessibility: Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeCookieModal();
+        });
+    </script>
+</body>
+</html>

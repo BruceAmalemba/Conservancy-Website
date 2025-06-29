@@ -875,3 +875,136 @@ nav#main-nav ul li a:hover::after, nav#main-nav ul li a.active::after {
         height: 360px;
     }
 }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cookie Banner Styling */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    display: none;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cookie-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cookie-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-secondary {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background: #d9d9d9;
+}
+
+/* Customize Modal Styling */
+.customize-modal {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px 5px 0 0;
+}
+
+.customize-modal h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.customize-modal label {
+    display: block;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.customize-modal input {
+    margin-right: 10px;
+}
+
+.customize-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .cookie-content h2 {
+        font-size: 1.2rem;
+    }
+    .cookie-content p {
+        font-size: 0.9rem;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}

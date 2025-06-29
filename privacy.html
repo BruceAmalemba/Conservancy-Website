@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Ambururu Waterfall Conservancy, outlining our commitment to protecting your personal information while preserving the natural heritage of Siaya, Kenya.">
+    <meta name="keywords" content="Ambururu Waterfall Conservancy, privacy policy, data protection, conservation, Siaya, Kenya">
+    <meta name="author" content="Ambururu Waterfall Conservancy">
+    <title>Privacy Policy - Ambururu Waterfall Conservancy</title>
+    <style>
+        :root {
+            --primary-color: #0a2f27; /* Deep forest teal */
+            --accent-color: #3d8b40; /* Lush green */
+            --text-color: #1a1a1a; /* Rich black for high contrast */
+            --bg-color: #f5f7f5; /* Neutral light green */
+            --card-bg: #ffffff; /* Crisp white */
+            --highlight-bg: rgba(61, 139, 64, 0.1); /* Subtler green tint */
+            --shadow-color: rgba(0, 0, 0, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.9;
+            color: var(--text-color);
+            background: linear-gradient(180deg, var(--bg-color), #e8f0e8);
+            padding: 60px 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px var(--shadow-color);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .header-decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(to right, var(--accent-color), var(--primary-color));
+        }
+
+        .watermark {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0.08;
+            font-size: 5rem;
+            color: var(--accent-color);
+            transform: rotate(-45deg);
+            pointer-events: none;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 0.6em;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.9rem;
+            color: var(--primary-color);
+            margin: 2em 0 0.8em;
+            font-weight: 600;
+            padding-left: 20px;
+            border-left: 5px solid var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        h2:hover {
+            transform: translateX(5px);
+        }
+
+        p {
+            margin-bottom: 1.6em;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-bottom: 1.6em;
+            padding-left: 35px;
+        }
+
+        li {
+            margin-bottom: 0.8em;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #4a4a4a;
+            text-align: center;
+            margin-bottom: 3em;
+            font-size: 1rem;
+        }
+
+        .intro {
+            background: var(--highlight-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 2.5em;
+            border: 1px solid rgba(61, 139, 64, 0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-color);
+            opacity: 0.2;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 3em;
+            padding: 30px;
+            background: var(--highlight-bg);
+            border-radius: 12px;
+            border: 1px solid rgba(61, 139, 64, 0.15);
+        }
+
+        .section-number {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+
+        .nav-menu {
+            position: sticky;
+            top: 20px;
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            margin-bottom: 2em;
+            z-index: 100;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .nav-menu li a {
+            font-size: 0.95rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background: var(--highlight-bg);
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            background: var(--accent-color);
+            color: var(--card-bg);
+        }
+
+        .accordion {
+            margin-bottom: 2em;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid rgba(61, 139, 64, 0.15);
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            padding: 15px;
+            background: var(--highlight-bg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background: rgba(61, 139, 64, 0.2);
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 20px;
+            background: var(--card-bg);
+        }
+
+        .accordion-content.active {
+            display: block;
+            animation: slideDown 0.5s ease;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 2em;
+            padding: 12px 24px;
+            background: var(--accent-color);
+            color: var(--card-bg);
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; max-height: 0; }
+            to { opacity: 1; max-height: 500px; }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            p, li {
+                font-size: 1rem;
+            }
+            .nav-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .watermark {
+                font-size: 3.5rem;
+            }
+        }
+
+        /* Accessibility Enhancements */
+        a:focus, .accordion-header:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+
+        [role="main"] {
+            outline: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" role="main" aria-labelledby="privacy-title">
+        <div class="header-decoration"></div>
+        <div class="watermark">Ambururu</div>
+        <h1 id="privacy-title">Privacy Policy</h1>
+        <p class="last-updated">Last Updated: June 26, 2025</p>
+
+        <nav class="nav-menu" aria-label="Privacy policy navigation">
+            <ul>
+                <li><a href="#section1">Information We Collect</a></li>
+                <li><a href="#section2">How We Collect</a></li>
+                <li><a href="#section3">How We Use</a></li>
+                <li><a href="#section4">How We Share</a></li>
+                <li><a href="#section5">Cookies</a></li>
+                <li><a href="#section6">Your Rights</a></li>
+                <li><a href="#section7">Data Security</a></li>
+                <li><a href="#section8">Data Transfers</a></li>
+                <li><a href="#section9">Data Retention</a></li>
+                <li><a href="#section10">Third-Party Links</a></li>
+                <li><a href="#section11">Children’s Privacy</a></li>
+                <li><a href="#section12">Eco-Conscious Practices</a></li>
+                <li><a href="#section13">Policy Changes</a></li>
+                <li><a href="#section14">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro">
+            <p>At <strong>Ambururu Waterfall Conservancy</strong>, our dedication to preserving the pristine beauty and ecological vitality of the Ambururu Waterfall in Siaya, Kenya, extends to safeguarding your personal information. This Privacy Policy outlines how we collect, use, protect, and share your data when you engage with our website (<a href="https://www.ambururuwaterfall.org" aria-label="Visit Ambururu Waterfall Conservancy website">www.ambururuwaterfall.org</a>), participate in our conservation programs, or connect through other channels. By entrusting us with your data, you join our mission to protect our shared natural heritage, and we honor that trust with unwavering care.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" id="section1-header" role="button" tabindex="0" aria-controls="section1-content" aria-expanded="false">
+                    <h2 id="section1"><span class="section-number">1.</span> Information We Collect</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section1-content" aria-labelledby="section1-header">
+                    <p>To advance our conservation mission, we collect the following personal information:</p>
+                    <ul>
+                        <li><strong>Contact Information</strong>: Name, email, postal address, and phone number provided during newsletter subscriptions, donations, event registrations, or volunteering.</li>
+                        <li><strong>Payment Information</strong>: Credit card or other payment details for donations or purchases, processed securely by third-party providers (e.g., PayPal, M-Pesa) and not stored by us.</li>
+                        <li><strong>Engagement Information</strong>: Data from surveys, advocacy campaigns, event registrations, or participation in memberships or volunteer programs.</li>
+                        <li><strong>Online Interaction Data</strong>: IP address, browser type, device information, and website usage data collected via cookies or analytics tools (e.g., Google Analytics).</li>
+                        <li><strong>Social Media Information</strong>: Profile details shared when engaging with us on platforms like X, Facebook, or Instagram.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section2-header" role="button" tabindex="0" aria-controls="section2-content" aria-expanded="false">
+                    <h2 id="section2"><span class="section-number">2.</span> How We Collect Information</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section2-content" aria-labelledby="section2-header">
+                    <p>We collect information through:</p>
+                    <ul>
+                        <li><strong>Direct Interactions</strong>: Forms you complete, donations, registrations, or communications via email, phone, or in-person.</li>
+                        <li><strong>Automated Technologies</strong>: Cookies, web beacons, and analytics tools to enhance website functionality and user experience.</li>
+                        <li><strong>Third-Party Sources</strong>: Trusted partners like payment processors or analytics providers who verify or support our services.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section3-header" role="button" tabindex="0" aria-controls="section3-content" aria-expanded="false">
+                    <h2 id="section3"><span class="section-number">3.</span> How We Use Your Information</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section3-content" aria-labelledby="section3-header">
+                    <p>Your information fuels our conservation efforts by enabling:</p>
+                    <ul>
+                        <li><strong>Program Delivery</strong>: Processing donations, managing registrations, and fulfilling orders.</li>
+                        <li><strong>Communication</strong>: Sending newsletters, updates, advocacy alerts, or responding to inquiries.</li>
+                        <li><strong>Personalization</strong>: Tailoring content like conservation updates to your interests.</li>
+                        <li><strong>Improvement</strong>: Analyzing usage and feedback to enhance our services.</li>
+                        <li><strong>Compliance</strong>: Meeting legal obligations, such as tax reporting or adherence to Kenya’s Data Protection Act, 2019.</li>
+                        <li><strong>Security</strong>: Protecting against fraud or unauthorized access.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section4-header" role="button" tabindex="0" aria-controls="section4-content" aria-expanded="false">
+                    <h2 id="section4"><span class="section-number">4.</span> How We Share Your Information</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section4-content" aria-labelledby="section4-header">
+                    <p>We do not sell, rent, or trade your information. We may share it in these cases:</p>
+                    <ul>
+                        <li><strong>Service Providers</strong>: With trusted vendors (e.g., PayPal, Mailchimp) bound by contracts to protect your data.</li>
+                        <li><strong>Legal Obligations</strong>: When required by law, such as court orders or regulatory requests.</li>
+                        <li><strong>Organizational Changes</strong>: During mergers or restructurings, data may be transferred as assets.</li>
+                        <li><strong>Anonymized Data</strong>: Non-identifiable data may be shared for research or promotion.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section5-header" role="button" tabindex="0" aria-controls="section5-content" aria-expanded="false">
+                    <h2 id="section5"><span class="section-number">5.</span> Cookies and Tracking Technologies</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section5-content" aria-labelledby="section5-header">
+                    <p>We use cookies and similar technologies to enhance your experience, analyze traffic, and personalize content. Manage preferences via your browser or our <a href="/cookies" aria-label="View our Cookie Policy">Cookie Policy</a>.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section6-header" role="button" tabindex="0" aria-controls="section6-content" aria-expanded="false">
+                    <h2 id="section6"><span class="section-number">6.</span> Your Rights and Choices</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section6-content" aria-labelledby="section6-header">
+                    <p>Under laws like Kenya’s Data Protection Act, 2019, GDPR, and CCPA, you may have rights to:</p>
+                    <ul>
+                        <li><strong>Access</strong>: Request your personal data.</li>
+                        <li><strong>Rectification</strong>: Correct inaccurate data.</li>
+                        <li><strong>Erasure</strong>: Request data deletion, subject to legal exceptions.</li>
+                        <li><strong>Opt-Out</strong>: Unsubscribe from marketing via email links or contact.</li>
+                        <li><strong>Portability</strong>: Obtain data in a machine-readable format.</li>
+                        <li><strong>Restrict Processing</strong>: Limit data processing where applicable.</li>
+                        <li><strong>Object</strong>: Object to processing for specific purposes, such as marketing.</li>
+                    </ul>
+                    <p>Contact us at <a href="mailto:ambururuwaterfall@gmail.com" aria-label="Email for privacy requests">ambururuwaterfall@gmail.com</a> to exercise these rights. We respond within 30 days, as required by law.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section7-header" role="button" tabindex="0" aria-controls="section7-content" aria-expanded="false">
+                    <h2 id="section7"><span class="section-number">7.</span> Data Security</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section7-content" aria-labelledby="section7-header">
+                    <p>We employ industry-standard measures, including encryption, secure servers, and access controls, to protect your data. However, no system is infallible, and we encourage secure communication channels.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section8-header" role="button" tabindex="0" aria-controls="section8-content" aria-expanded="false">
+                    <h2 id="section8"><span class="section-number">8.</span> International Data Transfers</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section8-content" aria-labelledby="section8-header">
+                    <p>As a Kenya-based organization, your data may be processed in countries with different privacy laws. We use safeguards like Standard Contractual Clauses to ensure global compliance.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section9-header" role="button" tabindex="0" aria-controls="section9-content" aria-expanded="false">
+                    <h2 id="section9"><span class="section-number">9.</span> Data Retention</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section9-content" aria-labelledby="section9-header">
+                    <p>We retain data only as necessary for outlined purposes or legal requirements (e.g., 7 years for tax records). Marketing preferences are kept until you opt out.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section10-header" role="button" tabindex="0" aria-controls="section10-content" aria-expanded="false">
+                    <h2 id="section10"><span class="section-number">10.</span> Third-Party Links</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section10-content" aria-labelledby="section10-header">
+                    <p>Our website may link to external sites (e.g., social media, payment platforms). We are not responsible for their privacy practices. Review their policies before sharing data.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section11-header" role="button" tabindex="0" aria-controls="section11-content" aria-expanded="false">
+                    <h2 id="section11"><span class="section-number">11.</span> Children’s Privacy</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section11-content" aria-labelledby="section11-header">
+                    <p>Our services are not intended for individuals under 16. We do not knowingly collect children’s data and will delete it upon discovery.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section12-header" role="button" tabindex="0" aria-controls="section12-content" aria-expanded="false">
+                    <h2 id="section12"><span class="section-number">12.</span> Eco-Conscious Data Practices</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section12-content" aria-labelledby="section12-header">
+                    <p>In alignment with our conservation mission, we minimize our digital footprint by using energy-efficient servers, limiting data storage, and promoting paperless interactions.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section13-header" role="button" tabindex="0" aria-controls="section13-content" aria-expanded="false">
+                    <h2 id="section13"><span class="section-number">13.</span> Changes to This Privacy Policy</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section13-content" aria-labelledby="section13-header">
+                    <p>We may update this policy to reflect legal or operational changes. Significant updates will be communicated via our website or email. The "Last Updated" date indicates the latest version.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section14-header" role="button" tabindex="0" aria-controls="section14-content" aria-expanded="false">
+                    <h2 id="section14"><span class="section-number">14.</span> Contact Us</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section14-content" aria-labelledby="section14-header">
+                    <div class="contact-info">
+                        <p>For privacy inquiries or requests, contact:</p>
+                        <p>
+                            <strong>Ambururu Waterfall Conservancy</strong><br>
+                            Email: <a href="mailto:ambururuwaterfall@gmail.com" aria-label="Email Ambururu Waterfall Conservancy">ambururuwaterfall@gmail.com</a><br>
+                            Address: Musanda-ruwe, Siaya, Kenya 40600<br>
+                            Phone: <a href="tel:+254741609862" aria-label="Call Ambururu Waterfall Conservancy">+254 741 609 862</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="support.html" class="cta-button" aria-label="Support our conservation efforts">Join Our Mission</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isActive = content.classList.contains('active');
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.accordion-header').forEach(h => h.setAttribute('aria-expanded', 'false'));
+                document.querySelectorAll('.accordion-icon').forEach(icon => icon.textContent = '+');
+                if (!isActive) {
+                    content.classList.add('active');
+                    header.setAttribute('aria-expanded', 'true');
+                    header.querySelector('.accordion-icon').textContent = '−';
+                }
+            });
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    header.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://code.jquery.com https://api.mapbox.com https://unpkg.com https://cdn.jsdelivr.net https://cdn.aframe.io https://cdn.jsdelivr.net/npm/web3@4/dist/ https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4/dist/ https://cdn.jsdelivr.net/npm/@huggingface/transformers@3 https://cdn.jsdelivr.net/npm/three@0.148/build/ https://cdn.jsdelivr.net/npm/@ceramicnetwork/http-client@2/ https://cdn.jsdelivr.net/npm/axe-core@4 https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.mapbox.com; img-src 'self' data: https://via.placeholder.com https://*.mapbox.com https://ipfs.io https://*.cloudfront.net; connect-src 'self' https://formspree.io https://api.weatherapi.com wss://iot.api.ambururuwaterfalls.com https://api.infura.io https://api.hotjar.com https://api.clarity.ms https://mock-api.ambururuwaterfalls.com https://graphql.ambururuwaterfalls.com https://ceramic-clay.3boxlabs.com; frame-src 'self' https://my.matterport.com https://cdn.aframe.io; font-src 'self' https://fonts.gstatic.com; media-src 'self' https://www.zapsplat.com https://*.cloudfront.net; worker-src 'self' blob:; manifest-src 'self';">
     <title>Accommodations - Ambururu Waterfalls & Resort | Siaya, Kenya</title>
-    <meta name="description" content="Experience eco-luxury accommodations at Ambururu Waterfalls & Resort in Siaya, Kenya, blending Luo heritage with sustainable elegance.">
-    <meta name="keywords" content="Ambururu Waterfalls, Siaya, Kenya, eco-luxury, resort, Luo heritage, sustainable travel">
-    <meta name="author" content="Ambururu Waterfalls & Resort">
+    <meta name="description" content="Indulge in eco-luxury at Ambururu Waterfalls & Resort and Ambururu Silent Homes in Siaya, Kenya, with AI-personalized stays, blockchain-secured bookings, and immersive WebXR tours.">
+    <meta name="keywords" content="Ambururu Waterfalls, Ambururu Silent Homes, Siaya, Kenya, eco-luxury, blockchain, AI, WebXR, sustainable travel, smart suites, rental homes, relaxation">
     <meta name="robots" content="index, follow">
     <!-- Open Graph -->
-    <meta property="og:title" content="Accommodations at Ambururu Waterfalls & Resort">
-    <meta property="og:description" content="Discover sustainable suites in Siaya’s Yala Valley, inspired by Luo culture.">
-    <meta property="og:image" content="images/accommodations-hero.jpg">
+    <meta property="og:title" content="Ambururu Waterfalls & Silent Homes Accommodations">
+    <meta property="og:description" content="Experience serene eco-luxury with AI personalization, blockchain bookings, and WebXR tours in Siaya’s Yala Valley.">
+    <meta property="og:image" content="/images/accommodations-hero.webp">
     <meta property="og:url" content="https://www.ambururuwaterfalls.com/accommodations.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
         "@context": "https://schema.org",
         "@type": "Resort",
         "name": "Ambururu Waterfalls & Resort",
-        "description": "Eco-luxury accommodations in Siaya, Kenya, with sustainable design and Luo heritage.",
+        "description": "Eco-luxury accommodations including Ambururu Silent Homes with AI personalization, blockchain security, WebXR tours, and IoT integration in Siaya, Kenya.",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Musanda, Siaya",
@@ -38,216 +38,180 @@
         "accommodation": [
             {
                 "@type": "HotelRoom",
-                "name": "Standard Room",
-                "description": "Cozy elegance for solo travelers or couples with eco-friendly design.",
-                "priceRange": "$100/night",
-                "amenityFeature": ["WiFi", "Queen Bed", "Coffee Maker"]
+                "name": "Signature Room",
+                "description": "AI-curated smart room with IoT controls, NFT rewards, WebXR previews, and sustainable elegance.",
+                "priceRange": "KSH 3500-5000/night or 0.025-0.035 ETH",
+                "amenityFeature": ["Ultra-Fast WiFi", "Queen Bed", "Smart Climate Control", "Eco-Luxury Toiletries", "Voice Navigation", "AR/VR Immersion"]
             },
             {
-                "@type": "HotelRoom",
-                "name": "Deluxe Suite",
-                "description": "Spacious luxury for groups with sustainable amenities.",
-                "priceRange": "$150/night",
-                "amenityFeature": ["WiFi", "King Bed", "Jacuzzi", "Smart TV"]
+                "@type": "Suite",
+                "name": "Presidential Suite",
+                "description": "Opulent smart suite with private jacuzzi, WebXR-guided tours, blockchain bookings, and IoT sophistication.",
+                "priceRange": "KSH 6000-9000/night or 0.045-0.065 ETH",
+                "amenityFeature": ["Ultra-Fast WiFi", "King Bed", "Private Jacuzzi", "4K Smart TV", "Panoramic Balcony", "Voice Navigation", "AR/VR Immersion"]
+            },
+            {
+                "@type": "House",
+                "name": "Ambururu Silent Home",
+                "description": "Eco-friendly rental home with solar power, smart appliances, and serene views, ideal for families or groups.",
+                "priceRange": "KSH 8000-12000/night or 0.060-0.090 ETH",
+                "amenityFeature": ["Solar Power", "Full Kitchen", "Smart Appliances", "Private Garden", "Eco-Luxury Toiletries", "AR/VR Immersion"]
             }
         ],
         "url": "https://www.ambururuwaterfalls.com/accommodations.html",
-        "telephone": "+254-721-202-551",
+        "telephone": "+254-720-215-511",
         "email": "reservations@ambururuwaterfalls.com",
-        "image": "images/accommodations-hero.jpg",
+        "image": "/images/accommodations-hero.webp",
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.9",
-            "reviewCount": "320"
-        }
+            "reviewCount": "620"
+        },
+        "paymentAccepted": ["Credit Card", "Cryptocurrency (ETH, USDT)", "NFT Loyalty Points"],
+        "hasMap": "https://maps.google.com/?q=-0.062,34.267",
+        "sameAs": [
+            "https://www.facebook.com/ambururu",
+            "https://x.com/Ambururu_W",
+            "https://www.instagram.com/ambururu1"
+        ]
     }
     </script>
     <!-- Preload Critical Assets -->
-    <link rel="preload" href="images/14.jpg" as="image" fetchpriority="high">
-    <link rel="preload" href="videos/A_breathtaking_view_of_Earth_rotating_in_the_vastn_6c2edb5d-dd81-49a8-a330-5c2664eb2f8a.webm" as="video" fetchpriority="high">
+    <link rel="preload" href="/images/accommodations-hero.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="/videos/hero-background.webm" as="video" fetchpriority="high">
+    <link rel="preload" href="/models/signature-room.glb" as="fetch" fetchpriority="high">
+    <link rel="preload" href="/models/silent-home.glb" as="fetch" fetchpriority="high">
+    <link rel="manifest" href="/manifest.json">
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.aframe.io">
+    <link rel="dns-prefetch" href="https://ipfs.io">
+    <link rel="dns-prefetch" href="https://mock-api.ambururuwaterfalls.com">
+    <link rel="dns-prefetch" href="https://ceramic-clay.3boxlabs.com">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Mapbox -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.8.1/mapbox-gl.css" rel="stylesheet" integrity="sha384-5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f" crossorigin="anonymous">
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" integrity="sha384-5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f" crossorigin="anonymous">
+    <!-- A-Frame -->
+    <link rel="stylesheet" href="https://cdn.aframe.io/aframe.min.css" integrity="sha384-5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f" crossorigin="anonymous">
+    <!-- Lottie Player -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lottie-player@2.0.2/dist/lottie-player.css">
     <style>
         :root {
-            --primary: #1a3c34; /* Jade green */
-            --secondary: #f5e6cc; /* Ivory */
-            --accent: #d4a017; /* Gold */
-            --dark: #0a1a2e; /* Midnight blue */
-            --light: #f8f1e9; /* Soft cream */
-            --luo-accent: #8b1e3f; /* Luo-inspired red */
-            --shadow: rgba(0, 0, 0, 0.3);
+            --primary: #1e3a2f; /* Deep forest green */
+            --secondary: #f7e8d2; /* Warm ivory */
+            --accent: #d4a017; /* Luxe gold */
+            --dark: #0f1c2a; /* Midnight navy */
+            --light: #fdfaf5; /* Soft cream */
+            --luo-accent: #9e2a44; /* Rich crimson */
+            --shadow: rgba(0,0,0,0.25);
+            --high-contrast-bg: #000;
+            --high-contrast-text: #fff;
+            --high-contrast-accent: #ffcc00;
+            --nft-badge: #ff5252;
+            --smart-room: #00d4aa;
+            --virtual-tour: #0288d1;
+            --eco-impact: #388e3c;
+            --base-transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
         }
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 120px;
-        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; scroll-padding-top: 100px; font-size: 16px; }
         body {
-            font-family: 'Lora', serif;
+            font-family: 'Inter', sans-serif;
             color: var(--secondary);
             background: var(--dark);
-            line-height: 1.8;
+            line-height: 1.7;
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        a {
-            text-decoration: none;
-            color: inherit;
+        a, button { text-decoration: none; color: inherit; cursor: pointer; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; letter-spacing: 0.5px; }
+        .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+        button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
         }
-        h1, h2, h3, h4 {
-            font-family: 'Cinzel Decorative', serif;
-            font-weight: 700;
-            letter-spacing: 1px;
-        }
-        /* Header */
-        .sticky-header {
+        .header {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(10, 26, 46, 0.95);
-            backdrop-filter: blur(12px);
-            padding: 1.5rem 0;
-            box-shadow: 0 4px 16px var(--shadow);
-            transition: transform 0.3s ease, background 0.3s ease;
+            background: rgba(15,28,42,0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            box-shadow: 0 4px 12px var(--shadow);
+            transition: var(--base-transition);
         }
-        .sticky-header.scrolled {
-            background: rgba(10, 26, 46, 1);
-        }
-        .sticky-header.hidden {
-            transform: translateY(-100%);
-        }
+        .header.hidden { transform: translateY(-100%); }
         .header-container {
-            max-width: 1400px;
+            max-width: 1440px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0 2rem;
         }
-        .brand {
-            display: flex;
-            align-items: center;
-        }
-        .logo {
-            width: 90px;
-            height: 90px;
-            transition: transform 0.3s ease;
-        }
-        .logo:hover {
-            transform: scale(1.05);
-        }
-        .brand h1 {
-            font-size: 2.2rem;
-            color: var(--accent);
-            margin: 0 0 0 1rem;
-            text-shadow: 0 2px 4px var(--shadow);
-        }
+        .brand { display: flex; align-items: center; }
+        .brand h1 { font-size: 1.8rem; color: var(--accent); margin-left: 1rem; text-shadow: 0 2px 4px var(--shadow); }
+        .logo { width: 80px; height: 80px; object-fit: contain; }
         nav ul {
             display: flex;
             list-style: none;
-        }
-        nav ul li {
-            margin-left: 2.5rem;
-            position: relative;
+            gap: 1.5rem;
+            margin-left: 2rem;
         }
         nav ul li a {
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: var(--secondary);
-            transition: color 0.3s, border-bottom 0.3s;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: var(--base-transition);
         }
-        nav ul li a:hover,
-        nav ul li a.active {
+        nav ul li a.active, nav ul li a:hover {
             color: var(--accent);
-            border-bottom: 2px solid var(--accent);
+            background: rgba(212,160,23,0.1);
         }
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: rgba(10, 26, 46, 0.95);
+        .blockchain-wallet {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .wallet-text {
+            font-size: 0.95rem;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+        .wallet-button {
+            background: var(--luo-accent);
+            color: var(--light);
+            padding: 0.6rem 1.2rem;
             border-radius: 8px;
-            padding: 1rem;
-            box-shadow: 0 4px 12px var(--shadow);
-            min-width: 220px;
-            opacity: 0;
-            transform: translateY(5px);
-            transition: opacity 0.3s, transform 0.3s;
+            font-size: 0.95rem;
+            transition: var(--base-transition);
         }
-        .dropdown:hover .dropdown-menu {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .dropdown-menu li {
-            margin: 0;
-        }
-        .dropdown-menu li a {
-            font-size: 1rem;
-            padding: var(--secondary);
-            display: block;
-        }
-        .dropdown-menu li a:hover {
-            color: var(--primary);
-            background-color: var(--accent);
-        }
-        .menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--accent);
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-        .language-toggle {
-            margin-left: 2rem;
-            position: relative;
-        }
-        .language-toggle select {
-            background: transparent;
-            border: none;
-            color: var(--secondary);
-            font-size: 1rem;
-            cursor: pointer;
-            padding: 0.5rem;
-            appearance: none;
-        }
-        .language-toggle select:focus {
-            outline: none;
-        }
-        .language-toggle::after {
-            content: '\f078';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--accent);
-            position: absolute;
-            right: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        /* Hero Section */
+        .wallet-button:hover { background: #b32c4e; }
         .hero {
             position: relative;
-            height: 90vh;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             overflow: hidden;
-            background: linear-gradient(180deg, rgba(10, 26, 46, 0.7), rgba(10, 26, 46, 0.9)), url('images/15.jpg') no-repeat center/cover;
+            background: linear-gradient(180deg, rgba(15,28,42,0.8), rgba(15,28,42,0.3));
+        }
+        .hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
         }
         .hero-video {
             position: absolute;
@@ -256,328 +220,480 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: 1;
-            filter: brightness(0.6);
+            opacity: 0.6;
+            z-index: 0;
         }
         .hero-overlay {
             position: relative;
             z-index: 2;
-            max-width: 1100px;
-            padding: 0 2rem;
+            max-width: 900px;
+            padding: 2rem;
         }
         .hero-overlay h2 {
-            font-size: 5.5rem;
-            color: var(--secondary);
-            letter-spacing: 4px;
-            margin: 0 0 1.5rem;
-            line-height: 1.1;
+            font-size: 4.5rem;
+            color: var(--light);
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
             text-shadow: 0 4px 8px var(--shadow);
         }
         .hero-overlay p {
-            font-size: 1.6rem;
-            color: var(--light);
-            margin: 0 0 2.5rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 400;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            text-shadow: 0 2px 4px var(--shadow);
         }
         .cta-button {
             background: var(--accent);
             color: var(--dark);
-            padding: 1.2rem 3rem;
+            padding: 1rem 2.5rem;
             border-radius: 50px;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1.3rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 12px rgba(212, 160, 23, 0.4);
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: var(--base-transition);
+            box-shadow: 0 4px 12px rgba(212,160,23,0.3);
         }
         .cta-button:hover {
             background: var(--luo-accent);
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(139, 30, 63, 0.5);
-        }
-        .secondary {
-            background: transparent;
-            border: 3px solid var(--accent);
-            color: var(--accent);
-            margin-left: 1.5rem;
-        }
-        .secondary:hover {
-            background: var(--accent);
-            color: var(--dark);
-            box-shadow: 0 6px 16px rgba(212, 160, 23, 0.5);
-        }
-        /* Audio Control */
-        .audio-control {
-            position: fixed;
-            top: 20px;
-            right: 80px;
-            z-index: 1000;
-            background: rgba(10, 26, 46, 0.9);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 2px 8px var(--shadow);
-        }
-        .audio-control:hover {
-            transform: scale(1.1);
-            box-shadow: 0 4px 12px var(--shadow);
-        }
-        .audio-control i {
-            color: var(--accent);
-            font-size: 1.4rem;
-        }
-        /* Contact Popup */
-        .contact-popup {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            z-index: 1000;
-            background: var(--accent);
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 12px rgba(212, 160, 23, 0.4);
-        }
-        .contact-popup:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(212, 160, 23, 0.5);
-        }
-        .contact-popup i {
-            color: var(--dark);
-            font-size: 1.8rem;
-        }
-        .contact-form {
-            display: none;
-            position: fixed;
-            bottom: 100px;
-            right: 30px;
-            background: var(--light);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 6px 16px var(--shadow);
-            max-width: 320px;
-            z-index: 1000;
-        }
-        .contact-form.active {
-            display: block;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.8rem;
-            margin-bottom: 1rem;
-            border: 1px solid var(--dark);
-            border-radius: 8px;
-            font-family: 'Lora', serif;
-            font-size: 1rem;
-        }
-        .contact-form button {
-            background: var(--accent);
-            color: var(--dark);
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        .contact-form button:hover {
-            background: var(--luo-accent);
-        }
-        /* Room Filters */
-        .room-filters {
-            max-width: 1200px;
-            margin: 3rem auto;
-            padding: 1.5rem 2rem;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            box-shadow: 0 4px 12px var(--shadow);
-        }
-        .room-filters button {
-            background: transparent;
-            border: 3px solid var(--accent);
-            color: var(--accent);
-            padding: 1rem 2rem;
-            margin: 0.5rem;
-            border-radius: 50px;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-        }
-        .room-filters button.active,
-        .room-filters button:hover {
-            background: var(--accent);
-            color: var(--dark);
+            color: var(--light);
             transform: translateY(-3px);
-            box-shadow: 0 4px 12px rgba(212, 160, 23, 0.4);
+            box-shadow: 0 6px 16px rgba(158,42,68,0.4);
         }
-        /* Accommodations Section */
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        .personalized-recommendation {
+            background: rgba(255,255,255,0.05);
+            padding: 3rem;
+            border-radius: 12px;
+            margin: 4rem auto;
+            max-width: 1000px;
+            text-align: center;
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+        .personalized-recommendation h3 {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .room-filters {
+            padding: 2rem 0;
+            text-align: center;
+            background: var(--dark);
+        }
+        .filter-btn {
+            background: var(--dark);
+            color: var(--secondary);
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+            border: 1px solid var(--accent);
+            transition: var(--base-transition);
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--accent);
+            color: var(--dark);
+            border-color: var(--accent);
+        }
         .accommodations {
             padding: 8rem 0;
             text-align: center;
-            background: linear-gradient(180deg, var(--dark) 0%, #12263a 100%);
-        }
-        .accommodations h3 {
-            font-size: 4rem;
-            color: var(--accent);
-            margin: 0 0 1.5rem;
-            text-shadow: 0 2px 8px var(--shadow);
-        }
-        .accommodations p {
-            font-size: 1.4rem;
-            color: var(--light);
-            margin: 0 0 3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            font-weight: 400;
+            background: linear-gradient(180deg, var(--dark), #1a2e3f);
         }
         .rooms-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
             gap: 3rem;
-            max-width: 1400px;
+            max-width: 1440px;
             margin: 0 auto;
             padding: 0 2rem;
         }
         .room-card {
-            background: rgba(255, 255, 255, 0.08);
+            background: rgba(255,255,255,0.06);
             padding: 2.5rem;
             border-radius: 16px;
-            backdrop-filter: blur(8px);
-            box-shadow: 0 6px 16px var(--shadow);
-            transition: transform 0.4s, box-shadow 0.4s;
-            position: relative;
-            overflow: hidden;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 20px var(--shadow);
+            transition: var(--base-transition);
+            cursor: pointer;
+            transform-style: preserve-3d;
         }
         .room-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 24px rgba(212, 160, 23, 0.3);
+            transform: translateY(-8px) rotateX(2deg) rotateY(2deg);
+            box-shadow: 0 10px 24px var(--shadow);
         }
-        .room-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
+        .room-card picture img {
             width: 100%;
-            height: 5px;
-            background: linear-gradient(90deg, var(--accent), var(--luo-accent));
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .room-card:hover::before {
-            opacity: 1;
-        }
-        .room-card img {
-            width: 100%;
-            height: 240px;
+            height: 260px;
             object-fit: cover;
             border-radius: 12px;
             margin-bottom: 1.5rem;
-            transition: transform 0.4s;
+            transition: transform 0.6s ease;
         }
-        .room-card:hover img {
+        .room-card:hover picture img {
             transform: scale(1.05);
         }
-        .room-card h4 {
-            font-size: 2rem;
-            color: var(--accent);
-            margin: 0 0 0.8rem;
-            text-shadow: 0 2px 4px var(--shadow);
-        }
-        .room-card p {
-            font-size: 1.1rem;
-            color: var(--light);
-            margin: 0 0 1.2rem;
-        }
-        .room-card .price {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: var(--luo-accent);
-        }
-        .badge {
+        .badge, .nft-badge, .eco-impact-badge {
             display: inline-block;
-            background: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+        .badge { background: var(--accent); color: var(--dark); }
+        .nft-badge { background: var(--nft-badge); color: var(--light); }
+        .eco-impact-badge { background: var(--eco-impact); color: var(--light); }
+        .smart-room-status {
+            background: var(--smart-room);
             color: var(--dark);
-            padding: 0.6rem 1.2rem;
-            border-radius: 8px;
-            margin-bottom: 1.2rem;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            margin: 0.5rem 0;
         }
         .amenities {
-            list-style: none;
+            list-style-type: none;
             padding: 0;
-            margin: 0 0 1.5rem;
-            text-align: left;
-            color: var(--light);
+            margin: 1rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
         }
         .amenities li {
-            margin-bottom: 0.8rem;
-            position: relative;
-            padding-left: 2rem;
-            font-size: 1rem;
-        }
-        .amenities li::before {
-            content: '\f058';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--accent);
-            position: absolute;
-            left: 0;
-            font-size: 1.2rem;
+            font-size: 0.9rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         .room-actions {
             display: flex;
-            gap: 1.2rem;
+            gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
-        .quick-view {
-            background: transparent;
-            border: 3px solid var(--accent);
+        .ar-preview-btn, .vr-tour-btn, .virtual-try-on-btn {
             color: var(--accent);
-            padding: 0.8rem 1.5rem;
-            border-radius: 50px;
-            cursor: pointer;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            transition: background 0.3s, color 0.3s, transform 0.3s;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            border: none;
+            background: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: var(--base-transition);
         }
-        .quick-view:hover {
+        .ar-preview-btn:hover, .vr-tour-btn:hover, .virtual-try-on-btn:hover {
+            color: var(--luo-accent);
+            background: rgba(158,42,68,0.1);
+        }
+        .silent-homes {
+            padding: 10rem 0;
+            text-align: center;
+            background: linear-gradient(45deg, #2e4b3c, #4a7457);
+            color: var(--secondary);
+        }
+        .silent-home-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        .silent-home-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 6px 16px var(--shadow);
+            transition: var(--base-transition);
+        }
+        .silent-home-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow);
+        }
+        .silent-home-card picture img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .testimonials {
+            padding: 10rem 0;
+            text-align: center;
+            background: var(--light);
+            color: var(--dark);
+        }
+        .swiper-slide {
+            background: rgba(255,255,255,0.95);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 6px 16px var(--shadow);
+        }
+        .swiper-slide p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .guest {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .guest picture img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent);
+        }
+        .eco-certifications {
+            padding: 10rem 0;
+            text-align: center;
+            background: var(--secondary);
+            color: var(--dark);
+        }
+        .certification-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .certification-card {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px var(--shadow);
+            transition: var(--base-transition);
+        }
+        .certification-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow);
+        }
+        .social-wall {
+            padding: 10rem 0;
+            text-align: center;
+            background: linear-gradient(45deg, var(--primary), #2f4f3e);
+        }
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .social-post {
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px var(--shadow);
+            color: var(--dark);
+            transition: var(--base-transition);
+        }
+        .social-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--shadow);
+        }
+        .social-post picture img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+        .booking-section {
+            padding: 10rem 0;
+            text-align: center;
+            background: linear-gradient(180deg, #1a2e3f, var(--dark));
+        }
+        .booking-section form {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 3rem;
+            background: rgba(255,255,255,0.06);
+            border-radius: 16px;
+            box-shadow: 0 8px 20px var(--shadow);
+        }
+        .booking-section input, .booking-section select {
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+            background: var(--dark);
+            color: var(--secondary);
+            width: 100%;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            transition: var(--base-transition);
+        }
+        .booking-section input:focus, .booking-section select:focus {
+            border-color: var(--accent);
+            outline: none;
+        }
+        .availability-calendar {
+            margin-top: 2rem;
+            background: rgba(255,255,255,0.06);
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 0.5rem;
+        }
+        .calendar-day {
+            padding: 0.8rem;
+            text-align: center;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--base-transition);
+        }
+        .calendar-day.available {
+            background: var(--smart-room);
+            color: var(--dark);
+        }
+        .calendar-day.unavailable {
+            background: var(--dark);
+            color: var(--secondary);
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .calendar-day.selected {
             background: var(--accent);
             color: var(--dark);
-            transform: translateY(-3px);
+            font-weight: bold;
         }
-        .virtual-tour {
-            color: var(--accent);
-            font-family: 'Cinzel Decorative', serif;
+        #booking-feedback {
+            margin-top: 1rem;
             font-size: 1rem;
-            transition: color 0.3s, text-shadow 0.3s;
         }
-        .virtual-tour:hover {
-            color: var(--luo-accent);
-            text-shadow: 0 2px 8px rgba(139, 30, 63, 0.5);
+        #booking-feedback.error { color: #ff5252; }
+        #booking-feedback.success { color: #00d4aa; }
+        #dynamic-price {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-top: 1rem;
         }
-        /* Modal */
+        .map {
+            padding: 10rem 0;
+            text-align: center;
+        }
+        #map {
+            height: 600px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px var(--shadow);
+        }
+        .chatbot-container {
+            position: fixed;
+            bottom: 120px;
+            right: 30px;
+            background: var(--light);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px var(--shadow);
+            max-width: 420px;
+            z-index: 1000;
+            display: none;
+            color: var(--dark);
+        }
+        .chatbot-container.active { display: block; }
+        .chatbot-messages {
+            max-height: 320px;
+            overflow-y: auto;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 12px;
+            background: rgba(15,28,42,0.05);
+        }
+        .chatbot-message {
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .chatbot-message.user {
+            background: var(--accent);
+            color: var(--dark);
+            text-align: right;
+        }
+        .chatbot-message.bot {
+            background: var(--dark);
+            color: var(--secondary);
+        }
+        .chatbot-quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .quick-reply {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--base-transition);
+        }
+        .quick-reply:hover {
+            background: var(--luo-accent);
+            color: var(--light);
+        }
+        .chatbot-container input {
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 1px solid var(--dark);
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+        .chatbot-container button {
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            border: none;
+        }
+        .assistant-orb {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: var(--accent);
+            color: var(--dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            box-shadow: 0 6px 16px var(--shadow);
+            cursor: pointer;
+            transition: var(--base-transition);
+        }
+        .assistant-orb:hover { transform: scale(1.1); }
+        .cookie-consent {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(15,28,42,0.95);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px var(--shadow);
+            z-index: 1000;
+            display: none;
+        }
+        .cookie-consent.active { display: block; }
+        .cookie-consent p {
+            font-size: 0.9rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
         .modal {
             display: none;
             position: fixed;
@@ -585,511 +701,182 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.85);
+            background: rgba(0,0,0,0.9);
             z-index: 2000;
             justify-content: center;
             align-items: center;
         }
-        .modal.active {
-            display: flex;
-        }
+        .modal.active { display: flex; }
         .modal-content {
             background: var(--light);
             padding: 3rem;
             border-radius: 16px;
-            max-width: 900px;
+            max-width: 1000px;
             width: 90%;
             color: var(--dark);
             position: relative;
-            box-shadow: 0 8px 24px var(--shadow);
-            animation: fadeIn 0.5s ease;
-        }
-        .modal-content iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-            border-radius: 12px;
         }
         .close-modal {
-            background: var(--accent);
-            color: var(--dark);
-            padding: 0.8rem 1.5rem;
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
             border: none;
-            border-radius: 8px;
+            font-size: 1.5rem;
             cursor: pointer;
-            margin-top: 1.5rem;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            transition: background 0.3s;
-        }
-        .close-modal:hover {
-            background: var(--luo-accent);
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: scale(0.95); }
-            to { opacity: 1; transform: scale(1); }
-        }
-        /* Nearby Hotels Section */
-        .nearby-hotels {
-            padding: 8rem 0;
-            text-align: center;
-            background: var(--secondary);
             color: var(--dark);
         }
-        .nearby-hotels h3 {
-            font-size: 4rem;
-            color: var(--primary);
-            margin: 0 0 1.5rem;
-            text-shadow: 0 2px 8px var(--shadow);
-        }
-        .hotel-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 3rem;
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        .hotel-card {
-            background: var(--light);
-            padding: 2.5rem;
-            border-radius: 16px;
-            box-shadow: 0 6px 16px var(--shadow);
-            transition: transform 0.4s, box-shadow 0.4s;
-        }
-        .hotel-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 24px var(--shadow);
-        }
-        .hotel-card h4 {
-            font-size: 2rem;
-            color: var(--primary);
-            margin: 0 0 0.8rem;
-        }
-        .hotel-card p {
-            font-size: 1.1rem;
-            color: var(--dark);
-            margin: 0.8rem 0;
-        }
-        /* Testimonials Section */
-        .testimonials {
-            padding: 8rem 0;
+        footer {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, #0f1c2a, #1a2e3f);
             text-align: center;
-            background: var(--dark);
+            color: var(--secondary);
         }
-        .testimonials h3 {
-            font-size: 4rem;
-            color: var(--accent);
-            margin: 0 0 3rem;
-            text-shadow: 0 2px 8px var(--shadow);
-        }
-        .swiper {
+        .footer-container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 2rem;
         }
-        .swiper-slide {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 2.5rem;
-            border-radius: 16px;
-            backdrop-filter: blur(8px);
-            text-align: left;
-            box-shadow: 0 6px 16px var(--shadow);
-        }
-        .swiper-slide p {
-            font-size: 1.2rem;
-            font-style: italic;
-            color: var(--light);
-            margin: 0 0 1.8rem;
-        }
-        .swiper-slide .guest {
-            display: flex;
-            align-items: center;
-            gap: 1.2rem;
-        }
-        .swiper-slide .guest img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: 3px solid var(--accent);
-        }
-        .swiper-slide .guest span {
-            font-size: 1.1rem;
-            color: var(--secondary);
-        }
-        .swiper-pagination-bullet {
-            background: var(--accent);
-            opacity: 0.7;
-            width: 12px;
-            height: 12px;
-        }
-        .swiper-pagination-bullet-active {
-            opacity: 1;
-        }
-        .swiper-button-next,
-        .swiper-button-prev {
-            color: var(--accent);
-            background: rgba(10, 26, 46, 0.5);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            transition: background 0.3s;
-        }
-        .swiper-button-next:hover,
-        .swiper-button-prev:hover {
-            background: rgba(10, 26, 46, 0.8);
-        }
-        /* Booking Form */
-        .booking-form {
-            padding: 8rem 0;
-            text-align: center;
-            background: linear-gradient(45deg, var(--primary), #2a5c4e);
-            box-shadow: 0 8px 24px var(--shadow);
-        }
-        .booking-form h3 {
-            font-size: 4rem;
-            color: var(--secondary);
-            margin: 0 0 1.5rem;
-            text-shadow: 0 2px 8px var(--shadow);
-        }
-        .booking-form p {
-            font-size: 1.4rem;
-            color: var(--light);
-            margin: 0 0 3rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .booking-form form {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.5rem;
-            justify-content: center;
-            background: rgba(255, 255, 255, 0.08);
-            padding: 3rem;
-            border-radius: 16px;
-            box-shadow: 0 6px 16px var(--shadow);
-        }
-        .booking-form input,
-        .booking-form select {
-            padding: 1rem;
-            border: none;
-            border-radius: 12px;
-            width: 240px;
-            font-size: 1.1rem;
-            background: var(--light);
-            color: var(--dark);
-            transition: box-shadow 0.3s;
-        }
-        .booking-form input:focus,
-        .booking-form select:focus {
-            outline: none;
-            box-shadow: 0 0 8px rgba(212, 160, 23, 0.5);
-        }
-        .booking-form button {
-            background: var(--accent);
-            color: var(--dark);
-            padding: 1rem 3rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1.2rem;
-            transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 12px rgba(212, 160, 23, 0.4);
-        }
-        .booking-form button:hover {
-            background: var(--luo-accent);
-            transform: translateY(-5px);
-            box-shadow: 0 6px 16px rgba(139, 30, 63, 0.5);
-        }
-        #booking-feedback {
-            margin-top: 1.5rem;
-            font-size: 1.2rem;
-            color: var(--light);
-        }
-        .error {
-            color: #ff4d4d;
-        }
-        .success {
-            color: var(--accent);
-        }
-        /* Map Section */
-        .map {
-            padding: 8rem 0;
-            text-align: center;
-            background: var(--dark);
-        }
-        .map h3 {
-            font-size: 4rem;
-            color: var(--accent);
-            margin: 0 0 2rem;
-            text-shadow: 0 2px 8px var(--shadow);
-        }
-        #map {
-            width: 100%;
-            height: 600px;
-            border-radius: 16px;
-            box-shadow: 0 8px 24px var(--shadow);
-        }
-        .map-description {
-            font-size: 1.3rem;
-            color: var(--light);
-            margin-top: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .map-description a {
-            color: var(--accent);
-            transition: color 0.3s;
-        }
-        .map-description a:hover {
-            color: var(--luo-accent);
-        }
-        /* Footer */
-        footer {
-            background: var(--dark);
-            color: var(--light);
-            padding: 6rem 0;
-            text-align: center;
-            box-shadow: 0 -4px 12px var(--shadow);
-        }
-        .footer-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
         .footer-logo {
-            width: 120px;
-            margin-bottom: 2rem;
-            transition: transform 0.3s;
-        }
-        .footer-logo:hover {
-            transform: scale(1.05);
+            width: 140px;
+            height: 140px;
+            margin-bottom: 1.5rem;
         }
         .social-links {
-            margin: 2.5rem 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
         }
         .social-links a {
-            color: var(--accent);
-            margin: 0 2rem;
-            font-size: 2rem;
-            transition: color 0.3s, transform 0.3s;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            transition: var(--base-transition);
         }
-        .social-links a:hover {
-            color: var(--luo-accent);
-            transform: scale(1.2);
-        }
-        .newsletter h4 {
-            font-size: 2.5rem;
-            color: var(--accent);
-            margin: 0 0 2rem;
-            text-shadow: 0 2px 4px var(--shadow);
+        .social-links a:hover { color: var(--accent); }
+        .newsletter {
+            max-width: 500px;
+            margin: 2rem auto;
         }
         .newsletter form {
             display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            max-width: 700px;
-            margin: 0 auto;
+            gap: 1rem;
         }
         .newsletter input {
             padding: 1rem;
-            border: none;
-            border-radius: 12px;
-            width: 350px;
-            font-size: 1.1rem;
-            background: var(--light);
-            color: var(--dark);
-        }
-        .newsletter button {
-            background: var(--accent);
-            color: var(--dark);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 12px;
-            cursor: pointer;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1.1rem;
-            transition: background 0.3s, transform 0.3s;
-        }
-        .newsletter button:hover {
-            background: var(--luo-accent);
-            transform: translateY(-3px);
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+            background: var(--dark);
+            color: var(--secondary);
+            flex: 1;
         }
         .footer-links {
-            margin-top: 2.5rem;
-        }
-        .footer-links a {
-            color: var(--light);
-            margin: 0 1.5rem;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-        .footer-links a:hover {
-            color: var(--accent);
-        }
-        .footer-certifications {
-            margin-top: 3rem;
             display: flex;
             justify-content: center;
-            gap: 3rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin: 1.5rem 0;
         }
-        .footer-certifications img {
+        .footer-links a {
+            font-size: 1rem;
+            color: var(--secondary);
+            transition: var(--base-transition);
+        }
+        .footer-links a:hover { color: var(--accent); }
+        .footer-certifications {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        .footer-certifications picture img {
             width: 100px;
-            height: auto;
-            transition: transform 0.3s;
+            height: 50px;
+            object-fit: contain;
         }
-        .footer-certifications img:hover {
-            transform: scale(1.1);
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: var(--accent);
+            color: var(--dark);
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 12px var(--shadow);
+            transition: var(--base-transition);
         }
-        /* Responsive Design */
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px var(--shadow);
+        }
         @media (max-width: 1200px) {
-            .hero-overlay h2 {
-                font-size: 4.5rem;
-            }
-            .rooms-grid,
-            .hotel-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            }
+            .hero-overlay h2 { font-size: 3.5rem; }
+            .rooms-grid { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
         }
         @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background: rgba(10, 26, 46, 0.95);
-                padding: 2rem 0;
-                position: absolute;
-                top: 100%;
-                left: 0;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            nav ul li {
-                margin: 1rem 0;
-            }
-            .dropdown-menu {
-                position: static;
-                background: transparent;
-                box-shadow: none;
-                padding: 1rem 0;
-            }
-            .menu-toggle {
-                display: block;
-            }
-            .language-toggle {
-                margin-left: 1rem;
-            }
-            .hero-overlay h2 {
-                font-size: 3.5rem;
-            }
-            .hero-overlay p {
-                font-size: 1.3rem;
-            }
-            .cta-button {
-                font-size: 1.1rem;
-                padding: 1rem 2rem;
-            }
-            .accommodations,
-            .nearby-hotels,
-            .testimonials,
-            .booking-form,
-            .map {
-                padding: 5rem 1.5rem;
-            }
-            .accommodations h3,
-            .nearby-hotels h3,
-            .testimonials h3,
-            .booking-form h3,
-            .map h3 {
-                font-size: 3rem;
-            }
-            .booking-form input,
-            .booking-form select {
-                width: 100%;
-            }
-            .newsletter form {
-                flex-direction: column;
-                align-items: center;
-            }
-            .newsletter input {
-                width: 100%;
-                max-width: 300px;
-            }
-            .audio-control {
-                right: 20px;
-                top: 15px;
-            }
-            .contact-popup {
-                right: 20px;
-                bottom: 20px;
-            }
-            .contact-form {
-                right: 20px;
-                bottom: 80px;
-                max-width: 280px;
-            }
+            .hero-overlay h2 { font-size: 2.5rem; }
+            .hero-overlay p { font-size: 1rem; }
+            .chatbot-container { max-width: 340px; right: 10px; bottom: 100px; }
+            .blockchain-wallet { flex-direction: column; gap: 0.5rem; }
+            .rooms-grid { grid-template-columns: 1fr; }
+            nav ul { flex-direction: column; display: none; position: absolute; top: 80px; left: 0; width: 100%; background: var(--dark); padding: 1rem; }
+            nav ul.active { display: flex; }
+            .menu-toggle { display: block; background: none; border: none; color: var(--secondary); font-size: 1.5rem; }
         }
         @media (max-width: 480px) {
-            .hero-overlay h2 {
-                font-size: 2.8rem;
-            }
-            .hero-overlay p {
-                font-size: 1.1rem;
-            }
-            .accommodations h3,
-            .nearby-hotels h3,
-            .testimonials h3,
-            .booking-form h3,
-            .map h3 {
-                font-size: 2.5rem;
-            }
-            .room-card img {
-                height: 200px;
-            }
+            .hero-overlay h2 { font-size: 2rem; }
+            .cta-button { padding: 0.8rem 2rem; font-size: 0.95rem; }
+        }
+        .dark-mode {
+            --dark: #121212;
+            --secondary: #e0e0e0;
+            --light: #1e1e1e;
+        }
+        .high-contrast {
+            --dark: #000;
+            --secondary: #fff;
+            --accent: #ffcc00;
+            --luo-accent: #ff1744;
+            --smart-room: #00e676;
+            --nft-badge: #d81b60;
+            --virtual-tour: #039be5;
         }
     </style>
 </head>
 <body>
+    <div class="visually-hidden" role="alert" aria-live="polite" id="announcer"></div>
     <!-- Header -->
-    <header class="sticky-header" role="banner">
+    <header class="header" role="banner">
         <div class="header-container">
             <div class="brand">
-                <img src="logo/B2.jpg" alt="Ambururu Waterfall Resort Logo" class="logo" width="90" height="90" loading="eager" onerror="this.src='https://via.placeholder.com/90?text=Logo';">
-                <h1>Ambururu Waterfalls</h1>
+                <picture>
+                    <source srcset="/logo/RL3.png" type="image/png">
+                    <img src="/logo/RL3.png" alt="Ambururu Waterfalls Conservancy Logo" class="logo" width="80" height="80" loading="eager" onerror="this.src='https://via.placeholder.com/80?text=Logo';">
+                </picture>
+                <h1>Ambururu Waterfalls Conservancy</h1>
             </div>
             <nav id="main-nav" aria-label="Main navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="about.html" aria-haspopup="true">About <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about.html#heritage">Luo Heritage</a></li>
-                            <li><a href="about.html#founder">Our Founder</a></li>
-                            <li><a href="about.html#sustainability">Sustainability</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li class="dropdown">
-                        <a href="activities.html" aria-haspopup="true">Experiences <i class="fas fa-caret-down"></i></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="activities.html#cultural-tours">Cultural Tours</a></li>
-                            <li><a href="activities.html#hiking">Yala Valley Trails</a></li>
-                            <li><a href="activities.html#wellness">Wellness Retreats</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="activities.html">Experiences</a></li>
                     <li><a href="accommodations.html" class="active" aria-current="page">Accommodations</a></li>
                     <li><a href="dining.html">Dining</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="journal.html">Journal</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
+            <div class="blockchain-wallet">
+                <span class="wallet-text" id="wallet-status">Connect Wallet</span>
+                <button class="wallet-button" id="connectBtn">Connect</button>
+            </div>
             <div class="language-toggle">
                 <select id="language-select" aria-label="Select language">
                     <option value="en">English</option>
@@ -1097,448 +884,1046 @@
                     <option value="luo">Luo</option>
                 </select>
             </div>
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div id="accessibility-controls">
+                <button class="dark-toggle-btn" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+                <button class="contrast-toggle-btn" aria-label="Toggle high contrast"><i class="fas fa-adjust"></i></button>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu"><i class="fas fa-bars"></i></button>
         </div>
     </header>
     <main>
-        <!-- Audio Control -->
-        <div class="audio-control" role="button" aria-label="Toggle ambient waterfall sound">
-            <i class="fas fa-volume-up"></i>
+        <!-- Weather Widget -->
+        <div class="weather-widget" role="region" aria-label="Current weather in Siaya">
+            <p id="weather-info">Siaya, Kenya: Loading...</p>
         </div>
-        <!-- Contact Popup -->
-        <div class="contact-popup" role="button" aria-label="Open contact form">
-            <i class="fas fa-concierge-bell"></i>
-        </div>
-        <div class="contact-form" role="form" aria-label="Contact concierge">
-            <input type="text" placeholder="Name" aria-label="Name" required>
-            <input type="email" placeholder="Email" aria-label="Email address" required>
-            <textarea placeholder="Message" aria-label="Message" required></textarea>
-            <button type="submit">Send</button>
-        </div>
+        <!-- Personalized Recommendation -->
+        <section class="personalized-recommendation" id="personalized-recommendation" role="region" aria-labelledby="recommendation-title">
+            <h2 id="recommendation-title" data-lang="personalized.title">Your Serene Escape</h2>
+            <p id="recommendation-text" data-lang="personalized.ai">...curating your perfect stay...</p>
+            <button class="cta-button" id="recommendation-btn" data-lang="personalized.discover">Discover Now</button>
+        </section>
         <!-- Hero Section -->
         <section class="hero" role="region" aria-label="Hero section">
-            <video class="hero-video" autoplay muted loop playsinline poster="imagees/16.jpg">
-                <source src="videos/A_serene_and_enchanting_misty_forest_bathed_in_the_8b65cda9-3b83-473f-84ff-6071a138369b.mp4" type="video/mp4">
+            <canvas class="hero-canvas" aria-hidden="true"></canvas>
+            <video class="hero-video" autoplay muted loop playsinline poster="/images/accommodations-hero.webp" alt="Ambururu Waterfalls Resort hero video">
+                <source src="/videos/19.mp4" type="video/webm">
+                <source src="/videos/19.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay">
-                <h2>Serene Eco-Luxury Awaits</h2>
-                <p>Indulge in sustainable suites inspired by Luo heritage, nestled in Siaya’s breathtaking Yala Valley.</p>
+                <h2 data-lang="hero.title">Serenity Redefined</h2>
+                <p data-lang="hero.description">Unwind in  suites or Ambururu Silent Homes, blending eco-luxury in Siaya’s Yala Valley.</p>
                 <div class="hero-ctas">
-                    <a href="booking.html" class="cta-button">Reserve Your Stay</a>
-                    <a href="#accommodations" class="cta-button secondary">Discover Rooms</a>
+                    <a href="#booking-section" class="cta-button" data-lang="hero.book">Reserve Your Retreat</a>
+                    <a href="#silent-homes" class="cta-button secondary" data-lang="hero.explore">Discover Silent Homes</a>
                 </div>
             </div>
         </section>
         <!-- Room Filters -->
         <section class="room-filters" role="region" aria-label="Room filters">
-            <button class="filter-btn active" data-filter="all">All Rooms</button>
-            <button class="filter-btn" data-filter="standard">Standard</button>
-            <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+            <h2 class="visually-hidden">Filter Accommodations</h2>
+            <button class="filter-btn active" data-filter="all" aria-pressed="true" data-lang="filters.all">All</button>
+            <button class="filter-btn" data-filter="signature" aria-pressed="false" data-lang="filters.signature">Signature</button>
+            <button class="filter-btn" data-filter="presidential" aria-pressed="false" data-lang="filters.presidential">Presidential</button>
+            <button class="filter-btn" data-filter="silent" aria-pressed="false" data-lang="filters.silent">Silent Homes</button>
         </section>
         <!-- Accommodations Section -->
-        <section class="accommodations" id="accommodations" role="region" aria-label="Accommodations section">
-            <h3>Our Eco-Luxury Retreats</h3>
-            <p>Immerse yourself in elegant accommodations that blend Luo cultural heritage with sustainable sophistication.</p>
+        <section class="accommodations" id="accommodations" role="region" aria-labelledby="accommodations-title">
+            <h2 id="accommodations-title" data-lang="accommodations.title">Curated Eco-Luxury Retreats</h2>
+            <p class="section-subtitle" data-lang="accommodations.description">Immerse yourself in smart, sustainable stays designed for ultimate relaxation.</p>
             <div class="rooms-grid">
-                <article class="room-card" id="standard" data-category="standard" tabindex="0">
-                    <img src="images/15.jpg" alt="Standard Room with lush views at Ambururu Waterfalls Resort" loading="lazy" onerror="this.src='https://via.placeholder.com/400x240?text=Standard+Room';">
-                    <div class="badge">Best Value</div>
-                    <h4>Standard Room</h4>
-                    <p>Cozy elegance for solo travelers or couples with eco-friendly design and serene views.</p>
-                    <p class="price">Ksh3000/night</p>
+                <article class="room-card" data-category="signature" data-tilt tabindex="0">
+                    <picture>
+                        <source srcset="/images/14.jpg" type="image/jpg">
+                        <img src="/images/14.jpg" alt="Signature Room at Ambururu" loading="lazy" width="360" height="260" srcset="/images/14.jpg 400w, /images/14.jpg 800w" sizes="(max-width: 768px) 400px, 800px" onerror="this.src='https://via.placeholder.com/360x260?text=Signature+Room';">
+                    </picture>
+                    <div class="badge" data-lang="badges.curated">Curated</div>
+                    <div class="nft-badge" data-lang="badges.nft">NFT Rewards</div>
+                    <div class="eco-impact-badge">Eco Score: <span id="signature-eco-score">8.5</span></div>
+                    <h3 data-lang="rooms.signature.title">Signature Room</h3>
+                    <p data-lang="rooms.signature.description">A smart sanctuary with eco-luxury design, for serene rest.</p>
+                    <p class="smart-room-status">Temp: <span id="signature-temp">23°C</span> | Lights: <span id="signature-lights">Off</span> | Status: <span id="signature-status">Available</span></p>
+                    <p class="price" data-price="3500" data-eth="0.025" data-usdt="35">KSH 3500/night or 0.025 ETH</p>
                     <ul class="amenities">
-                        <li>High-Speed WiFi</li>
-                        <li>Queen Bed</li>
-                        <li>Coffee Maker</li>
+                        <li><i class="fas fa-wifi"></i> <span data-lang="amenities.wifi">Ultra-Fast WiFi</span></li>
+                        <li><i class="fas fa-bed"></i> <span data-lang="amenities.queen_bed">Queen Bed</span></li>
+                        <li><i class="fas fa-thermometer-half"></i> <span data-lang="amenities.climate">Smart Climate</span></li>
+                        <li><i class="fas fa-leaf"></i> <span data-lang="amenities.toiletries">Eco-Luxury Toiletries</span></li>
+                        <li><i class="fas fa-microphone"></i> <span data-lang="amenities.voice">Voice Navigation</span></li>
+                        <li><i class="fas fa-vr-cardboard"></i> <span data-lang="amenities.ar_vr">AR/VR Immersion</span></li>
                     </ul>
                     <div class="room-actions">
-                        <a href="booking.html" class="cta-button">Book Now</a>
-                        <button class="quick-view" data-room="standard">Quick View</button>
-                        <a href="#" class="virtual-tour" data-room="standard">Virtual Tour</a>
+                        <a href="#booking-section" class="cta-button" data-lang="actions.book">Book Now</a>
+                        <button class="ar-preview-btn" data-room="signature" aria-label="AR preview of Signature Room" data-lang="actions.ar">AR Preview</button>
+                        <a href="#vr-tour-signature" class="vr-tour-btn" data-room="signature" aria-label="VR tour of Signature Room" data-lang="actions.vr">VR Tour</a>
+                        <button class="virtual-try-on-btn" data-room="signature" aria-label="Virtual try-on for Signature Room" data-lang="actions.customize">Customize Decor</button>
                     </div>
                 </article>
-                <article class="room-card" id="deluxe" data-category="deluxe" tabindex="0">
-                    <img src="images/14.jpg" alt="Deluxe Suite with balcony at Ambururu" loading="lazy" onerror="this.src='https://via.placeholder.com/400x240?text=Deluxe+Suite';">
-                    <div class="badge">Premium Luxury</div>
-                    <h4>Deluxe Suite</h4>
-                    <p>Spacious luxury for families or groups, featuring sustainable amenities and advanced comfort.</p>
-                    <p class="price">Ksh5000/night</p>
+                <article class="room-card" data-category="presidential" data-tilt tabindex="0">
+                    <picture>
+                        <source srcset="/images/57.jpg" type="image/webp">
+                        <img src="/images/57.jpg" alt="Presidential Suite at Ambururu" loading="lazy" width="360" height="260" srcset="/images/presidential-suite-400.webp 400w, /images/presidential-suite-800.webp 800w" sizes="(max-width: 768px) 400px, 800px" onerror="this.src='https://via.placeholder.com/360x260?text=Presidential+Suite';">
+                    </picture>
+                    <div class="badge" data-lang="badges.luxury">Ultimate Luxury</div>
+                    <div class="nft-badge" data-lang="badges.nft">NFT Rewards</div>
+                    <div class="eco-impact-badge">Eco Score: <span id="presidential-eco-score">9.2</span></div>
+                    <h3 data-lang="rooms.presidential.title">Presidential Suite</h3>
+                    <p data-lang="rooms.presidential.description">An opulent retreat with a private jacuzzi sophistication for unparalleled relaxation.</p>
+                    <p class="smart-room-status">Temp: <span id="presidential-temp">23°C</span> | Lights: <span id="presidential-lights">Off</span> | Status: <span id="presidential-status">Available</span></p>
+                    <p class="price" data-price="6000" data-eth="0.045" data-usdt="60">KSH 6000/night or 0.045 ETH</p>
                     <ul class="amenities">
-                        <li>High-Speed WiFi</li>
-                        <li>King Bed</li>
-                        <li>Jacuzzi</li>
-                        <li>Smart TV</li>
+                        <li><i class="fas fa-wifi"></i> <span data-lang="amenities.wifi">Ultra-Fast WiFi</span></li>
+                        <li><i class="fas fa-bed"></i> <span data-lang="amenities.king_bed">King Bed</span></li>
+                        <li><i class="fas fa-hot-tub"></i> <span data-lang="amenities.jacuzzi">Private Jacuzzi</span></li>
+                        <li><i class="fas fa-tv"></i> <span data-lang="amenities.tv">4K Smart TV</span></li>
+                        <li><i class="fas fa-door-open"></i> <span data-lang="amenities.balcony">Panoramic Balcony</span></li>
+                        <li><i class="fas fa-microphone"></i> <span data-lang="amenities.voice">Voice Navigation</span></li>
+                        <li><i class="fas fa-vr-cardboard"></i> <span data-lang="amenities.ar_vr">AR/VR Immersion</span></li>
                     </ul>
                     <div class="room-actions">
-                        <a href="booking.html" class="cta-button">Book Now</a>
-                        <button class="quick-view" data-room="deluxe">Quick View</button>
-                        <a href="#" class="virtual-tour" data-room="deluxe">Virtual Tour</a>
+                        <a href="booking.html" class="cta-button" data-lang="actions.book">Book Now</a>
+                        <button class="ar-preview-btn" data-room="presidential" aria-label="AR preview of Presidential Suite" data-lang="actions.ar">AR Preview</button>
+                        <a href="#vr-tour-presidential" class="vr-tour-btn" data-room="presidential" aria-label="VR tour of Presidential Suite" data-lang="actions.vr">VR Tour</a>
+                        <button class="virtual-try-on-btn" data-room="presidential" aria-label="Virtual try-on for Presidential Suite" data-lang="actions.customize">Customize Decor</button>
+                    </div>
+                </article>
+                <article class="room-card" data-category="silent" data-tilt tabindex="0">
+                    <picture>
+                        <source srcset="/images/55.jpg" type="image/jpg">
+                        <img src="/images/55.jpg" alt="Ambururu Silent Home" loading="lazy" width="360" height="260" srcset="/images/silent-home-400.webp 400w, /images/silent-home-800.webp 800w" sizes="(max-width: 768px) 400px, 800px" onerror="this.src='https://via.placeholder.com/360x260?text=Silent+Home';">
+                    </picture>
+                    <div class="badge" data-lang="badges.eco">Eco-Friendly</div>
+                    <div class="nft-badge" data-lang="badges.nft_bonus">NFT Bonus</div>
+                    <div class="eco-impact-badge">Eco Score: <span id="silent-eco-score">9.8</span></div>
+                    <h3 data-lang="rooms.silent.title">Ambururu Silent Home</h3>
+                    <p data-lang="rooms.silent.description">A tranquil eco-home with solar power, smart appliances, and private gardens, perfect for family or group relaxation.</p>
+                    <p class="smart-room-status">Temp: <span id="silent-temp">22°C</span> | Lights: <span id="silent-lights">Off</span> | Status: <span id="silent-status">Available</span></p>
+                    <p class="price" data-price="8000" data-eth="0.060" data-usdt="80">KSH 8000/night or 0.060 ETH</p>
+                    <ul class="amenities">
+                        <li><i class="fas fa-solar-panel"></i> <span data-lang="amenities.solar">Solar Power</span></li>
+                        <li><i class="fas fa-utensils"></i> <span data-lang="amenities.kitchen">Full Kitchen</span></li>
+                        <li><i class="fas fa-plug"></i> <span data-lang="amenities.appliances">Smart Appliances</span></li>
+                        <li><i class="fas fa-tree"></i> <span data-lang="amenities.garden">Private Garden</span></li>
+                        <li><i class="fas fa-leaf"></i> <span data-lang="amenities.toiletries">Eco-Luxury Toiletries</span></li>
+                        <li><i class="fas fa-vr-cardboard"></i> <span data-lang="amenities.ar_vr">AR/VR Immersion</span></li>
+                    </ul>
+                    <div class="room-actions">
+                        <a href="#booking-section" class="cta-button" data-lang="actions.book">Book Now</a>
+                        <button class="ar-preview-btn" data-room="silent-home" aria-label="AR preview of Silent Home" data-lang="actions.ar">AR Preview</button>
+                        <a href="#vr-tour-silent" class="vr-tour-btn" data-room="silent-home" aria-label="VR tour of Silent Home" data-lang="actions.vr">VR Tour</a>
+                        <button class="virtual-try-on-btn" data-room="silent-home" aria-label="Virtual try-on for Silent Home" data-lang="actions.customize">Customize Decor</button>
                     </div>
                 </article>
             </div>
         </section>
+        <!-- Ambururu Silent Homes Section -->
+        <section class="silent-homes" id="silent-homes" role="region" aria-labelledby="silent-homes-title">
+            <h2 id="silent-homes-title" data-lang="silent_homes.title">Ambururu Silent Homes</h2>
+            <p class="section-subtitle" data-lang="silent_homes.description">Owned by the Ambururu Waterfalls Conservancy, these eco-friendly retreats offer unparalleled tranquility with sustainable design and smart technology.</p>
+            <div class="silent-home-grid">
+                <article class="silent-home-card">
+                    <picture>
+                        <source srcset="/images/58.jpg" type="image/jpg">
+                        <img src="/images/58.jpg" alt="Silent Home Exterior" loading="lazy" width="300" height="220" onerror="this.src='https://via.placeholder.com/300x220?text=Silent+Home';">
+                    </picture>
+                    <h3 data-lang="silent_homes.features.solar">Solar-Powered Serenity</h3>
+                    <p data-lang="silent_homes.features.solar_description">Harnessing solar energy for a guilt-free, eco-conscious stay.</p>
+                </article>
+                <article class="silent-home-card">
+                    <picture>
+                        <source srcset="/images/59.jpg" type="image/jpg">
+                        <img src="/images/59.jpg" alt="Silent Home Garden" loading="lazy" width="300" height="220" onerror="this.src='https://via.placeholder.com/300x220?text=Garden';">
+                    </picture>
+                    <h3 data-lang="silent_homes.features.garden">Private Healing Gardens</h3>
+                    <p data-lang="silent_homes.features.garden_description">Lush gardens designed for meditation and relaxation.</p>
+                </article>
+                <article class="silent-home-card">
+                    <picture>
+                        <source srcset="/images/56.jpg" type="image/webp">
+                        <img src="/images/56.jpg" alt="Silent Home Interior" loading="lazy" width="300" height="220" onerror="this.src='https://via.placeholder.com/300x220?text=Interior';">
+                    </picture>
+                    <h3 data-lang="silent_homes.features.smart">Smart Eco-Living</h3>
+                    <p data-lang="silent_homes.features.smart_description">Control your environment with voice-activated IoT appliances.</p>
+                </article>
+            </div>
+            <a href="#booking-section" class="cta-button" data-lang="silent_homes.book">Book a Silent Home</a>
+        </section>
         <!-- Testimonials Section -->
-        <section class="testimonials" role="region" aria-label="Guest testimonials">
-            <h3>Guest Stories</h3>
+        <section class="testimonials" role="region" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title" data-lang="testimonials.title">Guest Experiences</h2>
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <p>“The Standard Room was a cozy haven with eco-friendly touches!”</p>
+                        <p data-lang="testimonials.ayana">"The Silent Home was a haven of peace—perfect for our family’s recharge!"</p>
                         <div class="guest">
-                            <img src="images/48.jpg" alt="Jane M." loading="lazy" width="60" height="60" onerror="this.src='https://via.placeholder.com/60?text=Guest';">
-                            <span>Jane M., Nairobi, 2025</span>
+                            <picture>
+                                <source srcset="/images/guest-ayana.webp" type="image/webp">
+                                <img src="/images/guest-ayana.jpg" alt="Ayana K." loading="lazy" width="70" height="70" onerror="this.src='https://via.placeholder.com/70?text=Guest';">
+                            </picture>
+                            <span>Ayana Kendi., Nairobi, 2025</span>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <p>“The Deluxe Suite’s jacuzzi was pure bliss!”</p>
+                        <p data-lang="testimonials.juma">"The IoT controls and WebXR tour made our stay futuristic yet calming."</p>
                         <div class="guest">
-                            <img src="logo/3.jpg" alt="David K." loading="lazy" width="60" height="60" onerror="this.src='https://via.placeholder.com/60?text=Guest';">
-                            <span>David K., Kisumu, 2025</span>
+                            <picture>
+                                <source srcset="/images/guest-juma.webp" type="image/webp">
+                                <img src="/images/guest-juma.jpg" alt="Juma M." loading="lazy" width="70" height="70" onerror="this.src='https://via.placeholder.com/70?text=Guest';">
+                            </picture>
+                            <span>Juma Molo., Mombasa, 2025</span>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <p>“A sustainable stay that felt truly luxurious!”</p>
+                        <p data-lang="testimonials.lila">"The Signature Room’s eco-luxury design was pure bliss!"</p>
                         <div class="guest">
-                            <img src="images/5.jpg" alt="Sarah L." loading="lazy" width="60" height="60" onerror="this.src='https://via.placeholder.com/60?text=Guest';">
-                            <span>Sarah L., Eldoret, 2024</span>
+                            <picture>
+                                <source srcset="/images/guest-lila.webp" type="image/webp">
+                                <img src="/images/guest-lila.jpg" alt="Lila S." loading="lazy" width="70" height="70" onerror="this.src='https://via.placeholder.com/70?text=Guest';">
+                            </picture>
+                            <span>Lila Simiyu., Kisumu, 2025</span>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination" aria-label="Testimonial pagination"></div>
+                <div class="swiper-button-prev" aria-label="Previous testimonial"></div>
+                <div class="swiper-button-next" aria-label="Next testimonial"></div>
             </div>
         </section>
-        <!-- Nearby Hotels Section -->
-        <section class="nearby-hotels" role="region" aria-label="Nearby hotels section">
-            <h3>Explore Nearby Stays</h3>
-            <div class="hotel-grid">
-                <article class="hotel-card" tabindex="0">
-                    <h4>Golf Hotel Kakamega</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> 5.2 mi</p>
-                    <p><i class="fas fa-star"></i> 3.8/5</p>
-                    <p><i class="fas fa-swimming-pool"></i> Pool, Restaurant, WiFi</p>
-                    <a href="#" class="cta-button">Book Now</a>
+        <!-- Eco Certifications Section -->
+        <section class="eco-certifications" role="region" aria-labelledby="eco-certifications-title">
+            <h2 id="eco-certifications-title" data-lang="eco_certifications.title">Sustainability at Our Core</h2>
+            <div class="certification-grid">
+                <article class="certification-card">
+                    <picture>
+                        <source srcset="/images/eco-warrior.webp" type="image/webp">
+                        <img src="/images/eco-warrior.png" alt="Eco Warrior Award 2024" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Certification';">
+                    </picture>
+                    <h4 data-lang="eco-certifications.eco_warrior">Eco Warrior Award</h4>
+                    <p data-lang="eco-certifications.eco_warrior_description">Recognized for sustainable tourism in 2024.</p>
                 </article>
-                <article class="hotel-card" tabindex="0">
-                    <h4>Siaya Guest House</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> 3.2 mi</p>
-                    <p><i class="fas fa-star"></i> 4.2/5</p>
-                    <p><i class="fas fa-utensils"></i> Breakfast, WiFi, Parking</p>
-                    <a href="#" class="cta-button">Book Now</a>
+                <article class="certification-card">
+                    <picture>
+                        <source srcset="/images/green-globe.webp" type="image/webp">
+                        <img src="/images/green-globe.png" alt="Green Globe Certified 2025" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Certification';">
+                    </picture>
+                    <h4 data-lang="eco-certifications.green_globe">Green Globe Certified</h4>
+                    <p data-lang="eco-certifications.green_globe_description">Certified for eco-conscious practices in 2025.</p>
+                </article>
+                <article class="certification-card">
+                    <picture>
+                        <source srcset="/images/travelife-gold.webp" type="image/webp">
+                        <img src="/images/travelife-gold.png" alt="Travelife Gold Award" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Gold';">
+                    </picture>
+                    <h4 data-lang="eco-certifications.travelife">Travelife Gold</h4>
+                    <p data-lang="eco-certifications.travelife_description">Awarded for exemplary sustainable hospitality.</p>
                 </article>
             </div>
         </section>
-        <!-- Booking Form -->
-        <section class="booking-form" role="region" aria-label="Booking section">
-            <h3>Plan Your Escape</h3>
-            <p>Secure your eco-luxury retreat in Siaya’s Yala Valley today.</p>
-            <form id="booking-form" action="https://formspree.io/f/xbloeqdy" method="POST" novalidate>
-                <input type="text" name="name" placeholder="Your Name" required aria-label="Full name">
-                <input type="email" name="email" placeholder="Email Address" required aria-label="Email address">
-                <select name="room" required aria-label="Room type">
-                    <option value="" disabled selected>Select Room</option>
-                    <option value="standard">Standard Room</option>
-                    <option value="deluxe">Deluxe Suite</option>
+        <!-- Social Media Wall -->
+        <section class="social-wall" role="social-wall" aria-labelledby="social-wall-title">
+            <h2 id="social-wall-title" data-lang="social_wall.title">Our Community Moments</h2>
+            <p data-lang="social_wall.description">Join the conversation with #AmbururuStories.</p>
+            <div class="social-grid" id="social-grid"></div>
+            <button class="cta-button" id="load-more-social" aria-label="Load more social posts" data-lang="social_wall.load_more">Load More Posts</button>
+        </section>
+        <!-- Booking Section -->
+        <section class="booking-section" id="booking-section" role="region" aria-labelledby="booking-title">
+            <h2 id="booking-title" data-lang="booking.title">Secure Your Sanctuary</h2>
+            <p data-lang="booking.description">Book with crypto, fiat, or NFT points, powered by blockchain and AI-optimized pricing for a seamless experience.</p>
+            <form id="booking-form" action="https://formspree.io/f/your_form_id" method="POST" novalidate aria-label="Booking form">
+                <input type="text" name="name" placeholder="Full Name" required aria-label="Full name" data-lang-placeholder="booking.name">
+                <input type="email" name="email" placeholder="Email Address" required aria-label="Email address" data-lang-placeholder="booking.email">
+                <select id="room-type" name="room" required aria-label="Select room type" data-lang-placeholder="booking.room_type">
+                    <option value="" disabled selected data-lang="booking.select_room">Select Room</option>
+                    <option value="signature" data-lang="rooms.signature.title">Signature Room</option>
+                    <option value="presidential" data-lang="rooms.presidential.title">Presidential Suite</option>
+                    <option value="silent" data-lang="rooms.silent.title">Silent Home</option>
                 </select>
-                <input type="date" name="check-in" id="check-in" required aria-label="Check-in date" min="2025-06-03">
-                <input type="date" name="check-out" id="check-out" required aria-label="Check-out date" min="2025-06-04">
-                <button type="submit">Check Availability</button>
+                <input type="date" name="check-in" id="check-in" required aria-label="Check-in date" min="2025-06-26">
+                <input type="date" name="check-out" id="check-out" required aria-label="Check-out date" min="2025-06-27">
+                <select id="payment-method" name="payment" required aria-label="Select payment method" data-lang-placeholder="booking.payment_method">
+                    <option value="" disabled selected data-lang="booking.select_payment">Payment Method</option>
+                    <option value="credit" data-lang="payment.credit">Credit Card</option>
+                    <option value="crypto_eth" data-lang="payment.eth">Cryptocurrency (ETH)</option>
+                    <option value="crypto_usdt" data-lang="payment.usdt">Cryptocurrency (USDT)</option>
+                    <option value="nft" data-lang="payment.nft">NFT Loyalty Points</option>
+                </select>
+                <p id="dynamic-price" data-lang="booking.select_price">Select a room to view pricing</p>
+                <button type="submit" class="cta-button" aria-label="Reserve now" data-lang="booking.reserve">Reserve Now</button>
+                <div id="booking-feedback" role="alert"></div>
+                <lottie-player id="form-loader" src="/animations/loading.json" background="transparent" speed="1" style="width: 100px; height: 100px; margin: 0 auto; display: none;" loop autoplay></lottie-player>
             </form>
-            <div id="booking-feedback" role="alert"></div>
+            <div class="availability-calendar" id="availability-calendar" role="grid" aria-label="Availability calendar">
+                <h3 data-lang="booking.calendar">Availability Calendar</h3>
+                <div class="calendar-grid" id="calendar-grid"></div>
+            </div>
         </section>
         <!-- Map Section -->
-        <section class="map" role="region" aria-label="Map section">
-            <h3>Discover Our Location</h3>
+        <section class="map" role="region" aria-labelledby="map-title">
+            <h2 id="map-title" data-lang="map.title">Your Oasis Awaits</h2>
             <div id="map" role="application" aria-label="Map of Ambururu Waterfalls"></div>
-            </div>
-            <p class="map-description">Nestled in Musanda, Siaya, Kenya. Coordinates: -0.062, 34.267. <a href="https://maps.windows.com/?form=WNAMSH&entity=local_ypid%3AYN8091x9956867690424910424&collection=point.0.199973_34.741566_Ambururu%20Water%20Falls" target="_blank" rel="noopener" aria-label="Get directions to Ambururu">Get directions</a></p>
+            <p class="map-description" data-lang="map.description">Musanda, Siaya, Kenya. Coordinates: -0.05, 34.267. <a href="https://maps.google.com/maps?q=-0.05,34.267" target="_blank" rel="noopener" data-lang="map.directions">Get Directions</a></p>
         </section>
     </main>
     <!-- Footer -->
     <footer role="contentinfo" aria-label="Footer">
         <div class="footer-container">
-            <img src="logo/B2.jpg" alt="Ambururu Waterfall Resort Footer Logo" class="footer-logo" width="120" height="120" loading="lazy" onerror="this.src='https://via.placeholder.com/120?text=Logo';">
-            <p>© 2025 Ambururu Waterfalls & Resort. All rights reserved.</p>
-            <div class="social-links" role="navigation" aria-label="Social media links">
+            <picture>
+                <source srcset="/logo/RL3.png" type="image/jpg">
+                <img src="/logo/RL3.png" alt="Ambururu Waterfalls Logo" class="footer-logo" width="140" height="140" loading="lazy" onerror="this.src='https://via.placeholder.com/140?text=Logo';">
+            </picture>
+            <p>© 2025 Ambururu Waterfall Conservancy. All rights reserved.</p>
+            <div class="social-links">
                 <a href="https://www.facebook.com/ambururu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/Ambururu_W" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://x.com/Ambururu_" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x"></i></a>
                 <a href="https://www.instagram.com/ambururu1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="newsletter" role="form" aria-label="Newsletter subscription">
-                <h4>Stay Connected</h4>
-                <form id="newsletter-form" action="https://formspree.io/f/xqabandb" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email" required aria-label="Email for newsletter">
-                    <button type="submit">Subscribe</button>
+            <div class="newsletter">
+                <h3 data-lang="footer.newsletter">Stay Inspired</h3>
+                <form id="newsletter-form" action="https://formspree.io/f/your_newsletter_id" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email" required aria-label="Email for newsletter" data-lang-placeholder="footer.email">
+                    <button type="submit" class="cta-button" data-lang="footer.subscribe">Subscribe</button>
                 </form>
             </div>
-            <nav class="footer-links" role="navigation" aria-label="Footer navigation">
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="accommodations.html">accommodations</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
+            <nav class="footer-links">
+                <a href="about.html" data-lang="footer.about">About Us</a>
+                <a href="contact.html" data-lang="footer.contact">Contact</a>
+                <a href="accommodations.html" data-lang="footer.accommodations">Accommodations</a>
+                <a href="privacy.html" data-lang="footer.privacy">Privacy Policy</a>
+                <a href="terms.html" data-lang="footer.terms">Terms & Conditions</a>
             </nav>
             <div class="footer-certifications">
-                <img src="logo/EW.jpeg" alt="Eco Warrior Award" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Certification';">
-                    <img src="logo/GE.jpeg" alt="Green Globe Certified" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Certification';">
+                <picture>
+                    <source srcset="/images/eco-warrior.webp" type="image/webp">
+                    <img src="/images/eco-warrior.png" alt="Eco Warrior Award 2024" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Certification';">
+                </picture>
+                <picture>
+                    <source srcset="/images/green-globe.webp" type="image/webp">
+                    <img src="/images/green-globe.png" alt="Green Globe Certified 2025" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Certification';">
+                </picture>
+                <picture>
+                    <source srcset="/images/travelife-gold.webp" type="image/webp">
+                    <img src="/images/travelife-gold.png" alt="Travelife Gold Award" loading="lazy" width="100" height="50" onerror="this.src='https://via.placeholder.com/100x50?text=Gold';">
+                </picture>
             </div>
         </div>
     </footer>
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" role="dialog" aria-label="Cookies consent">
+        <p data-lang="cookie.prompt">We use cookies to enhance your experience and deliver personalized services. <a href="/privacy.html" target="_blank" data-lang="cookie.privacy">Privacy Policy</a>.</p>
+        <button id="accept-cookies" class="cta-button" aria-label="Accept cookies" data-lang="cookie.accept">Accept</button>
+    </div>
+    <!-- Chatbot -->
+    <div class="assistant-orb" role="assistant-bot" role="button" aria-label="Open AI chatbot">
+        <i class="fas fa-robot"></i>
+    </div>
+    <div class="chatbot-container" id="chatbot" role="dialog" aria-label="AI chatbot">
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+        <input type="text" id="chatbot-input" placeholder="Ask about Silent Homes, bookings, or sustainability..." data-lang-placeholder="chatbot.prompt" aria-label="Chatbot input">
+        <div class="chatbot-actions">
+            <button id="chatbot-send" type="button" class="cta-button" aria-label="Send message" data-lang="chatbot.send">Send</button>
+            <button id="voice-input" type="button" aria-label="Voice input"><i class="fas fa-microphone"></i></button>
+        </div>
+        <div class="chatbot-quick-replies"></div>
+    </div>
+    <!-- Modal for AR/VR/Try-On -->
+    <div class="modal" id="ar-vr-modal" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <h2 id="modal-title" class="visually-hidden">Modal Content</h2>
+            <button class="close-modal" aria-label="Close modal">✕</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <!-- Back to Top -->
+    <a href="#" id="back-to-top" class="back-to-top" role="button" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
     <!-- Scripts -->
-    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script defer src="https://api.mapbox.com/mapbox-gl-js/v3.8.1/mapbox-gl.js"></script>
-    <script defer src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIwaJHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="https://api.mapbox.com/mapbox-gl-js/v3.8.1/mapbox-gl.js" integrity="sha384-5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f" crossorigin="anonymous"></script>
+    <script defer src="https://unpkg.com/swiper@11/swiper-bundle.min.js" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script defer src="https://cdn.aframe.io/aframe.min.js" integrity="sha384-5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.148.0/build/three.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/jsm/loaders/GLTFLoader.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.148.0/examples/jsm/controls/OrbitControls.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/web3@4.4.0/dist/web3.min.js" integrity="sha384-5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f2d5e5f" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.22.0/dist/tf.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.0.2/dist/transformers.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@ceramicnetwork/http-client@2.57.0/dist/index.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/axe-core@4.10.0/axe.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lottie-player@2.0.2/dist/lottie-player.js"></script>
     <script>
-        // Menu Toggle
-        $(document).ready(function() {
-            // Header Scroll Effect
-            $(window).on('scroll', function() {
-                $('.sticky-header').toggleClass('scrolled', $(window).scrollTop()) > 50);
-            });
-            $('.menu-toggle').on('click', function() {
-                $('#main-nav ul').toggleClass('active');
-                const isExpanded = $(this).attr('aria-expanded') === 'true';
-                $(this).attr('aria-expanded', !isExpanded);
-                $(this).find('i').toggleClass('fa-bars fa-times');
-            });
-            $('.dropdown').on('click', function(e) {
-                if ($(window).width() < 768) {
-                    e.preventDefault();
-                    $(this).find('.dropdown-menu').toggleClass('active');
-                }
-            });
-            // Room Filters
-            $('.filter-btn').on('click', function() {
-                $('.filter-btn').removeClass('active');
-                $(this).addClass('active');
-                const filter = $(this).data('filter');
-                $('.room-card').fadeOut(300);
-                setTimeout(() => {
-                    $('.room-card').each(function() {
-                        const category = $(this).data('category');
-                        if (filter === 'all' || category === filter)) {
-                            $(this).fadeIn(300);
-                        }
-                    });
-                }, 300);
-            });
-            // Quick View Modal
-            $('.quick-view').on('click', function() {
-                const roomCard = $(this).closest('.room-card');
-                const room = $(this).data('room');
-                const title = roomCard.find('h4').text();
-                const badge = roomCard.find('.badge').text();
-                const amenities = roomCard.find('.amenities').clone();
-                const modalContent = `
-                    <div class="modal-content">
-                        <h3>${title}</h3>
-                        <p class="badge">${badge}</p>
-                        ${amenities.prop('outerHTML')}
-                        <button class="close-modal">Close</button>
-                    </div>
-                `;
-                const modal = $('<div class="modal active">').html(modalContent);
-                $('body').append(modal');
-                $('.close-modal').on('click', () => modal.remove());
-                modal.on('click', (e) => {
-                    if (e.target === modal[0]) modal.remove();
-                });
-            });
-            // Virtual Tour Modal
-            $('.virtual-tour').on('click', function(e) {
-                e.preventDefault();
-                const room = $(this).data('room');
-                const tourUrl = room === 'standard' ? 'https://my.matterport.com/show/?m=exampleStandard' : 'https://my.matterport.com/show/?m=exampleDeluxe';
-                const modalContent = `
-                    <div class="modal-content">
-                        <h3>${room === 'standard' ? 'Standard Room' : 'Deluxe Suite'} Virtual Tour</h3>
-                        <iframe src="${tourUrl}" title="${room} virtual tour"></iframe>
-                        <button class="close-modal">Close</button>
-                    </div>
-                `;
-                const modal = $('<div class="modal active">').html(modalContent);
-                $('body').append(modal);
-                $('.close-modal').on('click', () => modal.remove());
-                modal.on('click', (e) => {
-                    if (e.target === modal[0]) {
-                        modal.remove();
+        // Configuration
+        const TRANSLATIONS = {
+            en: {
+                hero: {
+                    title: "Serenity Redefined",
+                    description: "Unwind in AI-curated suites or Ambururu Silent Homes, blending eco-luxury with blockchain security and immersive WebXR tours in Siaya’s Yala Valley.",
+                    book: "Reserve Your Retreat",
+                    explore: "Discover Silent Homes"
+                },
+                personalized: {
+                    title: "Your Serene Escape",
+                    ai: "AI is curating your perfect stay...",
+                    discover: "Discover Now"
+                },
+                filters: {
+                    all: "All",
+                    signature: "Signature",
+                    presidential: "Presidential",
+                    silent: "Silent Homes"
+                },
+                accommodations: {
+                    title: "Curated Eco-Luxury Retreats",
+                    description: "Immerse yourself in smart, sustainable stays designed for ultimate relaxation, secured by blockchain and enhanced with WebXR."
+                },
+                rooms: {
+                    signature: {
+                        title: "Signature Room",
+                        description: "A smart sanctuary with voice-activated IoT controls, eco-luxury design, and AR/VR immersion for serene rest."
+                    },
+                    presidential: {
+                        title: "Presidential Suite",
+                        description: "An opulent retreat with a private jacuzzi, WebXR-guided tours, and IoT sophistication for unparalleled relaxation."
+                    },
+                    silent: {
+                        title: "Ambururu Silent Home",
+                        description: "A tranquil eco-home with solar power, smart appliances, and private gardens, perfect for family or group relaxation."
                     }
-                });
-            });
-            // Booking Form Validation and Submission
-            $('#booking-form').on('submit', async function(e) {
-                e.preventDefault();
-                const checkIn = new Date($('#check-in').val());
-                const checkOut = new Date($('#check-out').val());
-                if (checkIn >= checkOut) {
-                    $('#booking-feedback').text('Check-out must be after check-in.').removeClass('success').addClass('error');
-                    return;
-                }
-                try {
-                    const formData = new FormData(this);
-                    const response = await fetch('https://formspree.io/f/your-form-id', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(Object.fromEntries(formData))
-                    });
-                    if (response.ok) {
-                        $('#booking-feedback').text('Booking inquiry sent! We’ll confirm soon.').removeClass('error').addClass('success');
-                        this.reset();
-                    } else {
-                        $('#booking-feedback').text('Submission failed. Please try again.').removeClass('success').addClass('error');
+                },
+                badges: {
+                    curated: "Curated",
+                    luxury: "Ultimate Luxury",
+                    eco: "Eco-Friendly",
+                    nft: "NFT Rewards",
+                    nft_bonus: "NFT Bonus"
+                },
+                amenities: {
+                    wifi: "Ultra-Fast WiFi",
+                    queen_bed: "Queen Bed",
+                    king_bed: "King Bed",
+                    climate: "Smart Climate",
+                    toiletries: "Eco-Luxury Toiletries",
+                    voice: "Voice Navigation",
+                    ar_vr: "AR/VR Immersion",
+                    jacuzzi: "Private Jacuzzi",
+                    tv: "4K Smart TV",
+                    balcony: "Panoramic Balcony",
+                    solar: "Solar Power",
+                    kitchen: "Full Kitchen",
+                    appliances: "Smart Appliances",
+                    garden: "Private Garden"
+                },
+                actions: {
+                    book: "Book Now",
+                    ar: "AR Preview",
+                    vr: "VR Tour",
+                    customize: "Customize Decor"
+                },
+                silent_homes: {
+                    title: "Ambururu Silent Homes",
+                    description: "Owned by the Ambururu Waterfalls Conservancy, these eco-friendly retreats offer unparalleled tranquility with sustainable design and smart technology.",
+                    book: "Book a Silent Home",
+                    features: {
+                        solar: "Solar-Powered Serenity",
+                        garden: "Private Healing Gardens",
+                        smart: "Smart Eco-Living",
+                        solar_description: "Harnessing solar energy for a guilt-free, eco-conscious stay.",
+                        garden_description: "Lush gardens designed for meditation and relaxation.",
+                        smart_description: "Control your environment with voice-activated IoT appliances."
                     }
-                } catch (error) {
-                    $('#booking-feedback').text('An error occurred. Please contact us.').removeClass('success').addClass('error');
+                },
+                testimonials: {
+                    title: "Guest Experiences",
+                    ayana: "The Silent Home was a haven of peace—perfect for our family’s recharge!",
+                    juma: "The IoT controls and WebXR tour made our stay futuristic yet calming.",
+                    lila: "The Signature Room’s eco-luxury design was pure bliss!"
+                },
+                eco_certifications: {
+                    title: "Sustainability at Our Core",
+                    eco_warriors: "Eco Warriors Award",
+                    green_globe: "Green Globe Certified",
+                    travelife: "Travelife Gold",
+                    eco_warriors_description: "Recognized for sustainable tourism in 2024.",
+                    green_globe_description: "Certified for eco-conscious practices in 2025.",
+                    travelife_description: "Awarded for exemplary sustainable hospitality."
+                },
+                social_wall: {
+                    title: "Our Community Moments",
+                    description: "Join the conversation with #AmbururuStories.",
+                    load_more: "Load More Stories"
+                },
+                booking: {
+                    title: "Secure Your Sanctuary",
+                    description: "Book with crypto, fiat, or NFT points, powered by blockchain and AI-optimized pricing for a seamless experience.",
+                    name: "Full Name",
+                    email: "Email Address",
+                    room_type: "Select Room",
+                    select_room: "Payment Method",
+                    select_payment: "Select Payment Method",
+                    payment_method: "Credit Card",
+                    payment_eth: "Cryptocurrency (ETH)",
+                    payment_usdt: "Cryptocurrency (USDT)",
+                    payment_nft: "NFT Loyalty Points",
+                    reserve: "Reserve Now",
+                    calendar: "Availability Calendar",
+                    select_price: "Select a room to view pricing"
+                },
+                map: {
+                    title: "Your Oasis Awaits",
+                    description: "Musanda, Siaya, Kenya. Coordinates: -0.05, 34.267.",
+                    directions: "Get Directions"
+                },
+                footer: {
+                    newsletter: "Stay Inspired",
+                    email: "Enter your email",
+                    subscribe: "Subscribe",
+                    about: "About Us",
+                    contact: "Contact",
+                    accommodations: "Accommodations",
+                    privacy: "Privacy Policy",
+                    terms: "Terms & Conditions"
+                },
+                cookie: {
+                    prompt: "We use cookies to enhance your experience and deliver personalized services.",
+                    privacy: "Privacy Policy",
+                    accept: "Accept"
+                },
+                chatbot: {
+                    prompt: "Ask about Silent Homes, bookings, or sustainability...",
+                    send: "Send"
                 }
-            });
-            // Newsletter Form
-            $('#newsletter-form').on('submit', async function(e) {
-                e.preventDefault();
-                const email = $(this).find('input[name="email"]').val();
-                try {
-                    const response = await fetch('https://formspree.io/f/your-form-id', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ email })
-                    });
-                    if (response.ok) {
-                        $(this).find('input').val('');
-                        $('#booking-feedback').text('Subscribed! Thank you for joining us.').removeClass('error').addClass('success');
-                        setTimeout(() => $('#booking-feedback').fadeOut(), 5000);
-                    } else {
-                        $('#booking-feedback').text('Subscription failed.').removeClass('success').addClass('error');
-                    }
-                } catch (error) {
-                    $('#booking-feedback').text('An error occurred.').removeClass('success').addClass('error');
-                }
-            });
-            // Contact Popup
-            $('.contact-popup').on('click', function() {
-                $('.contact-form').toggleClass('active');
-            });
-            $('.contact-form button').on('click', async function(e) {
-                e.preventDefault();
-                const form = $(this).closest('.contact-form');
-                const data = {
-                    name: form.find('input[name="name"]').val(),
-                    email: form.find('input[name="email"]').val(),
-                    message: form.find('textarea').val()
-                };
-                try {
-                    const response = await fetch('https://formspree.io/f/your-form-id', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(data)
-                    });
-                    if (response.ok) {
-                        form.find('input').val('');
-                        form.find('textarea').val('');
-                        form.removeClass('active');
-                        $('#booking-feedback').text('Message sent!').removeClass('error').addClass('success');
-                    } else {
-                        $('#booking-feedback').text('Message failed.').removeClass('success').addClass('error');
-                    }
-                } catch (error) {
-                    $('#booking-feedback').text('Error sending message.').removeClass('success').addClass('error');
-                }
-            });
-            // Image Error Handling
-            $('img').on('error', function() {
-                console.error(`Image not found: ${this.src}`);
-            });
-        });
-        // Audio Control
-        const audio = new Audio('https://www.zapsplat.com/wp-content/uploads/2015/sound-effects/77317/zapsplat_nature_waterfall_small_flowing_loop_001_81338.mp3');
-        audio.loop = true;
-        audio.volume = 0.5;
-        let isPlaying = false;
-        $('.audio-control').on('click', function() {
-            if (isPlaying) {
-                audio.pause();
-                $(this).html('<i class="fas fa-volume-mute"></i>').attr('aria-label', 'Play ambient waterfall sound');
-            } else {
-                audio.play().catch(() => console.error('Audio playback failed'));
-                $(this).html('<i class="fas fa-volume-up"></i>').attr('aria-label', 'Pause ambient waterfall sound');
+            },
+            sw: {
+                hero: {
+                    title: "Utulivu Uliofafanuliwa Upya",
+                    description: "Pumzika katika vyumba vilivyochaguliwa na AI au Nyumba za Kimya za Ambururu, zikichanganya anasa ya mazingira na usalama wa blockchain na ziara za WebXR za kustaajabisha katika Bonde la Yala, Siaya.",
+                    book: "Hifadhi Mapumziko Yako",
+                    explore: "Gundua Nyumba za Kimya"
+                },
+                // Add Swahili translations for other sections as needed
+            },
+            luo: {
+                hero: {
+                    title: "Ber marach kowuok",
+                    description: "Ibed gi kwe e ndege mowuok gi AI kata Ambururu Silent Homes, kachiel gi ber marach, kwe gi blockchain kod WebXR tours e Yala Valley, Siaya.",
+                    book: "Geng' Ber Marach",
+                    explore: "Nen Silent Homes"
+                },
+                // Add Luo translations for other sections as needed
             }
-            isPlaying = !isPlaying;
-        });
-        // Swiper Slider
+        };
+
+        // Initialize Mapbox
+        mapboxgl.accessToken = 'your_mapbox_access_token';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/dark-v11',
+            center: [34.267, -0.05],
+            zoom: 12,
+            attributionControl: false
+        }).addControl(new mapboxgl.NavigationControl());
+
+        // Initialize Swiper
         const swiper = new Swiper('.swiper', {
-            loop: true,
             slidesPerView: 1,
             spaceBetween: 30,
-            autoplay: { delay: 4000, disableOnInteraction: false },
+            loop: true,
             pagination: { el: '.swiper-pagination', clickable: true },
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+            autoplay: { delay: 5000, disableOnInteraction: false },
             breakpoints: {
                 768: { slidesPerView: 2 },
-                1200: { slidesPerView: 3 }
+                1024: { slidesPerView: 3 }
             }
         });
+
+        // Web3 Initialization
+        let web3, accounts, contract;
+        async function initWeb3() {
+            if (window.ethereum) {
+                web3 = new Web3(window.ethereum);
+                try {
+                    accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+                    document.getElementById('wallet-status').textContent = `${accounts[0].slice(0, 6)}...${accounts[0].slice(-4)}`;
+                    contract = new web3.eth.Contract(BookingContractABI, 'your_contract_address');
+                } catch (error) {
+                    console.error('Web3 connection failed:', error);
+                    document.getElementById('wallet-status').textContent = 'Connection Failed';
+                }
+            } else {
+                console.warn('MetaMask not detected');
+                document.getElementById('wallet-status').textContent = 'Install MetaMask';
+            }
+        }
+
+        document.getElementById('connectBtn').addEventListener('click', initWeb3);
+
+        // AI Personalization with TensorFlow.js
+        async function personalizeRecommendation() {
+            try {
+                const model = await tf.loadLayersModel('/models/personalization_model.json');
+                const userPreferences = JSON.parse(localStorage.getItem('userPreferences') || '{}');
+                const inputTensor = tf.tensor2d([[userPreferences.budget || 5000, userPreferences.groupSize || 2, userPreferences.sustainability || 0.8]]);
+                const prediction = model.predict(inputTensor);
+                const roomType = prediction.argMax(-1).dataSync()[0];
+                const roomTypes = ['signature', 'presidential', 'silent'];
+                const recommendedRoom = roomTypes[roomType];
+                document.getElementById('recommendation-text').textContent = `We recommend the ${TRANSLATIONS.en.rooms[recommendedRoom].title} for your perfect retreat.`;
+                document.getElementById('recommendation-btn').addEventListener('click', () => {
+                    document.querySelector(`.room-card[data-category="${recommendedRoom}"]`).scrollIntoView({ behavior: 'smooth' });
+                });
+            } catch (error) {
+                console.error('AI personalization failed:', error);
+                document.getElementById('recommendation-text').textContent = 'Explore our curated rooms for your perfect stay.';
+            }
+        }
+
+        // Language Toggle
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                const key = el.getAttribute('data-lang');
+                const keys = key.split('.');
+                let translation = TRANSLATIONS[lang];
+                for (const k of keys) {
+                    translation = translation[k];
+                    if (!translation) return;
+                }
+                if (el.tagName === 'INPUT' && el.hasAttribute('data-lang-placeholder')) {
+                    el.placeholder = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            });
+            localStorage.setItem('language', lang);
+        }
+
+        document.getElementById('language-select').addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+
+        // Initialize language
+        const savedLang = localStorage.getItem('language') || 'en';
+        document.getElementById('language-select').value = savedLang;
+        setLanguage(savedLang);
+
+        // Accessibility Features
+        document.querySelector('.dark-toggle-btn').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+        });
+
+        document.querySelector('.contrast-toggle-btn').addEventListener('click', () => {
+            document.body.classList.toggle('high-contrast');
+            localStorage.setItem('highContrast', document.body.classList.contains('high-contrast'));
+        });
+
+        if (localStorage.getItem('darkMode') === 'true') document.body.classList.add('dark-mode');
+        if (localStorage.getItem('highContrast') === 'true') document.body.classList.add('high-contrast');
+
+        // Room Filters
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('.filter-btn.active').classList.remove('active');
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                document.querySelectorAll('.room-card').forEach(card => {
+                    card.style.display = (filter === 'all' || card.getAttribute('data-category') === filter) ? 'block' : 'none';
+                });
+            });
+        });
+
+        // AR Preview with A-Frame
+        document.querySelectorAll('.ar-preview-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const room = btn.getAttribute('data-room');
+                const modal = document.getElementById('ar-vr-modal');
+                const modalBody = document.getElementById('modal-body');
+                modalBody.innerHTML = `
+                    <a-scene embedded arjs="sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3;">
+                        <a-asset-item id="${room}-model" src="/models/${room}.glb"></a-asset-item>
+                        <a-entity gltf-model="#${room}-model" scale="0.1 0.1 0.1" position="0 0 -1"></a-entity>
+                        <a-marker-camera preset="hiro"></a-marker-camera>
+                    </a-scene>
+                `;
+                modal.classList.add('active');
+                document.getElementById('announcer').textContent = `AR preview for ${room} opened.`;
+            });
+        });
+
+        // VR Tour
+        document.querySelectorAll('.vr-tour-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const room = btn.getAttribute('data-room');
+                const modal = document.getElementById('ar-vr-modal');
+                const modalBody = document.getElementById('modal-body');
+                modalBody.innerHTML = `
+                    <a-scene embedded>
+                        <a-sky src="/images/360-${room}.jpg"></a-sky>
+                        <a-camera></a-camera>
+                    </a-scene>
+                `;
+                modal.classList.add('active');
+                document.getElementById('announcer').textContent = `VR tour for ${room} opened.`;
+            });
+        });
+
+        // Virtual Try-On
+        document.querySelectorAll('.virtual-try-on-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const room = btn.getAttribute('data-room');
+                const modal = document.getElementById('ar-vr-modal');
+                const modalBody = document.getElementById('modal-body');
+                modalBody.innerHTML = `
+                    <div class="customization-tool">
+                        <h3>Customize ${room.replace('-', ' ')}</h3>
+                        <label for="wall-color">Wall Color:</label>
+                        <input type="color" id="wall-color" value="#f7e8d2">
+                        <label for="furniture-style">Furniture Style:</label>
+                        <select id="furniture-style">
+                            <option value="modern">Modern</option>
+                            <option value="rustic">Rustic</option>
+                            <option value="luo">Luo Traditional</option>
+                        </select>
+                        <button id="apply-customization" class="cta-button">Apply</button>
+                        <div id="preview-canvas"></div>
+                    </div>
+                `;
+                modal.classList.add('active');
+                initThreeJSPreview();
+                document.getElementById('announcer').textContent = `Customization tool for ${room} opened.`;
+            });
+        });
+
+        // Three.js Preview for Customization
+        function initThreeJSPreview() {
+            const scene = new THREE.Scene();
+            const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('preview-canvas') });
+            renderer.setSize(600, 400);
+            const loader = new GLTFLoader();
+            loader.load('/models/signature-room.glb', (gltf) => {
+                scene.add(gltf.scene);
+            });
+            camera.position.z = 5;
+            const controls = new THREE.OrbitControls(camera, renderer.domElement);
+            const animate = () => {
+                requestAnimationFrame(animate);
+                controls.update();
+                renderer.render(scene, camera);
+            };
+            animate();
+        }
+
+        // Close Modal
+        document.querySelector('.close-modal').addEventListener('click', () => {
+            document.getElementById('ar-vr-modal').classList.remove('active');
+            document.getElementById('modal-body').innerHTML = '';
+            document.getElementById('announcer').textContent = 'Modal closed.';
+        });
+
+        // Booking Form
+        const bookingForm = document.getElementById('booking-form');
+        bookingForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            document.getElementById('form-loader').style.display = 'block';
+            const formData = new FormData(bookingForm);
+            const paymentMethod = formData.get('payment');
+            try {
+                if (paymentMethod.startsWith('crypto')) {
+                    const roomType = formData.get('room');
+                    const priceInEth = document.querySelector(`.room-card[data-category="${roomType}"] .price`).getAttribute('data-eth');
+                    await contract.methods.bookRoom(roomType).send({
+                        from: accounts[0],
+                        value: web3.utils.toWei(priceInEth, 'ether')
+                    });
+                    document.getElementById('booking-feedback').classList.add('success');
+                    document.getElementById('booking-feedback').textContent = 'Booking confirmed via blockchain!';
+                } else {
+                    const response = await fetch(bookingForm.action, {
+                        method: 'POST',
+                        body: formData
+                    });
+                    if (response.ok) {
+                        document.getElementById('booking-feedback').classList.add('success');
+                        document.getElementById('booking-feedback').textContent = 'Booking request sent successfully!';
+                    } else {
+                        throw new Error('Booking failed');
+                    }
+                }
+            } catch (error) {
+                document.getElementById('booking-feedback').classList.add('error');
+                document.getElementById('booking-feedback').textContent = 'Booking failed. Please try again.';
+                console.error('Booking error:', error);
+            } finally {
+                document.getElementById('form-loader').style.display = 'none';
+            }
+        });
+
+        // Dynamic Pricing
+        document.getElementById('room-type').addEventListener('change', (e) => {
+            const roomType = e.target.value;
+            const priceEl = document.querySelector(`.room-card[data-category="${roomType}"] .price`);
+            if (priceEl) {
+                const price = priceEl.getAttribute('data-price');
+                const eth = priceEl.getAttribute('data-eth');
+                const usdt = priceEl.getAttribute('data-usdt');
+                document.getElementById('dynamic-price').textContent = `KSH ${price}/night or ${eth} ETH or ${usdt} USDT`;
+            }
+        });
+
+        // Availability Calendar
+        function renderCalendar() {
+            const calendarGrid = document.getElementById('calendar-grid');
+            calendarGrid.innerHTML = '';
+            const today = new Date('2025-06-25');
+            for (let i = 0; i < 30; i++) {
+                const day = new Date(today);
+                day.setDate(today.getDate() + i);
+                const dayEl = document.createElement('div');
+                dayEl.classList.add('calendar-day');
+                dayEl.textContent = day.getDate();
+                dayEl.setAttribute('data-date', day.toISOString().split('T')[0]);
+                dayEl.classList.add(Math.random() > 0.3 ? 'available' : 'unavailable');
+                dayEl.addEventListener('click', () => {
+                    if (dayEl.classList.contains('available')) {
+                        document.querySelectorAll('.calendar-day').forEach(el => el.classList.remove('selected'));
+                        dayEl.classList.add('selected');
+                        document.getElementById('check-in').value = day.toISOString().split('T')[0];
+                    }
+                });
+                calendarGrid.appendChild(dayEl);
+            }
+        }
+        renderCalendar();
+
+        // Weather Widget
+        async function fetchWeather() {
+            try {
+                const response = await fetch('https://api.weatherapi.com/v1/current.json?key=your_weather_api_key&q=Siaya');
+                const data = await response.json();
+                document.getElementById('weather-info').textContent = `Siaya, Kenya: ${data.current.temp_c}°C, ${data.current.condition.text}`;
+            } catch (error) {
+                document.getElementById('weather-info').textContent = 'Siaya, Kenya: Weather unavailable';
+                console.error('Weather fetch failed:', error);
+            }
+        }
+        fetchWeather();
+
+        // Chatbot
+        const chatbot = document.getElementById('chatbot');
+        const chatbotMessages = document.getElementById('chatbot-messages');
+        const chatbotInput = document.getElementById('chatbot-input');
+        const chatbotSend = document.getElementById('chatbot-send');
+        const assistantOrb = document.querySelector('.assistant-orb');
+
+        assistantOrb.addEventListener('click', () => {
+            chatbot.classList.toggle('active');
+            if (chatbot.classList.contains('active')) {
+                chatbotInput.focus();
+                document.getElementById('announcer').textContent = 'AI chatbot opened.';
+            } else {
+                document.getElementById('announcer').textContent = 'AI chatbot closed.';
+            }
+        });
+
+        async function sendMessage(message) {
+            const userMessage = document.createElement('div');
+            userMessage.classList.add('chatbot-message', 'user');
+            userMessage.textContent = message;
+            chatbotMessages.appendChild(userMessage);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+
+            try {
+                // Simulate AI response using Hugging Face Transformers
+                const response = await fetch('https://mock-api.ambururuwaterfalls.com/chatbot', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message })
+                });
+                const data = await response.json();
+                const botMessage = document.createElement('div');
+                botMessage.classList.add('chatbot-message', 'bot');
+                botMessage.textContent = data.reply || 'How can I assist you with your stay?';
+                chatbotMessages.appendChild(botMessage);
+                chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+
+                // Add quick replies
+                const quickReplies = document.createElement('div');
+                quickReplies.classList.add('chatbot-quick-replies');
+                ['Check Availability', 'Silent Homes Info', 'Sustainability'].forEach(reply => {
+                    const btn = document.createElement('button');
+                    btn.classList.add('quick-reply');
+                    btn.textContent = reply;
+                    btn.addEventListener('click', () => sendMessage(reply));
+                    quickReplies.appendChild(btn);
+                });
+                chatbotMessages.appendChild(quickReplies);
+            } catch (error) {
+                console.error('Chatbot error:', error);
+                const botMessage = document.createElement('div');
+                botMessage.classList.add('chatbot-message', 'bot');
+                botMessage.textContent = 'Sorry, I’m having trouble responding. Try again!';
+                chatbotMessages.appendChild(botMessage);
+            }
+        }
+
+        chatbotSend.addEventListener('click', () => {
+            const message = chatbotInput.value.trim();
+            if (message) {
+                sendMessage(message);
+                chatbotInput.value = '';
+            }
+        });
+
+        chatbotInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && chatbotInput.value.trim()) {
+                sendMessage(chatbotInput.value.trim());
+                chatbotInput.value = '';
+            }
+        });
+
+        // Voice Input
+        const voiceInput = document.getElementById('voice-input');
+        if ('webkitSpeechRecognition' in window) {
+            const recognition = new webkitSpeechRecognition();
+            recognition.lang = 'en-US';
+            recognition.onresult = (event) => {
+                const transcript = event.results[0][0].transcript;
+                chatbotInput.value = transcript;
+                sendMessage(transcript);
+            };
+            voiceInput.addEventListener('click', () => {
+                recognition.start();
+                voiceInput.style.background = '#ff5252';
+                document.getElementById('announcer').textContent = 'Voice input started.';
+            });
+            recognition.onend = () => {
+                voiceInput.style.background = '';
+                document.getElementById('announcer').textContent = 'Voice input stopped.';
+            };
+        } else {
+            voiceInput.style.display = 'none';
+        }
+
+        // Social Media Wall
+        async function loadSocialPosts(page = 1) {
+            try {
+                const response = await fetch(`https://mock-api.ambururuwaterfalls.com/social?page=${page}`);
+                const posts = await response.json();
+                const socialGrid = document.getElementById('social-grid');
+                posts.forEach(post => {
+                    const postEl = document.createElement('article');
+                    postEl.classList.add('social-post');
+                    postEl.innerHTML = `
+                        <picture>
+                            <source srcset="${post.image}.webp" type="image/webp">
+                            <img src="${post.image}.jpg" alt="${post.caption}" loading="lazy" width="300" height="220">
+                        </picture>
+                        <p>${post.caption}</p>
+                        <a href="${post.link}" target="_blank" rel="noopener">View on ${post.platform}</a>
+                    `;
+                    socialGrid.appendChild(postEl);
+                });
+            } catch (error) {
+                console.error('Social posts fetch failed:', error);
+            }
+        }
+
+        document.getElementById('load-more-social').addEventListener('click', () => loadSocialPosts(2));
+
+        // Cookie Consent
+        if (!localStorage.getItem('cookiesAccepted')) {
+            document.querySelector('.cookie-consent').classList.add('active');
+        }
+
+        document.getElementById('accept-cookies').addEventListener('click', () => {
+            localStorage.setItem('cookiesAccepted', 'true');
+            document.querySelector('.cookie-consent').classList.remove('active');
+            document.getElementById('announcer').textContent = 'Cookies accepted.';
+        });
+
+        // Back to Top
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.scrollY > 500 ? 'flex' : 'none';
+        });
+
+        backToTop.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Header Scroll Effect
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            const currentScroll = window.scrollY;
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.classList.add('hidden');
+            } else {
+                header.classList.remove('hidden');
+            }
+            lastScroll = currentScroll;
+        });
+
+        // Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('active');
+            document.getElementById('announcer').textContent = 'Navigation menu toggled.';
+        });
+
         // GSAP Animations
         gsap.registerPlugin(ScrollTrigger);
-        gsap.from('.hero-overlay h2', { opacity: 0, y: 50, duration: 1.5, ease: 'power3.out' });
-        gsap.from('.hero-overlay p', { opacity: 0, y: 30, duration: 1.5, delay: 0.3, ease: 'power3.out' });
-        gsap.from('.hero-ctas', { opacity: 0, y: 20, duration: 1.5, delay: 0.6, ease: 'power3.out' });
+        gsap.from('.hero-overlay', { opacity: 0, y: 50, duration: 1.5, ease: 'power3.out' });
         gsap.from('.room-card', {
             opacity: 0,
-            y: 80,
+            y: 100,
             stagger: 0.3,
             duration: 1,
             ease: 'power3.out',
             scrollTrigger: { trigger: '.accommodations', start: 'top 80%' }
         });
-        gsap.from('.hotel-card', {
+        gsap.from('.silent-home-card', {
             opacity: 0,
-            y: 80,
-            stagger: 0.3,
-            duration: 1,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: '.nearby-hotels', start: 'top 80%' }
-        });
-        gsap.from('.swiper-slide', {
-            opacity: 0,
-            y: 50,
+            x: -100,
             stagger: 0.2,
             duration: 1,
             ease: 'power3.out',
-            scrollTrigger: { trigger: '.testimonials', start: 'top 80%' }
+            scrollTrigger: { trigger: '.silent-homes', start: 'top 80%' }
         });
-        gsap.from('.booking-form form', {
-            opacity: 0,
-            y: 60,
-            duration: 1.5,
-            ease: 'power3.out',
-            scrollTrigger: { trigger: '.booking-form', start: 'top 80%' }
+
+        // Vanilla Tilt for Room Cards
+        VanillaTilt.init(document.querySelectorAll('[data-tilt]'), {
+            max: 15,
+            speed: 400,
+            glare: true,
+            'max-glare': 0.3
         });
-        // Mapbox
-        mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/outdoors-v11',
-            center: [34.267, -0.062],
-            zoom: 14,
-            pitch: 45,
-            bearing: 0'
+
+        // Accessibility Audit
+        axe.run().then(results => {
+            if (results.violations.length) {
+                console.warn('Accessibility issues:', results.violations);
+            }
         });
-        map.on('load', () => {
-            new mapboxgl.Marker({ color: '#d4a017' })
-                .setLngLat([34.267, -0.062])
-                .setPopup(new mapboxgl.Popup().setHTML('<h3>Ambururu Waterfalls</h3><p>Musanda, Siaya, Kenya</p>'))
-                .addTo(map);
+
+        // Initialize Features
+        window.addEventListener('load', () => {
+            personalizeRecommendation();
+            loadSocialPosts();
+            document.getElementById('announcer').textContent = 'Page loaded successfully.';
         });
-        // Header Scroll
-        let lastScroll = 0;
-        $(window).on('scroll', function() {
-            const scroll = $(this).scrollTop();
-            $('.sticky-header').toggleClass('hidden', scroll > lastScroll && scroll > 100);
-            lastScroll = scroll;
-        });
+
+        // Service Worker Registration
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js').catch(error => {
+                console.error('Service Worker registration failed:', error);
+            });
+        }
     </script>
 </body>
 </html>

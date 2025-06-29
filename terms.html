@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms and Conditions for Ambururu Waterfall Conservancy, governing the use of our website, services, and conservation initiatives in Siaya, Kenya.">
+    <meta name="keywords" content="Ambururu Waterfall Conservancy, terms and conditions, conservation, Siaya, Kenya, environment">
+    <meta name="author" content="Ambururu Waterfall Conservancy">
+    <title>Terms and Conditions - Ambururu Waterfall Conservancy</title>
+    <style>
+        :root {
+            --primary-color: #0a2f27; /* Deep forest teal */
+            --accent-color: #3d8b40; /* Lush green */
+            --text-color: #1a1a1a; /* Rich black for contrast */
+            --bg-color: #e9f0e9; /* Soft earthy green */
+            --card-bg: #ffffff; /* Crisp white */
+            --highlight-bg: rgba(61, 139, 64, 0.15); /* Subtle green tint */
+            --shadow-color: rgba(0, 0, 0, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.9;
+            color: var(--text-color);
+            background: linear-gradient(180deg, var(--bg-color), #d0e0d0);
+            padding: 60px 20px;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px var(--shadow-color);
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        .header-decoration {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(to right, var(--accent-color), var(--primary-color));
+        }
+
+        .watermark {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            opacity: 0.1;
+            font-size: 6rem;
+            color: var(--accent-color);
+            transform: rotate(-45deg);
+            pointer-events: none;
+            font-family: 'Playfair Display', serif;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 0.6em;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.9rem;
+            color: var(--primary-color);
+            margin: 2em 0 0.8em;
+            font-weight: 600;
+            padding-left: 20px;
+            border-left: 5px solid var(--accent-color);
+            transition: transform 0.3s ease;
+        }
+
+        h2:hover {
+            transform: translateX(5px);
+        }
+
+        p {
+            margin-bottom: 1.6em;
+            font-size: 1.1rem;
+        }
+
+        ul {
+            margin-bottom: 1.6em;
+            padding-left: 35px;
+        }
+
+        li {
+            margin-bottom: 0.8em;
+            font-size: 1.1rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+            transform: translateY(-2px);
+        }
+
+        .last-updated {
+            font-style: italic;
+            color: #4a4a4a;
+            text-align: center;
+            margin-bottom: 3em;
+            font-size: 1rem;
+        }
+
+        .intro {
+            background: var(--highlight-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 2.5em;
+            border: 1px solid rgba(61, 139, 64, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .intro::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-color);
+            opacity: 0.3;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 3em;
+            padding: 30px;
+            background: var(--highlight-bg);
+            border-radius: 12px;
+            border: 1px solid rgba(61, 139, 64, 0.25);
+        }
+
+        .section-number {
+            font-weight: 700;
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+
+        .nav-menu {
+            position: sticky;
+            top: 20px;
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            margin-bottom: 2em;
+            z-index: 100;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .nav-menu li a {
+            font-size: 0.95rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            background: var(--highlight-bg);
+            transition: background 0.3s ease;
+        }
+
+        .nav-menu li a:hover {
+            background: var(--accent-color);
+            color: var(--card-bg);
+        }
+
+        .accordion {
+            margin-bottom: 2em;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid rgba(61, 139, 64, 0.2);
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            padding: 15px;
+            background: var(--highlight-bg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background: rgba(61, 139, 64, 0.3);
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 20px;
+            background: var(--card-bg);
+        }
+
+        .accordion-content.active {
+            display: block;
+            animation: slideDown 0.5s ease;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 2em;
+            padding: 12px 24px;
+            background: var(--accent-color);
+            color: var(--card-bg);
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-color);
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; max-height: 0; }
+            to { opacity: 1; max-height: 500px; }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+            }
+            h1 {
+                font-size: 2.4rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            p, li {
+                font-size: 1rem;
+            }
+            .nav-menu ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .watermark {
+                font-size: 4rem;
+            }
+        }
+
+        /* Accessibility Enhancements */
+        a:focus, .accordion-header:focus {
+            outline: 3px solid var(--accent-color);
+            outline-offset: 3px;
+        }
+
+        [role="main"] {
+            outline: none;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" role="main" aria-labelledby="terms-title">
+        <div class="header-decoration"></div>
+        <div class="watermark">Ambururu</div>
+        <h1 id="terms-title">Terms and Conditions</h1>
+        <p class="last-updated">Last Updated: June 26, 2025</p>
+
+        <nav class="nav-menu" aria-label="Terms navigation">
+            <ul>
+                <li><a href="#section1">Acceptance</a></li>
+                <li><a href="#section2">Eligibility</a></li>
+                <li><a href="#section3">Website Use</a></li>
+                <li><a href="#section4">Donations</a></li>
+                <li><a href="#section5">Events</a></li>
+                <li><a href="#section6">Intellectual Property</a></li>
+                <li><a href="#section7">User Content</a></li>
+                <li><a href="#section8">Third-Party Links</a></li>
+                <li><a href="#section9">Liability</a></li>
+                <li><a href="#section10">Warranties</a></li>
+                <li><a href="#section11">Indemnification</a></li>
+                <li><a href="#section12">Termination</a></li>
+                <li><a href="#section13">Governing Law</a></li>
+                <li><a href="#section14">Changes</a></li>
+                <li><a href="#section15">Environment</a></li>
+                <li><a href="#section16">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="intro">
+            <p>At <strong>Ambururu Waterfall Conservancy</strong>, our mission is to safeguard the pristine beauty and ecological vitality of the Ambururu Waterfall in Siaya, Kenya, for future generations. These Terms and Conditions ("Terms") govern your engagement with our website (<a href="https://www.ambururuwaterfall.org" aria-label="Visit Ambururu Waterfall Conservancy website">www.ambururuwaterfall.org</a>), conservation programs, events, and services. By accessing or participating, you agree to these Terms, which form a sacred pact between you and us to protect our shared natural heritage. If you do not agree, please refrain from using our services.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header" id="section1-header" role="button" tabindex="0" aria-controls="section1-content" aria-expanded="false">
+                    <h2 id="section1"><span class="section-number">1.</span> Acceptance of Terms</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section1-content" aria-labelledby="section1-header">
+                    <p>By accessing our website, donating, registering for events, volunteering, or engaging in our programs, you acknowledge that you have read, understood, and agree to these Terms and our <a href="privacy.html" aria-label="View our Privacy Policy">Privacy Policy</a>. These Terms constitute a legally binding agreement with Ambururu Waterfall Conservancy ("we," "us," or "our").</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section2-header" role="button" tabindex="0" aria-controls="section2-content" aria-expanded="false">
+                    <h2 id="section2"><span class="section-number">2.</span> Eligibility</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section2-content" aria-labelledby="section2-header">
+                    <p>You must be at least 16 years old to use our website or services. By engaging with us, you confirm you meet this age requirement and have the legal capacity to enter this agreement.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section3-header" role="button" tabindex="0" aria-controls="section3-content" aria-expanded="false">
+                    <h2 id="section3"><span class="section-number">3.</span> Use of Our Website and Services</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section3-content" aria-labelledby="section3-header">
+                    <p>You agree to use our website and services lawfully and in accordance with these Terms, including:</p>
+                    <ul>
+                        <li>Refraining from illegal or unauthorized activities, including violations of Kenyan laws or international regulations.</li>
+                        <li>Avoiding actions that may harm, disable, or impair our website, such as introducing malicious code.</li>
+                        <li>Not attempting unauthorized access to our systems or databases.</li>
+                        <li>Providing accurate and current information during interactions.</li>
+                        <li>Respecting the intellectual property and privacy rights of others.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section4-header" role="button" tabindex="0" aria-controls="section4-content" aria-expanded="false">
+                    <h2 id="section4"><span class="section-number">4.</span> Donations and Payments</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section4-content" aria-labelledby="section4-header">
+                    <p>Donations and payments are processed securely via third-party providers (e.g., PayPal, M-Pesa). By contributing, you agree:</p>
+                    <ul>
+                        <li>To provide accurate payment information.</li>
+                        <li>That donations are non-refundable unless required by law.</li>
+                        <li>That we may allocate donations to conservation initiatives at our discretion.</li>
+                        <li>To comply with payment processors’ terms.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section5-header" role="button" tabindex="0" aria-controls="section5-content" aria-expanded="false">
+                    <h2 id="section5"><span class="section-number">5.</span> Event and Volunteer Participation</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section5-content" aria-labelledby="section5-header">
+                    <p>Participation in our events or volunteer programs requires:</p>
+                    <ul>
+                        <li>Adherence to safety guidelines and staff instructions.</li>
+                        <li>Assumption of risks associated with physical activities, to the extent permitted by law.</li>
+                        <li>Compliance with our policies, with refusal of participation for non-compliance.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section6-header" role="button" tabindex="0" aria-controls="section6-content" aria-expanded="false">
+                    <h2 id="section6"><span class="section-number">6.</span> Intellectual Property</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section6-content" aria-labelledby="section6-header">
+                    <p>All website content, including text, images, and logos, is owned or licensed by us and protected by copyright and trademark laws. You may not reproduce or modify content without permission, except for personal, non-commercial use.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section7-header" role="button" tabindex="0" aria-controls="section7-content" aria-expanded="false">
+                    <h2 id="section7"><span class="section-number">7.</span> User-Generated Content</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section7-content" aria-labelledby="section7-header">
+                    <p>By submitting content (e.g., photos, testimonials), you grant us a non-exclusive, royalty-free, worldwide license to use it for conservation purposes. You confirm your content complies with laws and does not infringe third-party rights.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section8-header" role="button" tabindex="0" aria-controls="section8-content" aria-expanded="false">
+                    <h2 id="section8"><span class="section-number">8.</span> Third-Party Links and Services</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section8-content" aria-labelledby="section8-header">
+                    <p>Our website may link to third-party services (e.g., social media, payment platforms). We are not responsible for their practices. Review their terms before engaging.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section9-header" role="button" tabindex="0" aria-controls="section9-content" aria-expanded="false">
+                    <h2 id="section9"><span class="section-number">9.</span> Limitation of Liability</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section9-content" aria-labelledby="section9-header">
+                    <p>To the fullest extent permitted by law, we are not liable for indirect or consequential damages from your use of our services. Our liability for direct damages is limited to amounts paid to us, if any.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section10-header" role="button" tabindex="0" aria-controls="section10-content" aria-expanded="false">
+                    <h2 id="section10"><span class="section-number">10.</span> Disclaimer of Warranties</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section10-content" aria-labelledby="section10-header">
+                    <p>Our services are provided "as is" without warranties. We do not guarantee uninterrupted, error-free, or secure access.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section11-header" role="button" tabindex="0" aria-controls="section11-content" aria-expanded="false">
+                    <h2 id="section11"><span class="section-number">11.</span> Indemnification</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section11-content" aria-labelledby="section11-header">
+                    <p>You agree to indemnify us from claims or damages arising from your violation of these Terms or misuse of our services.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section12-header" role="button" tabindex="0" aria-controls="section12-content" aria-expanded="false">
+                    <h2 id="section12"><span class="section-number">12.</span> Termination</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section12-content" aria-labelledby="section12-header">
+                    <p>We may suspend or terminate your access for violations of these Terms. You may cease using our services at any time.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section13-header" role="button" tabindex="0" aria-controls="section13-content" aria-expanded="false">
+                    <h2 id="section13"><span class="section-number">13.</span> Governing Law and Dispute Resolution</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section13-content" aria-labelledby="section13-header">
+                    <p>These Terms are governed by Kenyan law. Disputes shall be resolved through negotiation or mediation, with unresolved disputes subject to the courts of Siaya, Kenya.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section14-header" role="button" tabindex="0" aria-controls="section14-content" aria-expanded="false">
+                    <h2 id="section14"><span class="section-number">14.</span> Changes to These Terms</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section14-content" aria-labelledby="section14-header">
+                    <p>We may update these Terms, with significant changes notified via our website or email. Continued use after updates constitutes acceptance.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section15-header" role="button" tabindex="0" aria-controls="section15-content" aria-expanded="false">
+                    <h2 id="section15"><span class="section-number">15.</span> Environmental Commitment</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section15-content" aria-labelledby="section15-header">
+                    <p>Aligned with our mission, we minimize our environmental impact through sustainable digital practices and encourage eco-friendly interactions, such as electronic communications.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section16-header" role="button" tabindex="0" aria-controls="section16-content" aria-expanded="false">
+                    <h2 id="section16"><span class="section-number">16.</span> Community Engagement and Memberships</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section16-content" aria-labelledby="section16-header">
+                    <p>If you join our digital membership or community programs, you agree to:</p>
+                    <ul>
+                        <li>Abide by community guidelines promoting respect and conservation values.</li>
+                        <li>Pay applicable membership fees, which are non-refundable unless stated otherwise.</li>
+                        <li>Participate in good faith to support our mission.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header" id="section17-header" role="button" tabindex="0" aria-controls="section17-content" aria-expanded="false">
+                    <h2 id="section17"><span class="section-number">17.</span> Contact Us</h2>
+                    <span class="accordion-icon" aria-hidden="true">+</span>
+                </div>
+                <div class="accordion-content" id="section17-content" aria-labelledby="section17-header">
+                    <div class="contact-info">
+                        <p>For inquiries or concerns about these Terms, contact:</p>
+                        <p>
+                            <strong>Ambururu Waterfall Conservancy</strong><br>
+                            Email: <a href="mailto:ambururuwaterfall@gmail.com" aria-label="Email Ambururu Waterfall Conservancy">ambururuwaterfall@gmail.com</a><br>
+                            Address: Musanda-ruwe, Siaya, Kenya 40600<br>
+                            Phone: <a href="tel:+254741609862" aria-label="Call Ambururu Waterfall Conservancy">+254 741 609 862</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="support.html" class="cta-button" aria-label="Support our conservation efforts">Join Our Mission</a>
+    </div>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                const isActive = content.classList.contains('active');
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.accordion-header').forEach(h => h.setAttribute('aria-expanded', 'false'));
+                if (!isActive) {
+                    content.classList.add('active');
+                    header.setAttribute('aria-expanded', 'true');
+                    header.querySelector('.accordion-icon').textContent = '−';
+                } else {
+                    header.querySelector('.accordion-icon').textContent = '+';
+                }
+            });
+            header.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    header.click();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

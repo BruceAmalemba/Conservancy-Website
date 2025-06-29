@@ -1,5 +1,32 @@
 {
   "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.15.2",
+    "pdfkit": "^0.17.1",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.1",
     "tailwindcss": "^4.1.8"
-  }
+  },
+  "name": "official-ambururu-resort-website",
+  "version": "1.0.0",
+  "description": "\"# Ambururu-Waterfall-Resort\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BruceAmalemba/Official-Ambururu-Website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BruceAmalemba/Official-Ambururu-Website/issues"
+  },
+  "homepage": "https://github.com/BruceAmalemba/Official-Ambururu-Website#readme"
 }

@@ -1,821 +1,1443 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Journal | Ambururu Waterfalls & Resort</title>
-    <meta name="description" content="Read stories, insights, and updates from Ambururu Waterfalls & Resort, celebrating Luo heritage, sustainability, and eco-luxury in Siaya, Kenya.">
-    <meta name="keywords" content="Ambururu Waterfalls, Siaya, Kenya, journal, Luo culture, sustainable travel, eco-luxury, Yala Valley">
-    <meta name="author" content="Ambururu Waterfalls & Resort">
+    <meta name="description" content="Explore travel tips, news, and conservation stories from Ambururu Waterfalls Resort in Siaya, Kenya.">
+    <meta name="keywords" content="Ambururu Waterfalls, Siaya, Kenya, blog, travel tips, conservation, eco-tourism, Luo culture">
+    <meta name="author" content="Ambururu Waterfalls Resort">
     <meta name="robots" content="index, follow">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Journal | Ambururu Waterfalls & Resort">
-    <meta property="og:description" content="Explore stories and insights from Ambururu, Siaya’s eco-luxury retreat.">
-    <meta property="og:image" content="images/hero.jpg">
+    <meta name="theme-color" content="#1a3c34">
+    <meta property="og:title" content="Journal - Ambururu Waterfalls Resort">
+    <meta property="og:description" content="Dive into travel tips, news, and conservation tales from Ambururu Waterfalls in Siaya, Kenya.">
+    <meta property="og:image" content="https://cdn.ambururuwaterfalls.com/assets/images/30.webp">
     <meta property="og:url" content="https://www.ambururuwaterfalls.com/journal.html">
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="sw_KE">
+    <meta property="og:locale:alternate" content="dh_KE">
     <meta name="twitter:card" content="summary_large_image">
-    <!-- Schema Markup -->
+    <meta name="twitter:site" content="@Ambururu_W">
+    <link rel="canonical" href="https://www.ambururuwaterfalls.com/journal.html">
+    <title>Journal - Ambururu Waterfalls Resort</title>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" sizes="any">
+    <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="preload" href="https://cdn.ambururuwaterfalls.com/assets/images/30.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="/assets/fonts/PlayfairDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="dns-prefetch" href="https://api.mapbox.com">
+    <link rel="dns-prefetch" href="https://cdn.ambururuwaterfalls.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&family=Montserrat:wght@400;600&display=swap" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" media="all">
+    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet" media="all">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.0/dist/confetti.browser.min.js" defer></script>
     <script type="application/ld+json">
-    {
+    [{
         "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Ambururu Waterfalls Journal",
-        "description": "Stories and insights from Ambururu Waterfalls & Resort, celebrating Luo heritage and sustainability in Siaya, Kenya.",
-        "url": "https://www.ambururuwaterfalls.com/journal.html",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Ambururu Waterfalls & Resort",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "images/logo.jpg"
-            }
-        },
-        "sameAs": [
-            "https://www.facebook.com/ambururu",
-            "https://x.com/Ambururu_W",
-            "https://www.instagram.com/ambururu1"
-        ]
-    }
-    </script>
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="images/21.jpg" as="image" fetchpriority="high">
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-    <link rel="preconnect" href="https://api.mapbox.com" crossorigin>
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <!-- Mapbox -->
-    <link href="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css" rel="stylesheet">
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@10/swiper-bundle.min.css">
-    <!-- Google Analytics (Optional, remove if not in update) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA4_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'YOUR_GA4_ID');
+        "@type": "BlogPosting",
+        "headline": "5 Tips for Visiting Ambururu Waterfalls",
+        "datePublished": "2025-05-20",
+        "author": {"@type": "Organization", "name": "Ambururu Waterfalls Resort", "url": "https://www.ambururuwaterfalls.com"},
+        "publisher": {"@type": "Organization", "name": "Ambururu Waterfalls Resort", "logo": {"@type": "ImageObject", "url": "/logo/B2.webp"}},
+        "image": "https://cdn.ambururuwaterfalls.com/assets/images/30.webp",
+        "description": "Plan your visit to Ambururu Waterfalls in Siaya with our expert tips for an unforgettable eco-luxury experience.",
+        "keywords": "travel tips, Ambururu Waterfalls, Siaya, Kenya, eco-tourism",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.ambururuwaterfalls.com/journal.html#post-1"}
+    }, {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "New Trail Opens at Ambururu Waterfalls",
+        "datePublished": "2025-05-15",
+        "author": {"@type": "Organization", "name": "Ambururu Waterfalls Resort", "url": "https://www.ambururuwaterfalls.com"},
+        "publisher": {"@type": "Organization", "name": "Ambururu Waterfalls Resort", "logo": {"@type": "ImageObject", "url": "/logo/B2.webp"}},
+        "image": "https://cdn.ambururuwaterfalls.com/assets/images/4.webp",
+        "description": "Discover our new hiking trail offering breathtaking views in Siaya’s Yala Valley.",
+        "keywords": "hiking trail, Ambururu Waterfalls, Siaya, Kenya, news",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.ambururuwaterfalls.com/journal.html#post-2"}
+    }, {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Conservation Efforts at Ambururu",
+        "datePublished": "2025-05-05",
+        "author": {"@type": "Organization", "name": "Ambururu Waterfalls Resort", "url": "https://www.ambururuwaterfalls.com"},
+        "publisher": {"@type": "Organization", "name": "Ambururu Waterfalls Resort", "logo": {"@type": "ImageObject", "url": "/logo/B2.webp"}},
+        "image": "https://cdn.ambururuwaterfalls.com/assets/images/26.webp",
+        "description": "Learn about our initiatives to protect Siaya’s ecosystem and promote sustainable tourism.",
+        "keywords": "conservation, Ambururu Waterfalls, Siaya, Kenya, eco-tourism",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.ambururuwaterfalls.com/journal.html#post-3"}
+    }]
     </script>
     <style>
         :root {
-            --primary: #1a3c34; /* Jade green */
-            --secondary: #f5e6cc; /* Ivory */
-            --accent: #d4a017; /* Gold */
-            --dark: #0a1a2e; /* Midnight blue */
-            --light: #f8f1e9; /* Soft cream */
-            --luo-accent: #8b1e3f; /* Luo-inspired red */
-            --glow: rgba(212, 160, 23, 0.5);
+            --primary: #1a3c34;
+            --secondary: #f8f9fa;
+            --accent: #d4a017;
+            --luo-accent: #8b1e3f;
+            --dark: #0f1c2e;
+            --light: #ffffff;
+            --glow: rgba(212, 160, 23, 0.3);
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            --transition: all 0.2s ease;
+            --font-size-base: 14px;
+            --dark-mode-bg: #1a2526;
+            --dark-mode-text: #e0e0e0;
         }
-        *, *::before, *::after {
+        * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         html {
             scroll-behavior: smooth;
-            scroll-padding-top: 100px;
+            scroll-padding-top: 80px;
+            font-size: var(--font-size-base);
         }
         body {
-            font-family: 'Lora', serif;
-            color: var(--secondary);
-            background: var(--dark);
-            line-height: 1.8;
+            font-family: 'Roboto', sans-serif;
+            color: var(--dark);
+            background: var(--light);
+            line-height: 1.6;
             overflow-x: hidden;
-            -webkit-font-smoothing: antialiased;
-            text-rendering: optimizeLegibility;
         }
-        a {
+        body.dark-mode {
+            background: var(--dark-mode-bg);
+            color: var(--dark-mode-text);
+            --secondary: #1a2526;
+        }
+        body.high-contrast {
+            --primary: #000000;
+            --secondary: #ffffff;
+            --accent: #ffd700;
+            --dark: #ffffff;
+            --light: #000000;
+            --luo-accent: #c71585;
+            background: var(--light);
+            color: var(--dark);
+        }
+        a, button {
             text-decoration: none;
             color: inherit;
+            cursor: pointer;
+            transition: var(--transition);
         }
         h1, h2, h3, h4 {
-            font-family: 'Cinzel Decorative', serif;
-            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            letter-spacing: 0.015em;
         }
-        /* Header */
+        h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        p {
+            font-size: 1rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
         .sticky-header {
             position: fixed;
             top: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(10, 26, 46, 0.95);
+            background: rgba(15, 28, 46, 0.95);
             backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            transition: transform 0.3s ease, background 0.3s ease;
-        }
-        .sticky-header.scrolled {
-            background: rgba(10, 26, 46, 1);
-        }
-        .sticky-header.hidden {
-            transform: translateY(-100%);
+            padding: 0.75rem 0;
+            box-shadow: var(--shadow);
         }
         .header-container {
-            max-width: 1400px;
+            max-width: 1280px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 2rem;
+            padding: 0 1.5rem;
         }
         .brand {
             display: flex;
             align-items: center;
+            gap: 0.75rem;
         }
         .logo {
-            width: 80px;
-            height: 80px;
-            transition: transform 0.3s ease, filter 0.3s ease;
+            width: 60px;
+            height: 60px;
+            transition: transform 0.3s ease;
         }
         .logo:hover {
-            transform: scale(1.05);
-            filter: drop-shadow(0 0 5px var(--glow));
+            transform: scale(1.1);
         }
         .brand h1 {
-            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
             color: var(--accent);
-            margin: 0 0 0 1rem;
-            letter-spacing: 2px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
         }
         nav ul {
             display: flex;
             list-style: none;
-        }
-        nav ul li {
-            margin-left: 2rem;
-            position: relative;
+            gap: 1rem;
         }
         nav ul li a {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
             color: var(--secondary);
-            padding: 0.5rem;
-            transition: color 0.3s ease, border-bottom 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
         }
         nav ul li a:hover,
         nav ul li a.active {
             color: var(--accent);
-            border-bottom: 1px solid var(--accent);
+            background: rgba(212, 160, 23, 0.1);
         }
         .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: rgba(10, 26, 46, 0.95);
-            border-radius: 8px;
-            padding: 1rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            min-width: 200px;
+            background: var(--dark);
+            border-radius: 6px;
+            padding: 0.75rem;
+            min-width: 180px;
+            transform: translateY(-5px);
             opacity: 0;
-            transform: translateY(5px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
+            transition: opacity 0.2s ease, transform 0.2s ease;
         }
         .dropdown:hover .dropdown-menu,
         .dropdown:focus-within .dropdown-menu {
-            display: block;
-            opacity: 1;
             transform: translateY(0);
-        }
-        .dropdown-menu li {
-            margin: 0;
+            opacity: 1;
         }
         .dropdown-menu li a {
-            font-size: 1rem;
-            padding: 0.5rem 1rem;
-            display: block;
-            transition: background 0.3s ease, color 0.3s ease;
-        }
-        .dropdown-menu li a:hover {
-            color: var(--accent);
-            background: rgba(212, 160, 23, 0.1);
+            font-size: 0.85rem;
+            padding: 0.5rem 0.75rem;
         }
         .menu-toggle {
             display: none;
-            background: none;
+            background: transparent;
             border: none;
             color: var(--accent);
             font-size: 1.5rem;
-            cursor: pointer;
         }
-        .language-toggle {
-            margin-left: 2rem;
-            position: relative;
-        }
-        .language-toggle select {
-            background: transparent;
-            border: 1px solid var(--accent);
-            color: var(--secondary);
-            font-size: 1rem;
-            padding: 0.3rem 2rem 0.3rem 0.5rem;
-            cursor: pointer;
-            border-radius: 4px;
-            appearance: none;
-        }
-        .language-toggle select:focus {
-            outline: none;
-            box-shadow: 0 0 5px var(--glow);
-        }
-        .language-toggle::after {
-            content: '\f078';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            color: var(--accent);
-            position: absolute;
-            right: 0.5rem;
-            top: 50%;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-        /* Audio Control */
-        .audio-control {
+        .accessibility-controls {
             position: fixed;
-            top: 20px;
-            right: 80px;
+            top: 100px;
+            right: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
             z-index: 1000;
-            background: rgba(10, 26, 46, 0.8);
-            border-radius: 50%;
+        }
+        .accessibility-controls button {
             width: 40px;
             height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .audio-control:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 5px var(--glow);
-        }
-        .audio-control i {
-            color: var(--accent);
-            font-size: 1.2rem;
-        }
-        /* Sticky Booking CTA */
-        .sticky-booking {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            z-index: 1000;
-            background: var(--accent);
-            color: var(--dark);
-            padding: 0.8rem 1.5rem;
-            border-radius: 8px;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .sticky-booking:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 10px var(--glow);
-        }
-        /* Concierge Contact */
-        .contact-popup {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1000;
             background: var(--accent);
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            box-shadow: var(--shadow);
+            border: none;
+            cursor: pointer;
+        }
+        .accessibility-controls button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.05);
+        }
+        .accessibility-controls i {
+            font-size: 1.2rem;
+            color: var(--dark);
+        }
+        .hero {
+            position: relative;
+            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: var(--dark);
+            overflow: hidden;
         }
-        .contact-popup:hover {
-            transform: scale(1.1);
-            box-shadow: 0 0 5px var(--glow);
-        }
-        .contact-popup i {
-            color: var(--dark);
-            font-size: 1.5rem;
-        }
-        .contact-form {
-            display: none;
-            position: fixed;
-            bottom: 80px;
-            right: 20px;
-            background: var(--light);
-            padding: 1.5rem;
+        .hero-video-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            max-width: 800px;
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-            max-width: 300px;
-            z-index: 1000;
+            overflow: hidden;
+            box-shadow: var(--shadow);
         }
-        .contact-form.active {
+        .hero-video {
+            width: 100%;
+            height: auto;
             display: block;
         }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 0.5rem;
-            border: 1px solid var(--dark);
-            border-radius: 4px;
-            font-size: 0.9rem;
-            font-family: 'Lora', serif;
-        }
-        .contact-form button {
-            background: var(--accent);
-            color: var(--dark);
-            padding: 0.5rem 1rem;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-family: 'Cinzel Decorative', serif;
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-        .contact-form button:hover {
-            background: var(--luo-accent);
-            box-shadow: 0 0 5px var(--glow);
-        }
-        /* Luo Pattern Divider */
-        .luo-divider {
-            width: 100%;
-            height: 40px;
-            background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10"%3E%3Cpath fill="%238b1e3f" d="M0 5 L10 0 L20 5 L30 0 L40 5 L50 0 L60 5 L70 0 L80 5 L90 0 L100 5 V10 H0 Z"/%3E%3C/svg%3E') repeat-x center;
-            margin: 2rem 0;
-        }
-        /* Journal Section */
-        .journal {
-            padding: 6rem 0;
+        .hero-overlay {
+            background: rgba(15, 28, 46, 0.6);
+            backdrop-filter: blur(6px);
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 700px;
             text-align: center;
-            background: var(--dark);
+            box-shadow: var(--shadow);
+            animation: fadeInHero 1s ease-out;
         }
-        .journal h2 {
+        @keyframes fadeInHero {
+            0% { opacity: 0; transform: translateY(30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .hero-overlay h2 {
+            font-family: 'Montserrat', sans-serif;
             font-size: 3rem;
             color: var(--accent);
-            margin: 0 0 1rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 8px var(--glow);
         }
-        .journal-subtitle {
+        .hero-overlay p {
             font-size: 1.2rem;
             color: var(--light);
-            max-width: 700px;
-            margin: 0 auto 3rem;
+            margin-bottom: 1.5rem;
         }
-        .journal-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+        .hero-cts {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .btn {
+            background: linear-gradient(135deg, var(--accent), var(--luo-accent));
+            color: var(--dark);
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px var(--glow);
+        }
+        .btn.secondary {
+            background: none;
+            border: 2px solid var(--accent);
+            color: var(--accent);
+        }
+        .btn.secondary:hover {
+            background: var(--accent);
+            color: var(--dark);
+        }
+        .virtual-assistant {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            z-index: 1000;
+        }
+        .assistant-orb {
+            width: 60px;
+            height: 60px;
+            background: var(--accent);
+            border-radius: 50%;
+            box-shadow: var(--shadow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 2s infinite;
+        }
+        .assistant-orb:hover {
+            background: var(--luo-accent);
+            transform: scale(1.1);
+        }
+        .assistant-tooltip {
+            display: none;
+            position: absolute;
+            bottom: 80px;
+            right: 0;
+            background: var(--dark);
+            color: var(--light);
+            padding: 1rem;
+            border-radius: 6px;
+            width: 200px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+        .assistant-orb:hover .assistant-tooltip,
+        .assistant-orb:focus .assistant-tooltip {
+            display: block;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); box-shadow: 0 0 10px var(--glow); }
+            50% { transform: scale(1.1); box-shadow: 0 0 20px var(--glow); }
+            100% { transform: scale(1); box-shadow: 0 0 10px var(--glow); }
+        }
+        .blog-feed {
+            padding: 4rem 1.5rem;
+            background: var(--secondary);
+            position: relative;
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        .blog-container {
+            display: flex;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
         }
-        .journal-post {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 12px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            text-align: left;
-        }
-        .journal-post:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 10px var(--glow);
-        }
-        .journal-post img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
+        .blog-sidebar {
+            flex: 1;
+            padding: 1.5rem;
             border-radius: 8px;
+            background: var(--light);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 100px;
+        }
+        .blog-sidebar h3 {
+            font-size: 1.6rem;
+            color: var(--primary);
             margin-bottom: 1rem;
         }
-        .journal-post h3 {
-            font-size: 1.8rem;
-            color: var(--accent);
-            margin: 0 0 0.5rem;
-        }
-        .journal-post .meta {
+        .blog-search {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid var(--primary);
+            border-radius: 6px;
             font-size: 0.9rem;
-            color: var(--light);
-            margin-bottom: 1rem;
+            background: var(--light);
+            color: var(--dark);
         }
-        .journal-post p {
-            font-size: 1rem;
-            color: var(--light);
-            margin-bottom: 1rem;
+        .blog-search:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 6px var(--glow);
         }
-        .journal-post a {
+        .category-filter {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+        .filter-btn {
+            display: block;
+            background: none;
+            border: 1px solid var(--accent);
             color: var(--accent);
-            font-weight: bold;
-            transition: color 0.3s ease;
+            padding: 0.6rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            cursor: pointer;
         }
-        .journal-post a:hover {
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--accent);
+            color: var(--dark);
+        }
+        .recent-posts ul {
+            list-style: none;
+        }
+        .recent-posts li a {
+            color: var(--primary);
+            font-size: 0.9rem;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+        .recent-posts li a:hover {
+            color: var(--accent);
+        }
+        .blog-posts {
+            flex: 3;
+        }
+        .blog-post {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: var(--light);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 16px var(--glow);
+        }
+        .blog-image {
+            width: 180px;
+            height: 135px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+        .blog-content h3 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        .blog-meta {
+            font-size: 0.85rem;
+            color: var(--dark);
+            opacity: 0.7;
+            margin-bottom: 0.75rem;
+        }
+        .blog-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .social-share {
+            display: flex;
+            gap: 0.75rem;
+        }
+        .share-btn {
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+        .share-btn:hover {
+            color: var(--luo-accent);
+            transform: scale(1.1);
+        }
+        .save-btn {
+            background: none;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+        }
+        .save-btn.saved {
+            background: var(--accent);
+            color: var(--dark);
+        }
+        .blog-comments {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            border-radius: 6px;
+            background: rgba(15, 28, 46, 0.1);
+        }
+        .load-more {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .newsletter {
+            margin-top: 2rem;
+        }
+        .newsletter h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.75rem;
+        }
+        .newsletter input {
+            padding: 0.8rem;
+            border: 1px solid var(--primary);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: var(--light);
+            color: var(--dark);
+            flex: 1;
+        }
+        .newsletter input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 6px var(--glow);
+        }
+        .contact-section {
+            padding: 4rem 1.5rem;
+            background: var(--dark);
+            color: var(--light);
+            text-align: center;
+        }
+        .contact-info p {
+            font-size: 1rem;
+            margin: 0.75rem 0;
+        }
+        .contact-info a {
+            color: var(--accent);
+        }
+        .contact-info a:hover {
             color: var(--luo-accent);
         }
-        /* Footer */
+        #contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        #contact-form input,
+        #contact-form textarea {
+            padding: 0.8rem;
+            border: 1px solid var(--primary);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: var(--light);
+            color: var(--dark);
+        }
+        #contact-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        #contact-form input:focus,
+        #contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 6px var(--glow);
+        }
+        .form-success {
+            color: var(--accent);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+        .social-media {
+            padding: 3rem 1.5rem;
+            background: var(--secondary);
+            text-align: center;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .social-links a {
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+        .social-links a:hover {
+            color: var(--luo-accent);
+            transform: scale(1.1);
+        }
+        .x-feed {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: var(--light);
+            box-shadow: var(--shadow);
+        }
+        .x-post {
+            padding: 1rem;
+            border-bottom: 1px solid rgba(15, 28, 46, 0.1);
+        }
+        .x-post:last-child {
+            border-bottom: none;
+        }
+        .x-post span {
+            font-size: 0.85rem;
+            color: var(--dark);
+            opacity: 0.7;
+        }
+        .map {
+            padding: 4rem 1.5rem;
+            background: var(--secondary);
+            text-align: center;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        .map-description {
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
         footer {
             background: var(--dark);
             color: var(--light);
-            padding: 4rem 0;
+            padding: 3rem 1.5rem;
             text-align: center;
         }
         .footer-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem;
-        }
-        .footer-logo {
-            width: 100px;
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-        .footer-logo:hover {
-            transform: scale(1.05);
-        }
-        .social-links {
-            margin: 2rem 0;
-        }
-        .social-links a {
-            color: var(--accent);
-            margin: 0 1.5rem;
-            font-size: 1.5rem;
-            transition: color 0.3s ease, transform 0.3s ease;
-        }
-        .social-links a:hover {
-            color: var(--luo-accent);
-            transform: scale(1.2);
-        }
-        .newsletter h4 {
-            font-size: 2rem;
-            color: var(--accent);
-            margin: 0 0 1.5rem;
-        }
-        .newsletter-form {
             display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
             justify-content: center;
-            gap: 1rem;
-            max-width: 600px;
-            margin: 0 auto;
         }
-        .newsletter-form input {
-            padding: 0.8rem;
-            border: none;
-            border-radius: 8px;
-            width: 300px;
-            font-size: 1rem;
-            font-family: 'Lora', serif;
-            background: var(--light);
-            color: var(--dark);
-            transition: box-shadow 0.3s ease;
-        }
-        .newsletter-form input:focus {
-            box-shadow: 0 0 5px var(--glow);
-            outline: none;
-        }
-        .newsletter-form button {
-            background: var(--accent);
-            color: var(--dark);
-            padding: 0.8rem 1.5rem;
-            border: none;
-            border-radius: 8px;
-            font-family: 'Cinzel Decorative', serif;
-            font-size: 1rem;
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-        .newsletter-form button:hover {
-            background: var(--luo-accent);
-            box-shadow: 0 0 10px var(--glow);
-        }
-        .footer-links {
-            margin-top: 2rem;
+        .footer-brand img {
+            width: 100px;
+            margin-bottom: 1rem;
         }
         .footer-links a {
-            color: var(--light);
-            margin: 0 1rem;
-            font-size: 1rem;
-            transition: color 0.3s ease, text-shadow 0.3s ease;
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin: 0 0.5rem;
         }
         .footer-links a:hover {
-            color: var(--accent);
-            text-shadow: 0 0 5px var(--glow);
+            color: var(--luo-accent);
         }
-        .footer-certifications {
-            margin-top: 2rem;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .footer-certifications img {
-            width: 80px;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-        .footer-certifications img:hover {
-            transform: scale(1.1);
-        }
-        /* Scroll to Top Button (Optional, remove if not in update) */
-        .scroll-to-top {
+        .back-to-top {
             position: fixed;
-            bottom: 20px;
-            right: 80px;
-            z-index: 1000;
-            background: var(--accent);
-            color: var(--dark);
+            bottom: 15px;
+            right: 90px;
             width: 40px;
             height: 40px;
+            background: var(--accent);
             border-radius: 50%;
-            display: flex;
+            box-shadow: var(--shadow);
+            display: none;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
         }
-        .scroll-to-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-        .scroll-to-top:hover {
+        .back-to-top:hover {
+            background: var(--luo-accent);
             transform: scale(1.1);
-            box-shadow: 0 0 5px var(--glow);
         }
-        .scroll-to-top i {
-            font-size: 1.2rem;
+        .skeleton {
+            background: rgba(15, 28, 46, 0.1);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            animation: skeleton-pulse 1.5s infinite;
         }
-        /* Responsive Design */
-        @media (max-width: 1200px) {
-            .journal-grid {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        .skeleton .blog-image {
+            width: 180px;
+            height: 135px;
+            background: rgba(15, 28, 46, 0.05);
+        }
+        .skeleton .blog-content h3 {
+            width: 60%;
+            height: 1.5rem;
+            background: rgba(15, 28, 46, 0.05);
+            border-radius: 4px;
+        }
+        .skeleton .blog-meta,
+        .skeleton .blog-content p {
+            width: 80%;
+            height: 0.9rem;
+            background: rgba(15, 28, 46, 0.05);
+            border-radius: 4px;
+        }
+        @keyframes skeleton-pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 0.8; }
+            100% { opacity: 0.6; }
+        }
+        @media (max-width: 1024px) {
+            .blog-container {
+                flex-direction: column;
+            }
+            .blog-sidebar {
+                position: static;
+            }
+            .blog-post {
+                flex-direction: column;
+                text-align: center;
+            }
+            .blog-image {
+                width: 100%;
+                max-width: 280px;
             }
         }
         @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
             nav ul {
                 display: none;
                 flex-direction: column;
                 width: 100%;
-                padding: 1rem 0;
-                background: rgba(10, 26, 46, 0.95);
-                position: absolute;
-                top: 100%;
-                left: 0;
+                background: var(--dark);
+                position: fixed;
+                top: 0;
+                right: -100%;
+                height: 100vh;
+                padding: 2rem;
+                transition: right 0.4s ease;
             }
             nav ul.active {
                 display: flex;
+                right: 0;
             }
-            .menu-toggle {
+            .dropdown-menu {
+                position: static;
+                background: none;
+                backdrop-filter: none;
+            }
+            .hero-video-container {
+                width: 90%;
+            }
+            .hero-overlay h2 {
+                font-size: 2rem;
+            }
+            .hero-overlay p {
+                font-size: 1rem;
+            }
+            .category-filter {
+                display: none;
+            }
+            .category-filter.active {
                 display: block;
-            }
-            .journal {
-                padding: 4rem 1rem;
-            }
-            .newsletter-form {
-                flex-direction: column;
-                align-items: center;
-            }
-            .newsletter-form input {
-                width: 100%;
-                max-width: 300px;
-            }
-            .audio-control {
-                right: 60px;
-            }
-            .scroll-to-top {
-                right: 60px;
             }
         }
         @media (max-width: 480px) {
-            .journal h2 {
-                font-size: 2rem;
+            .logo {
+                width: 50px;
+                height: 50px;
+            }
+            .brand h1 {
+                font-size: 1.2rem;
+            }
+            .hero-overlay h2 {
+                font-size: 1.8rem;
+            }
+            .hero-overlay p {
+                font-size: 0.9rem;
+            }
+            .newsletter-form {
+                flex-direction: column;
+            }
+            .newsletter input {
+                width: 100%;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation: none !important;
+                transition: none !important;
             }
         }
     </style>
 </head>
 <body>
-    <header class="sticky-header" role="banner">
+    <div id="preloader" role="status" aria-label="Loading">
+        <i class="fas fa-spinner fa-spin" style="font-size: 2.5rem; color: var(--accent);"></i>
+    </div>
+    <header class="sticky-header" role="banner" aria-label="Main header">
         <div class="header-container">
             <div class="brand">
-                <img src="logo/B2.jpg" alt="Ambururu Waterfalls & Resort Logo" class="logo" width="80" height="80" loading="eager">
-                <h1>Ambururu Waterfalls</h1>
+                <a href="index.html" aria-label="Ambururu Waterfall Resort Home">
+                    <picture>
+                        <source srcset="/logo/RL3.png" type="image/webp">
+                        <img src="/logo/RL3.png" alt="Ambururu Waterfall Resort Logo" class="logo" width="60" height="60" loading="eager">
+                    </picture>
+                </a>
+                <h1 data-lang="en:Ambururu Waterfalls;sw:Maporomoko ya Ambururu;dh:Ambururu Ber Marach">Ambururu Waterfalls</h1>
             </div>
             <nav id="main-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" data-lang="en:Home;sw:Nyumbani;dh:Ber Marach">Home</a></li>
                     <li class="dropdown">
-                        <a href="about.html" aria-haspopup="true" aria-expanded="false">About <i class="fas fa-caret-down"></i></a>
+                        <a href="about.html" aria-haspopup="true" data-lang="en:About;sw:Kuhusu;dh:Ng’iyo">About <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html#heritage">Luo Heritage</a></li>
-                            <li><a href="about.html#founder">Our Founder</a></li>
-                            <li><a href="about.html#sustainability">Sustainability</a></li>
+                            <li><a href="about.html#history" data-lang="en:History;sw:Historia;dh:Wach Ber">History</a></li>
+                            <li><a href="about.html#owner" data-lang="en:Our Founder;sw:Mwanzilishi Wetu;dh:Jatichwa">Our Founder</a></li>
+                            <li><a href="about.html#developers" data-lang="en:Meet the Team;sw:Kutana na Timu;dh:Ng’iyo Tim">Meet the Team</a></li>
                         </ul>
                     </li>
-                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html" data-lang="en:Gallery;sw:Matunzio;dh:Picha">Gallery</a></li>
                     <li class="dropdown">
-                        <a href="activities.html" aria-haspopup="true" aria-expanded="false">Experiences <i class="fas fa-caret-down"></i></a>
+                        <a href="activities.html" aria-haspopup="true" data-lang="en:Experiences;sw:Uzoefu;dh:Ber Marach">Experiences <i class="fas fa-caret-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="activities.html#cultural-tours">Cultural Tours</a></li>
-                            <li><a href="activities.html#hiking">Yala Valley Trails</a></li>
-                            <li><a href="activities.html#wellness">Wellness Retreats</a></li>
+                            <li><a href="activities.html#cultural-tours" data-lang="en:Cultural Tours;sw:Ziara za Utamaduni;dh:Wach Luo">Cultural Tours</a></li>
+                            <li><a href="activities.html#hiking" data-lang="en:Yala Valley Trails;sw:Njia za Bonde la Yala;dh:Yore Yala">Yala Valley Trails</a></li>
+                            <li><a href="activities.html#wellness" data-lang="en:Wellness Retreats;sw:Mapumziko ya Afya;dh:Ber Marach Afya">Wellness Retreats</a></li>
                         </ul>
                     </li>
-                    <li><a href="accommodations.html">Accommodations</a></li>
-                    <li><a href="dining.html">Dining</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="journal.html" class="active" aria-current="page">Journal</a></li>
+                    <li><a href="accommodations.html" data-lang="en:Accommodations;sw:Malazi;dh:Ber Marach Kado">Accommodations</a></li>
+                    <li><a href="dining.html" data-lang="en:Dining;sw:Chakula;dh:Chiemo">Dining</a></li>
+                    <li><a href="events.html" data-lang="en:Events;sw:Matukio;dh:Ber Marach Matukio">Events</a></li>
+                    <li><a href="contact.html" data-lang="en:Contact;sw:Wasiliana;dh:Ber Marach Wach">Contact</a></li>
+                    <li><a href="journal.html" class="active" aria-current="page" data-lang="en:Journal;sw:Jarida;dh:Wach Ber">Journal</a></li>
+                    <li><a href="booking.html" class="btn" data-lang="en:Book Now;sw:Weka Nafasi Sasa;dh:Ket Ber Marach">Book Now</a></li>
                 </ul>
             </nav>
-            <div class="language-toggle">
-                <select id="language-select" aria-label="Select language">
-                    <option value="en">English</option>
-                    <option value="sw">Swahili</option>
-                    <option value="luo">Luo</option>
-                </select>
-            </div>
             <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </header>
+    <div class="accessibility-controls" role="toolbar" aria-label="Accessibility controls">
+        <button class="contrast-toggle" aria-label="Toggle high contrast mode" title="High Contrast"><i class="fas fa-adjust"></i></button>
+        <button class="font-size-toggle" aria-label="Increase font size" title="Font Size"><i class="fas fa-text-height"></i></button>
+        <button class="dark-mode-toggle" aria-label="Toggle dark mode" title="Dark Mode"><i class="fas fa-moon"></i></button>
+        <button class="audio-control" aria-label="Toggle ambient waterfall sound" title="Audio"><i class="fas fa-volume-up"></i></button>
+    </div>
     <main>
-        <!-- Audio Control -->
-        <div class="audio-control" role="button" aria-label="Toggle ambient waterfall sound">
-            <i class="fas fa-volume-up"></i>
+        <div class="virtual-assistant" role="button" aria-label="Virtual assistant">
+            <div class="assistant-orb" tabindex="0">
+                <i class="fas fa-robot"></i>
+                <div class="assistant-tooltip">
+                    <p data-lang="en:Explore our journal!;sw:Chunguza jarida letu!;dh:Ng’iyo wachwa!">Explore our journal!</p>
+                    <a href="#category-filter" data-lang="en:Browse Categories;sw:Angalia Kategoria;dh:Ng’iyo Kategoria">Browse Categories</a> |
+                    <a href="#contact-form" data-lang="en:Contact Us;sw:Wasiliana Nasi;dh:Wach Kwe">Contact Us</a> |
+                    <a href="#newsletter-form" data-lang="en:Subscribe;sw:Jiandikishe;dh:Jiandikishe">Subscribe</a>
+                </div>
+            </div>
         </div>
-        <!-- Sticky Booking CTA -->
-        <a href="index.html#booking" class="sticky-booking" role="button" aria-label="Book your stay">Book Now</a>
-        <!-- Contact Popup -->
-        <div class="contact-popup" role="button" aria-label="Open contact form">
-            <i class="fas fa-concierge-bell"></i>
+        <div class="back-to-top" role="button" aria-label="Back to top" tabindex="0">
+            <i class="fas fa-arrow-up"></i>
         </div>
-        <div class="contact-form" role="form" aria-label="Contact concierge">
-            <input type="text" placeholder="Name" aria-label="Name" required>
-            <input type="email" placeholder="Email" aria-label="Email" required>
-            <textarea placeholder="Message" aria-label="Message" required></textarea>
-            <button type="submit">Send</button>
-        </div>
-        <!-- Scroll to Top Button (Optional, remove if not in update) -->
-        <div class="scroll-to-top" role="button" aria-label="Scroll to top">
-            <i class="fas fa-chevron-up"></i>
-        </div>
-        <!-- Journal Section -->
-        <section class="journal" role="region" aria-label="Journal articles">
-            <h2>Our Journal</h2>
-            <p class="journal-subtitle">Discover stories, insights, and updates from Ambururu’s Yala Valley.</p>
-            <div class="journal-grid">
-                <article class="journal-post">
-                    <img src="images/9.jpg" alt="Luo cultural ceremony" loading="lazy" width="300" height="200">
-                    <h3>Luo Heritage Unveiled</h3>
-                    <p class="meta">Posted on May 15, 2025 by Ambururu Team</p>
-                    <p>Explore the vibrant traditions of the Luo people through our guided cultural tours, where storytelling and history come alive.</p>
-                    <a href="#read-more">Read More</a>
-                </article>
-                <article class="journal-post">
-                    <img src="images/14.jpg" alt="Sustainable suite at Ambururu" loading="lazy" width="300" height="200">
-                    <h3>Sustainability in Siaya</h3>
-                    <p class="meta">Posted on April 20, 2025 by Ambururu Team</p>
-                    <p>Learn how our eco-luxury suites are built with local materials to preserve Yala Valley’s natural beauty.</p>
-                    <a href="#read-more">Read More</a>
-                </article>
-                <article class="journal-post">
-                    <img src="images/10.jpg" alt="Luo-inspired dining" loading="lazy" width="300" height="200">
-                    <h3>Flavors of Yala</h3>
-                    <p class="meta">Posted on March 10, 2025 by Ambururu Team</p>
-                    <p>Our farm-to-table dining celebrates Siaya’s culinary heritage with dishes inspired by Luo traditions.</p>
-                    <a href="#read-more">Read More</a>
-                </article>
+        <section class="hero" role="region" aria-label="Journal hero section" aria-describedby="hero-desc">
+            <div class="hero-video-container">
+                <video class="hero-video" autoplay muted playsinline loop preload="metadata">
+                    <source src="/videos/17.mp4" type="video/mp4">
+                    <img src="https://cdn.ambururuwaterfalls.com/assets/images/30.webp" alt="Ambururu Waterfalls fallback image" loading="lazy">
+                </video>
+            </div>
+            <div id="particles-js"></div>
+            <div class="hero-overlay">
+                <h2 data-lang="en:Ambururu Journal;sw:Jarida la Ambururu;dh:Wach Ambururu">Ambururu Journal</h2>
+                <p id="hero-desc" data-lang="en:Discover travel tips, resort updates, and conservation stories from Siaya’s eco-luxury haven.;sw:Gundua vidokezo vya kusafiri, habari za hoteli, na hadithi za uhifadhi.;dh:Ng’iyo vidokezo marach, habari mar hoteli, kendo wach marach e Siaya.">Discover travel tips, resort updates, and conservation stories from Siaya’s eco-luxury haven.</p>
+                <div class="hero-cts">
+                    <a href="#blog-feed" class="btn" data-lang="en:Explore Journal;sw:Chunguza Jarida;dh:Ng’iyo Wach">Explore Journal</a>
+                    <a href="#newsletter-form" class="btn secondary" data-lang="en:Join Newsletter;sw:Jiunga na Jarida;dh:Jiandikishe e Jarida">Join Newsletter</a>
+                </div>
             </div>
         </section>
-        <div class="luo-divider"></div>
+        <section class="blog-feed" id="blog-feed" role="region" aria-label="Journal posts" aria-describedby="blog-desc">
+            <h2 data-lang="en:Our Stories;sw:Hadithi Zetu;dh:Wachwa">Our Stories</h2>
+            <p id="blog-desc" data-lang="en:Insights, tips, and updates from the heart of Ambururu.;sw:Mawazo, vidokezo, na masasisho kutoka moyo wa Ambururu.;dh:Wach, vidokezo, kendo masasisho e Ambururu.">Insights, tips, and updates from the heart of Ambururu.</p>
+            <div class="blog-container">
+                <aside class="blog-sidebar">
+                    <h3 data-lang="en:Filter Posts;sw:Chuja Machapisho;dh:Chuja Wach">Filter Posts</h3>
+                    <input type="text" class="blog-search" id="blog-search" placeholder="Search posts..." aria-label="Search journal posts" data-lang="en:Search posts...;sw:Tafuta machapisho...;dh:Tafuta wach...">
+                    <button class="filter-toggle" aria-label="Toggle category filters" data-lang="en:Categories;sw:Kategoria;dh:Kategoria">Categories</button>
+                    <ul class="category-filter" id="category-filter" role="list">
+                        <li role="listitem"><button type="button" class="filter-btn active" data-category="all" aria-pressed="true" data-lang="en:All;sw:Wote;dh:Wote">All</button></li>
+                        <li role="listitem"><button type="button" class="filter-btn" data-category="travel-tips" aria-pressed="false" data-lang="en:Travel Tips;sw:Vidokezo vya Usafiri;dh:Vidokezo marach">Travel Tips</button></li>
+                        <li role="listitem"><button type="button" class="filter-btn" data-category="news" aria-pressed="false" data-lang="en:News;sw:Habari;dh:Habari">News</button></li>
+                        <li role="listitem"><button type="button" class="filter-btn" data-category="conservation" aria-pressed="false" data-lang="en:Conservation;sw:Uhifadhi;dh:Ber Mazingira">Conservation</button></li>
+                    </ul>
+                    <div class="recent-posts">
+                        <h3 data-lang="en:Recent Posts;sw:Machapisho ya Hivi Karibuni;dh:Wach Manyien">Recent Posts</h3>
+                        <ul>
+                            <li><a href="#post-1" data-lang="en:5 Tips for Visiting Ambururu;sw:Vidokezo 5 vya Kutembelea Ambururu;dh:Vidokezo 5 marach">5 Tips for Visiting Ambururu</a></li>
+                            <li><a href="#post-2" data-lang="en:New Trail Opens;sw:Njia Mpya Inafunguliwa;dh:Yore Manyien">New Trail Opens</a></li>
+                            <li><a href="#post-3" data-lang="en:Conservation Efforts;sw:Juhudi za Uhifadhi;dh:Ber Mazingira">Conservation Efforts</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsletter">
+                        <h4 data-lang="en:Stay Updated;sw:Baki na Sasisho;dh:Bed gi Sasisho">Stay Updated</h4>
+                        <form id="newsletter-form" class="newsletter-form" action="https://formspree.io/f/xbloeqdy" method="POST">
+                            <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address for newsletter" data-lang="en:Enter your email;sw:Ingiza barua pepe yako;dh:Ket email mari">
+                            <button type="submit" class="btn" data-lang="en:Subscribe;sw:Jiandikishe;dh:Jiandikishe">Subscribe</button>
+                        </form>
+                        <p class="form-success" style="display:none;" data-lang="en:Subscribed successfully!;sw:Umefanikiwa kujisajili!;dh:Jiandikishe maber!">Subscribed successfully!</p>
+                    </div>
+                </aside>
+                <div class="blog-posts">
+                    <article class="blog-post card" data-category="travel-tips" id="post-1" role="article" aria-labelledby="post-1-title">
+                        <img src="images/30.jpg" alt="Ambururu Waterfall scenery" class="blog-image" loading="lazy" onerror="this.src='https://via.placeholder.com/180x135?text=Travel+Tips';">
+                        <div class="blog-content">
+                            <h3 id="post-1-title" data-lang="en:5 Tips for Visiting Ambururu Waterfalls;sw:Vidokezo 5 vya Kutembelea Maporomoko ya Ambururu;dh:Vidokezo 5 marach e Ambururu">5 Tips for Visiting Ambururu Waterfalls</h3>
+                            <p class="blog-meta">Posted on May 20, 2025 | By Ambururu Team | 4 min read</p>
+                            <p data-lang="en:Plan your visit to Ambururu with our expert tips for an unforgettable eco-luxury experience.;sw:Panga ziara yako ya Ambururu na vidokezo vyetu.;dh:Ket ziara mari e Ambururu gi vidokezo maber.">Plan your visit to Ambururu with our expert tips for an unforgettable eco-luxury experience.</p>
+                            <div class="blog-actions">
+                                <div>
+                                    <a href="#post-1" class="btn" data-lang="en:Read More;sw:Soma Zaidi;dh:Som Moko">Read More</a>
+                                    <button class="save-btn" data-post-id="post-1" aria-label="Save this post">Save</button>
+                                </div>
+                                <div class="social-share">
+                                    <a href="#" class="share-btn" data-platform="facebook" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="share-btn" data-platform="twitter" aria-label="Share on Twitter"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="#" class="share-btn" data-platform="whatsapp" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="share-btn" data-platform="copy" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-comments" id="disqus_thread_1"></div>
+                    </article>
+                    <article class="blog-post card" data-category="news" id="post-2" role="article" aria-labelledby="post-2-title">
+                        <img src="images/47.jpg" alt="New hiking trail at Ambururu" class="blog-image" loading="lazy" onerror="this.src='https://via.placeholder.com/180x135?text=New+Trail';">
+                        <div class="blog-content">
+                            <h3 id="post-2-title" data-lang="en:New Trail Opens at Ambururu Waterfalls;sw:Njia Mpya Inafunguliwa katika Ambururu;dh:Yore Manyien e Ambururu">New Trail Opens at Ambururu Waterfalls</h3>
+                            <p class="blog-meta">Posted on May 15, 2025 | By Ambururu Team | 3 min read</p>
+                            <p data-lang="en:Discover our new hiking trail offering breathtaking views in Siaya’s Yala Valley.;sw:Gundua njia yetu mpya ya kupanda.;dh:Ng’iyo yore manyien gi maber e Yala Valley.">Discover our new hiking trail offering breathtaking views in Siaya’s Yala Valley.</p>
+                            <div class="blog-actions">
+                                <div>
+                                    <a href="#post-2" class="btn" data-lang="en:Read More;sw:Soma Zaidi;dh:Som Moko">Read More</a>
+                                    <button class="save-btn" data-post-id="post-2" aria-label="Save this post">Save</button>
+                                </div>
+                                <div class="social-share">
+                                    <a href="#" class="share-btn" data-platform="facebook" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="share-btn" data-platform="twitter" aria-label="Share on Twitter"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="#" class="share-btn" data-platform="whatsapp" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="share-btn" data-platform="copy" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-comments" id="disqus_thread_2"></div>
+                    </article>
+                    <article class="blog-post card" data-category="conservation" id="post-3" role="article" aria-labelledby="post-3-title">
+                        <img src="images/26.jpg" alt="Conservation efforts at Ambururu" class="blog-image" loading="lazy" onerror="this.src='https://via.placeholder.com/180x135?text=Conservation';">
+                        <div class="blog-content">
+                            <h3 id="post-3-title" data-lang="en:Conservation Efforts at Ambururu;sw:Juhudi za Uhifadhi katika Ambururu;dh:Ber Mazingira e Ambururu">Conservation Efforts at Ambururu</h3>
+                            <p class="blog-meta">Posted on May 5, 2025 | By Ambururu Team | 5 min read</p>
+                            <p data-lang="en:Learn about our initiatives to protect Siaya’s ecosystem and promote sustainable tourism.;sw:Jifunze kuhusu juhudi zetu za kuhifadhi.;dh:Ng’iyo kuhusu ber mazingira mar Siaya kendo utalii maber.">Learn about our initiatives to protect Siaya’s ecosystem and promote sustainable tourism.</p>
+                            <div class="blog-actions">
+                                <div>
+                                    <a href="#post-3" class="btn" data-lang="en:Read More;sw:Soma Zaidi;dh:Som Moko">Read More</a>
+                                    <button class="save-btn" data-post-id="post-3" aria-label="Save this post">Save</button>
+                                </div>
+                                <div class="social-share">
+                                    <a href="#" class="share-btn" data-platform="facebook" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="share-btn" data-platform="twitter" aria-label="Share on Twitter"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="#" class="share-btn" data-platform="whatsapp" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="share-btn" data-platform="copy" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-comments" id="disqus_thread_3"></div>
+                    </article>
+                    <div class="load-more">
+                        <button id="load-more-btn" class="btn" aria-label="Load more journal posts" data-lang="en:Load More;sw:Pakia Zaidi;dh:Pak Moko">Load More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section" id="contact-form" role="region" aria-label="Contact us" aria-describedby="contact-desc">
+            <h2 data-lang="en:Contact Us;sw:Wasiliana Nasi;dh:Wach Kwe">Contact Us</h2>
+            <p id="contact-desc" data-lang="en:Reach out for inquiries or feedback about our journal.;sw:Wasiliana nasi kwa maswali au maoni.;dh:Wach kwe ni maswali kata maoni marach.">Reach out for inquiries or feedback about our journal.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> <a href="tel:+254720215511" data-lang="en:+254 720 215 511;sw:+254 720 215 511;dh:+254 720 215 511">+254 720 215 511</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:ambururuwaterfalls@gmail.com" data-lang="en:ambururuwaterfalls@gmail.com;sw:ambururuwaterfalls@gmail.com;dh:ambururuwaterfalls@gmail.com">ambururuwaterfalls@gmail.com</a></p>
+            </div>
+            <form action="https://formspree.io/f/xldbzjdz" method="POST" id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Your full name" data-lang="en:Your Name;sw:Jina Lako;dh:Nyingi">
+                <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Your email address" data-lang="en:Your Email;sw:Barua Pepe Yako;dh:Email Mari">
+                <textarea id="message" name="message" placeholder="Your Message" required aria-label="Your message" data-lang="en:Your Message;sw:Ujumbe Wako;dh:Wach Mari"></textarea>
+                <button type="submit" class="btn" data-lang="en:Send;sw:Tuma;dh:Or">Send</button>
+                <p class="form-success" style="display:none;" data-lang="en:Message sent successfully!;sw:Ujumbe umetumwa!;dh:Wach oorum!">Message sent successfully!</p>
+            </form>
+        </section>
+        <section class="social-media" role="region" aria-label="Social media" aria-describedby="social-desc">
+            <h2 data-lang="en:Connect With Us;sw:Ungana Nasi;dh:Bed Kwe">Connect With Us</h2>
+            <p id="social-desc" data-lang="en:Follow our journey on social media for the latest updates.;sw:Fuata safari yetu kwenye mitandao.;dh:Fuata safari wa e mitandao marach.">Follow our journey on social media for the latest updates.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/ambururu/" target="_blank" rel="noopener" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/Ambururu_W" target="_blank" rel="noopener" aria-label="Visit our Twitter profile"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/ambururu1/" target="_blank" rel="noopener" aria-label="Visit our Instagram profile"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="x-feed" id="x-feed">
+                <div class="x-post">
+                    <p data-lang="en:New journal post: 5 Tips for Visiting Ambururu! 🌊✨ #TravelKenya;sw:Chapisho jipya: Vidokezo 5 vya Ambururu! 🌊✨ #SafariKenya;dh:Wach manyien: Vidokezo 5 marach e Ambururu! 🌊✨ #SafariKenya">New journal post: 5 Tips for Visiting Ambururu! 🌊✨ #TravelKenya</p>
+                    <span class="x-posted">Posted May 20, 2025</span>
+                </div>
+                <div class="x-post">
+                    <p data-lang="en:Explore our new hiking trail in our latest journal! 🥾 #Ambururu;sw:Gundua njia yetu mpya ya kupanda! 🥾 #Ambururu;dh:Ng’iyo yore manyien e wachwa! 🥾 #Ambururu">Explore our new hiking trail in our latest journal! 🥾 #Ambururu</p>
+                    <span class="x-posted">Posted May 15, 2025</span>
+                </div>
+            </div>
+        </section>
+        <section class="map" role="region" aria-label="Map section" aria-describedby="map-desc">
+            <h2 data-lang="en:Our Location;sw:Mahali Petu;dh:E kwe">Our Location</h2>
+            <p id="map-desc" data-lang="en:Nestled in Musanda, Siaya, Kenya, accessible via Kisumu-Siaya road.;sw:Tumekaa Musanda, Siaya, Kenya.;dh:E Musanda, Siaya, Kenya, yalo gi barabara mar Kisumu-Siaya.">Nestled in Musanda, Siaya, Kenya, accessible via Kisumu-Siaya road.</p>
+            <div id="map"></div>
+        </section>
     </main>
     <footer role="contentinfo" aria-label="Footer">
         <div class="footer-container">
-            <img src="logo/B2.jpg" alt="Ambururu Waterfalls & Resort Footer Logo" class="footer-logo" width="100" height="100" loading="lazy">
-            <p>© 2025 Ambururu Waterfalls & Resort. All rights reserved.</p>
-            <div class="social-links" role="navigation" aria-label="Social media links">
-                <a href="https://www.facebook.com/ambururu" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/Ambururu_W" target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/ambururu1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <div class="footer-brand">
+                <img src="/logo/RL3.png" alt="Ambururu Waterfall Resort Logo" class="footer-logo" width="100" height="100" loading="lazy">
+                <p data-lang="en:Ambururu Waterfalls Resort, Siaya, Kenya;sw:Hoteli ya Maporomoko ya Ambururu, Siaya, Kenya;dh:Ambururu Ber Marach, Siaya, Kenya">Ambururu Waterfalls Resort, Siaya, Kenya</p>
+                <p id="current-year"></p>
             </div>
-            <div class="newsletter" role="form" aria-label="Newsletter subscription">
-                <h4>Stay Connected</h4>
-                <form class="newsletter-form" id="newsletter-form" action="/api/newsletter" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email" required aria-label="Email for newsletter">
-                    <button type="submit">Subscribe</button>
+            <div class="footer-links">
+                <a href="privacy.html" data-lang="en:Privacy Policy;sw:Sera ya Faragha;dh:Sera mar Faragha">Privacy Policy</a>
+                <a href="terms.html" data-lang="en:Terms of Service;sw:Masharti ya Huduma;dh:Masharti mar Huduma">Terms of Service</a>
+                <a href="sitemap.xml" data-lang="en:Sitemap;sw:Ramani ya Tovuti;dh:Ramani mar Site">Sitemap</a>
+                <a href="contact.html" data-lang="en:Contact Us;sw:Wasiliana Nasi;dh:Wach Kwe">Contact Us</a>
+            </div>
+            <div class="newsletter">
+                <h4 data-lang="en:Stay Updated;sw:Baki na Sasisho;dh:Bed gi Sasisho">Stay Updated</h4>
+                <form id="newsletter-form-footer" class="newsletter-form" action="https://formspree.io/f/xbloeqdy" method="POST">
+                    <input type="email" name="email" id="email-footer" placeholder="Enter your email" required aria-label="Email address for newsletter" data-lang="en:Enter your email;sw:Ingiza barua pepe yako;dh:Ket email mari">
+                    <button type="submit" class="btn" data-lang="en:Subscribe;sw:Jiandikishe;dh:Jiandikishe">Subscribe</button>
                 </form>
-            </div>
-            <nav class="footer-links" role="navigation" aria-label="Footer navigation">
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact</a>
-                <a href="sustainability.html">Sustainability</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms & Conditions</a>
-            </nav>
-            <div class="footer-certifications" role="contentinfo" aria-label="Certifications and awards">
-                <img src="logo/B8.jpeg" alt="Eco Warrior Award" loading="lazy" width="80" height="40">
-                <img src="logo/B7.jpeg" alt="Green Globe Certified" loading="lazy" width="80" height="40">
+                <p class="form-success" style="display:none;" data-lang="en:Subscribed successfully!;sw:Umefanikiwa kujisajili!;dh:Jiandikishe maber!">Subscribed successfully!</p>
             </div>
         </div>
     </footer>
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js"></script>
-    <script src="https://unpkg.com/swiper@10/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js" defer></script>
     <script>
         // Menu Toggle
-        $(document).ready(function() {
-            $('.menu-toggle').on('click', function() {
-                $('#main-nav ul').toggleClass('active');
-                const isExpanded = $(this).attr('aria-expanded') === 'true';
-                $(this).attr('aria-expanded', !isExpanded);
-                $(this).find('i').toggleClass('fa-bars fa-times');
-            });
-            $('.dropdown').on('click', function(e) {
-                if ($(window).width() < 768) {
-                    e.preventDefault();
-                    $(this).find('.dropdown-menu').toggleClass('active');
-                }
-            });
-            // Newsletter Form
-            $('#newsletter-form').on('submit', async function(e) {
-                e.preventDefault();
-                const email = $(this).find('input[name="email"]').val();
-                if (!email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
-                    alert('Please enter a valid email.');
-                    return;
-                }
-                try {
-                    const response = await fetch('/api/newsletter', {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ email })
-                    });
-                    if (response.ok) {
-                        $(this).find('input').val('');
-                        $(this).append('<p class="success">Subscribed!</p>');
-                        setTimeout(() => $('.success').fadeOut(), 5000);
-                    } else {
-                        alert('Subscription failed.');
-                    }
-                } catch (error) {
-                    alert('An error occurred.');
-                }
-            });
-            // Contact Popup
-            $('.contact-popup').on('click', function() {
-                $('.contact-form').toggleClass('active');
-            });
-            // Contact Form Submission
-            $('.contact-form').on('submit', async function(e) {
-                e.preventDefault();
-                const formData = new FormData(this);
-                try {
-                    const response = await fetch('/api/contact', {
-                        method: 'POST',
-                        body: JSON.stringify(Object.fromEntries(formData)),
-                        headers: { 'Content-Type': 'application/json' }
-                    });
-                    if (response.ok) {
-                        $(this).find('input, textarea').val('');
-                        alert('Message sent successfully!');
-                        $('.contact-form').removeClass('active');
-                    } else {
-                        alert('Message failed to send.');
-                    }
-                } catch (error) {
-                    alert('An error occurred.');
-                }
-            });
+        $('.menu-toggle').on('click', function() {
+            $('#main-nav ul').toggleClass('active');
+            const expanded = $(this).attr('aria-expanded') === 'true' ? 'false' : 'true';
+            $(this).attr('aria-expanded', expanded);
         });
-        // Audio Control
-        const audio = new Audio('images/waterfall-ambient.mp3');
-        audio.loop = true;
-        audio.volume = 0.3;
-        let isPlaying = false;
+
+        // Accessibility Controls
+        $('.contrast-toggle').on('click', function() {
+            $('body').toggleClass('high-contrast');
+        });
+        $('.font-size-toggle').on('click', function() {
+            const currentSize = parseFloat($('html').css('font-size'));
+            $('html').css('font-size', currentSize + 2 > 18 ? 14 : currentSize + 2);
+        });
+        $('.dark-mode-toggle').on('click', function() {
+            $('body').toggleClass('dark-mode');
+        });
         $('.audio-control').on('click', function() {
-            if (isPlaying) {
-                audio.pause();
-                $(this).html('<i class="fas fa-volume-mute"></i>').attr('aria-label', 'Play ambient waterfall sound');
+            const audio = document.querySelector('#ambient-audio');
+            const icon = $(this).find('i');
+            if (audio.paused) {
+                audio.play().catch(() => console.log('Audio playback failed'));
+                icon.removeClass('fa-volume-mute').addClass('fa-volume-up');
             } else {
-                audio.play().catch(e => console.error('Audio playback failed:', e));
-                $(this).html('<i class="fas fa-volume-up"></i>').attr('aria-label', 'Pause ambient waterfall sound');
+                audio.pause();
+                icon.removeClass('fa-volume-up').addClass('fa-volume-mute');
             }
-            isPlaying = !isPlaying;
         });
+
+        // Category Filter Toggle for Mobile
+        $('.filter-toggle').on('click', function() {
+            $('.category-filter').toggleClass('active');
+        });
+
+        // Category Filter
+        $('.filter-btn').on('click', function() {
+            $('.filter-btn').removeClass('active').attr('aria-pressed', 'false');
+            $(this).addClass('active').attr('aria-pressed', 'true');
+            const category = $(this).data('category');
+            $('.blog-post').each(function() {
+                if (category === 'all' || $(this).data('category') === category) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+
+        // Search Functionality
+        $('#blog-search').on('input', function() {
+            const query = $(this).val().toLowerCase();
+            $('.blog-post').each(function() {
+                const title = $(this).find('h3').text().toLowerCase();
+                const content = $(this).find('p').eq(1).text().toLowerCase();
+                $(this).css('display', title.includes(query) || content.includes(query) ? 'flex' : 'none');
+            });
+        });
+
+        // Form Validation
+        $('#contact-form, #newsletter-form, #newsletter-form-footer').find('input, textarea').on('input', function() {
+            $(this).toggleClass('valid', this.checkValidity()).toggleClass('invalid', !this.checkValidity());
+        });
+
+        // Contact Form Submission
+        $('#contact-form').on('submit', async function(e) {
+            e.preventDefault();
+            const button = $(this).find('button');
+            button.prop('disabled', true).append('<span class="loading">...</span>');
+            try {
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(this))
+                });
+                if (response.ok) {
+                    button.remove();
+                    $(this).find('.form-success').show();
+                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+                    this.reset();
+                    $(this).find('input, textarea').removeClass('valid invalid');
+                    setTimeout(() => $(this).find('.form-success').hide(), 3000);
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch {
+                alert('Error sending message. Please try again later.');
+                button.prop('disabled', false).find('.loading').remove();
+            }
+        });
+
+        // Newsletter Form Submission
+        $('#newsletter-form, #newsletter-form-footer').on('submit', async function(e) {
+            e.preventDefault();
+            const button = $(this).find('button');
+            button.prop('disabled', true).append('<span class="loading">...</span>');
+            try {
+                const response = await fetch(this.action, {
+                    method: this.method,
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(this))
+                });
+                if (response.ok) {
+                    button.remove();
+                    $(this).prepend('<p class="form-success">Subscribed successfully!</p>');
+                    confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+                    this.reset();
+                    $(this).find('input').removeClass('valid invalid');
+                    setTimeout(() => $(this).find('.form-success').remove(), 3000);
+                } else {
+                    throw new Error('Submission failed');
+                }
+            } catch {
+                alert('Error subscribing. Please try again later.');
+                button.prop('disabled', false).find('.loading').remove();
+            }
+        });
+
+        // Social Sharing
+        $('.share-btn').on('click', function(e) {
+            e.preventDefault();
+            const platform = $(this).data('platform');
+            const url = window.location.href + $(this).closest('.blog-post').attr('id');
+            const title = $(this).closest('.blog-post').find('h3').text();
+            let shareUrl;
+            if (platform === 'facebook') {
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+            } else if (platform === 'twitter') {
+                shareUrl = `https://x.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(url)}`;
+            } else if (platform === 'whatsapp') {
+                shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(title + ' ' + url)}`;
+            } else if (platform === 'copy') {
+                navigator.clipboard.writeText(url).then(() => alert('Link copied to clipboard!'));
+                return;
+            }
+            window.open(shareUrl, '_blank');
+        });
+
+        // Save Post
+        $('.save-btn').each(function() {
+            const postId = $(this).data('post-id');
+            const savedPosts = JSON.parse(localStorage.getItem('savedPosts') || '[]');
+            if (savedPosts.some(p => p.id === postId)) {
+                $(this).addClass('saved').text('Saved');
+            }
+            $(this).on('click', function() {
+                const postTitle = $(this).closest('.blog-post').find('h3').text();
+                let savedPosts = JSON.parse(localStorage.getItem('savedPosts') || '[]');
+                if ($(this).hasClass('saved')) {
+                    savedPosts = savedPosts.filter(p => p.id !== postId);
+                    $(this).removeClass('saved').text('Save');
+                    alert('Post removed from saved.');
+                } else {
+                    savedPosts.push({ id: postId, title: postTitle });
+                    $(this).addClass('saved').text('Saved');
+                    alert('Post saved!');
+                }
+                localStorage.setItem('savedPosts', JSON.stringify(savedPosts));
+            });
+        });
+
+        // Particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 30, density: { enable: true, value_area: 1000 } },
+                color: { value: '#d4a017' },
+                shape: { type: 'circle' },
+                opacity: { value: 0.4, random: true },
+                size: { value: 2, random: true },
+                line_linked: { enable: true, distance: 120, color: '#8b1e3f', opacity: 0.3, width: 1 },
+                move: { enable: true, speed: 0.5, direction: 'none', random: false, straight: false, out_mode: 'out' }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: { onhover: { enable: true, mode: 'repulse' }, onclick: { enable: true, mode: 'push' }, resize: true },
+                modes: { repulse: { distance: 80, duration: 0.4 }, push: { particles_nb: 3 } }
+            },
+            retina_detect: true
+        });
+
         // GSAP Animations
         gsap.registerPlugin(ScrollTrigger);
-        gsap.from('.journal h2', { opacity: 0, y: 50, duration: 1.5, ease: 'power2.out' });
-        gsap.from('.journal-subtitle', { opacity: 0, x: -50, duration: 1.5, delay: 0.5 });
-        gsap.from('.journal-post', { opacity: 0, y: 50, stagger: 0.2, duration: 1, scrollTrigger: { trigger: '.journal', start: 'top 80%' } });
-        // Header Scroll
-        let lastScroll = 0;
-        $(window).on('scroll', function() {
-            const scroll = $(this).scrollTop();
-            $('.sticky-header').toggleClass('hidden', scroll > lastScroll && scroll > 80);
-            $('.sticky-header').toggleClass('scrolled', scroll > 80);
-            $('.scroll-to-top').toggleClass('visible', scroll > 400);
+        gsap.from('.hero-video-container', { opacity: 0, scale: 0.9, duration: 1, ease: 'power3.out' });
+        gsap.from('.hero-overlay', { opacity: 0, y: 50, duration: 1, delay: 0.3, ease: 'power3.out' });
+        gsap.from('.blog-post', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            stagger: 0.2,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: '.blog-feed', start: 'top 80%' }
         });
-        // Scroll to Top (Optional, remove if not in update)
-        $('.scroll-to-top').on('click', function() {
+        gsap.from('.blog-sidebar', {
+            opacity: 0,
+            x: -50,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: '.blog-feed', start: 'top 80%' }
+        });
+        gsap.from('#contact-form', {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: '.contact-section', start: 'top 80%' }
+        });
+        gsap.from('#map', {
+            opacity: 0,
+            scale: 0.9,
+            duration: 1,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: '.map', start: 'top 80%' }
+        });
+
+        // Back to Top
+        $(window).on('scroll', function() {
+            $('.back-to-top').css('display', window.scrollY > 300 ? 'flex' : 'none');
+        });
+        $('.back-to-top').on('click', function(e) {
+            e.preventDefault();
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+
+        // Smooth Scrolling
+        $('a[href^="#"]').on('click', function(e) {
+            e.preventDefault();
+            const target = $(this.getAttribute('href'));
+            if (target.length) {
+                target[0].scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // Ambient Audio
+        const audio = new Audio('/syn/vlog-music-beat-trailer-showreel-promo-background-intro-theme-274290.mp3');
+        audio.loop = true;
+        audio.volume = 0.3;
+        audio.id = 'ambient-audio';
+        document.body.appendChild(audio);
+
+        // Mapbox
+        const mapboxToken = 'YOUR_VALID_MAPBOX_TOKEN';
+        if (mapboxToken !== 'YOUR_VALID_MAPBOX_TOKEN') {
+            mapboxgl.accessToken = mapboxToken;
+            const map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/satellite-v9',
+                center: [34.751865, 0.282730],
+                zoom: 12,
+                pitch: 60,
+                bearing: -60,
+                projection: 'globe'
+            });
+            map.on('load', () => {
+                map.addLayer({
+                    id: 'sky',
+                    type: 'sky',
+                    paint: {
+                        'sky-type': 'atmosphere',
+                        'sky-atmosphere-sun': [0, 0],
+                        'sky-atmosphere-sun-intensity': 5
+                    }
+                });
+                new mapboxgl.Marker({ color: '#d4a017' })
+                    .setLngLat([34.751865, 0.282730])
+                    .setPopup(new mapboxgl.Popup().setHTML(`
+                        <h3 data-lang="en:Ambururu Waterfalls;sw:Maporomoko ya Ambururu;dh:Ambururu Ber Marach">Ambururu Waterfalls</h3>
+                        <p data-lang="en:Musanda, Siaya, Kenya;sw:Musanda, Siaya, Kenya;dh:Musanda, Siaya, Kenya">Musanda, Siaya, Kenya</p>
+                                                <a href="https://www.google.com/maps/dir/?api=1&destination=0.282730,34.751865" target="_blank" rel="noopener" style="color: var(--accent);" data-lang="en:Get Directions;sw:Pata Maelekezo;dh:Nang Maelekezo">Get Directions</a>
+                    `))
+                    .addTo(map);
+            });
+        } else {
+            $('#map').html('<p style="color: var(--light); text-align: center;" data-lang="en:Map unavailable. Please check your Mapbox configuration.;sw:Ramani haipatikani. Tafadhali angalia usanidi wa Mapbox.;dh:Ramani ok nyal. Tafadhali angal Mapbox.">Map unavailable. Please check your Mapbox configuration.</p>');
+        }
+
+        // Infinite Scroll
+        let page = 1;
+        const loadMoreBtn = $('#load-more-btn');
+        $(window).on('scroll', function() {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200 && !loadMoreBtn.prop('disabled')) {
+                loadMoreBtn.prop('disabled', true);
+                loadMorePosts();
+            }
+        });
+        async function loadMorePosts() {
+            const skeleton = $('<article class="skeleton"></article>').html(`
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <h3></h3>
+                    <p class="blog-meta"></p>
+                    <p></p>
+                </div>
+            `);
+            $('.blog-posts').append(skeleton);
+            try {
+                // Simulate API call (replace with actual API endpoint)
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                const newPost = $(`
+                    <article class="blog-post card" data-category="travel-tips" id="post-${page + 3}" role="article" aria-labelledby="post-${page + 3}-title">
+                        <img src="https://cdn.ambururuwaterfalls.com/assets/images/30.webp" alt="Sample post scenery" class="blog-image" loading="lazy" onerror="this.src='https://via.placeholder.com/180x135?text=Sample+Post';">
+                        <div class="blog-content">
+                            <h3 id="post-${page + 3}-title" data-lang="en:Sample Post ${page + 3};sw:Chapisho la Mfano ${page + 3};dh:Wach Mfano ${page + 3}">Sample Post ${page + 3}</h3>
+                            <p class="blog-meta">Posted on May 1, 2025 | By Ambururu Team | 3 min read</p>
+                            <p data-lang="en:This is a sample post loaded dynamically.;sw:Hili ni chapisho la mfano lililopakiwa.;dh:Wach ni mfano opakiwa maber.">This is a sample post loaded dynamically.</p>
+                            <div class="blog-actions">
+                                <div>
+                                    <a href="#post-${page + 3}" class="btn" data-lang="en:Read More;sw:Soma Zaidi;dh:Som Moko">Read More</a>
+                                    <button class="save-btn" data-post-id="${page + 3}" aria-label="Save this post">Save</button>
+                                </div>
+                                <div class="social-share">
+                                    <a href="#" class="share-btn" data-platform="facebook" aria-label="Share on Facebook"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="share-btn" data-platform="twitter" aria-label="Share on Twitter"><i class="fab fa-x-twitter"></i></a>
+                                    <a href="#" class="share-btn" data-platform="whatsapp" aria-label="Share on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="share-btn" data-platform="copy" aria-label="Copy link"><i class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-comments" id="disqus_thread_${page + 3}"></div>
+                    </article>
+                `);
+                $('.blog-posts').append(newPost);
+                skeleton.remove();
+                page++;
+                loadMoreBtn.prop('disabled', false);
+            } catch {
+                skeleton.remove();
+                loadMoreBtn.prop('disabled', false);
+            }
+        }
+
+        // Debug Assets
+        $('img, video').on('error', function() {
+            console.error(`Asset not loaded: ${this.src || this.currentSrc || this.poster || 'unknown'}`);
+        });
+
+        // Preloader
+        $(window).on('load', function() {
+            $('#preloader').fadeOut(500, function() {
+                $(this).remove();
+            });
+            // Initialize GSAP animations after load
+            gsap.from('.blog-post', {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                stagger: 0.2,
+                ease: 'power3.out',
+                scrollTrigger: { trigger: '.blog-feed', start: 'top 80%' }
+            });
+        });
+
+        // Dynamic Footer Year
+        $('#current-year').text(`© ${new Date().getFullYear()} Ambururu Waterfalls Resort. All rights reserved.`);
+
+        // Disqus Integration
+        var disqus_config = function() {
+            this.page.url = 'https://www.ambururuwaterfalls.com/journal.html';
+            this.page.identifier = '';
+        };
+        function loadDisqus() {
+            const d = document, s = d.createElement('script');
+            s.src = 'https://ambururu-waterfalls.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+        $(window).on('load', loadDisqus);
+
+        // Tawk.to Integration
+        const tawkScript = document.createElement('script');
+        tawkScript.async = true;
+        tawkScript.src = 'https://embed.tawk.to/68360ce00f6bcf190fc26624/1is9i4jf2';
+        document.body.appendChild(tawkScript);
     </script>
 </body>
 </html>

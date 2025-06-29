@@ -1,7 +1,7 @@
 'use strict';
 
 // Register GSAP ScrollTrigger plugin
-gsap.registerPlugin(0, 'ScrollTrigger');
+gsap.registerPlugin(ScrollTrigger);
 
 // Utility Functions
 function debounce(func, wait) {
@@ -9,7 +9,7 @@ function debounce(func, wait) {
     return function (...args) {
         clearTimeout(timeout);
         timeout = setTimeout(() => func.apply(this, args), wait);
-    };
+    });
 }
 
 // Booking Form Validation
@@ -70,7 +70,7 @@ const bookingValidator = {
             $('#step-error').text('An unexpected error occurred. Please try again.').show();
             return false;
         }
-    }
+    },
 
     validateStep2() {
         const $room = $('#room');
@@ -81,7 +81,7 @@ const bookingValidator = {
         }
         $availabilityStatus.hide();
         return true;
-    }
+    },
 
     validateStep3() {
         const $name = $('#name').val();
@@ -94,7 +94,7 @@ const bookingValidator = {
         }
         $('#form-error').hide();
         return true;
-    }
+    },
 
     checkAvailability() {
         try {
@@ -107,12 +107,10 @@ const bookingValidator = {
                     { start: new Date('2025-06-10'), end: new Date('2025-06-12') }
                 ];
                 const available = !bookedDates.some(range => 
-                    return (
-                        (checkin >= range.start && checkin <= range.end) ||
-                        (checkout >= range.start && checkout <= range.end) ||
-                        (checkin <= range.start && checkout >= range.end)
-                    );
-                });
+                    (checkin >= range.start && checkin <= range.end) ||
+                    (checkout >= range.start && checkout <= range.end) ||
+                    (checkin <= range.start && checkout >= range.end)
+                );
                 $availabilityStatus.text(available ? 'Available!' : 'No rooms available, please try different dates.').css('color', available ? 'var(--aqua-blue)' : '#e63946').show();
                 return available;
             } else {
@@ -577,12 +575,12 @@ const AmbururuApp = {
                 items.forEach((item, index) => {
                     ctx.beginPath();
                     ctx.fillStyle = item.color;
-                    ctx.moveTo(100, 100');
+                    ctx.moveTo(100, 100);
                     ctx.arc(100, 100, 100, index * arcSize, (index + 1) * arcSize);
                     ctx.fill();
                     ctx.save();
                     ctx.translate(100, 100);
-                    ctx.rotate(index * arcSize + arcSize / 2));
+                    ctx.rotate(index * arcSize + arcSize / 2);
                     ctx.fillStyle = '#fff';
                     ctx.font = '16px Roboto';
                     ctx.fillText(item.label, 50, 10);
@@ -592,8 +590,8 @@ const AmbururuApp = {
             drawWheel();
 
             $('#spin-wheel').on('click', function() {
-                const spins = 5 + Math.random() * 5);
-                totalAngle = spins * 360 + Math.random() * 360;
+                const spins = 5 + Math.random() * 5;
+                const finalAngle = spins * 360 + Math.random() * 360;
                 gsap.to(wheelCanvas, {
                     rotation: finalAngle,
                     duration: 3.5,
@@ -606,7 +604,7 @@ const AmbururuApp = {
                         AmbururuApp.calculateTotal();
                         new Audio('https://freesound.org/data/freeview/120/120375_1670642-lq.mp3').play().catch(() => {});
                     }
-                );
+                });
             });
         } catch (e) {
             console.error('Discount wheel error:', e);
@@ -811,12 +809,12 @@ const AmbururuApp = {
                     trigger: selector,
                     start: 'top 80%',
                     toggleActions: 'play none none none',
-                    ...options.scrollTrigger
+                    ...(options.scrollTrigger || {})
                 },
                 opacity: 0,
                 ...options
             });
-        });
+        };
 
         // Header
         if ($('.header-container').length) {
@@ -939,7 +937,7 @@ const AmbururuApp = {
         }
 
         // Footer
-        footer {
+        if ($('.footer').length) {
             animateFrom('.footer .social-links a', { y: 20, duration: 0.8, stagger: 0.2, ease: 'power2.out' });
             animateFrom('.newsletter .form', { y: 20, duration: 0.8, delay: 0.4, ease: 'power2.out' });
         }
@@ -1010,8 +1008,8 @@ const AmbururuApp = {
         // Features Heading
         if ($('#features-heading').length) {
             const headingText = $('#features-heading').text();
-            $('#features-heading').html(headingText.split('').map(char => `<span>${char}</span>`).join(''));
-            gsap.from('.letter span', {
+            $('#features-heading').html(headingText.split('').map(char => `<span class="letter">${char}</span>`).join(''));
+            gsap.from('.letter', {
                 opacity: 0,
                 y: 20,
                 duration: 0.5,
@@ -1098,7 +1096,7 @@ const AmbururuApp = {
                     <div class="modal-content">
                         <span class="modal-close" aria-label="Close modal">×</span>
                         <h4>${details[room].title}</h4>
-                        <img src="${details[room].image}" alt="${details[room].title}">
+                        <img src="${details[room].image}" alt="${details[room].title}" />
                         <p>${details[room].description}</p>
                         <a href="contact.html#booking-form" class="cta-button">Book Now</a>
                     </div>
@@ -1151,4 +1149,62 @@ $(document).ready(() => {
     AmbururuApp.init();
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const customizeModal = document.getElementById('customize-modal');
+    const acceptCookiesBtn = document.getElementById('accept-cookies');
+    const declineCookiesBtn = document.getElementById('decline-cookies');
+    const customizeCookiesBtn = document.getElementById('customize-cookies');
+    const saveCustomizeBtn = document.getElementById('save-customize');
+    const cancelCustomizeBtn = document.getElementById('cancel-customize');
 
+    // Check if cookie preferences are already set
+    const cookiePreferences = localStorage.getItem('cookie-preferences');
+    if (!cookiePreferences) {
+        setTimeout(() => {
+            cookieBanner.style.display = 'block';
+        }, 1000);
+    }
+
+    // Accept all cookies
+    acceptCookiesBtn.addEventListener('click', () => {
+        localStorage.setItem('cookie-preferences', JSON.stringify({
+            essential: true,
+            analytics: true,
+            marketing: true
+        }));
+        cookieBanner.style.display = 'none';
+    });
+
+    // Decline non-essential cookies
+    declineCookiesBtn.addEventListener('click', () => {
+        localStorage.setItem('cookie-preferences', JSON.stringify({
+            essential: true,
+            analytics: false,
+            marketing: false
+        }));
+        cookieBanner.style.display = 'none';
+    });
+
+    // Show customize modal
+    customizeCookiesBtn.addEventListener('click', () => {
+        customizeModal.style.display = 'block';
+    });
+
+    // Save customized settings
+    saveCustomizeBtn.addEventListener('click', () => {
+        const preferences = {
+            essential: true,
+            analytics: document.getElementById('analytics-cookies').checked,
+            marketing: document.getElementById('marketing-cookies').checked
+        };
+        localStorage.setItem('cookie-preferences', JSON.stringify(preferences));
+        customizeModal.style.display = 'none';
+        cookieBanner.style.display = 'none';
+    });
+
+    // Cancel customization
+    cancelCustomizeBtn.addEventListener('click', () => {
+        customizeModal.style.display = 'none';
+    });
+});

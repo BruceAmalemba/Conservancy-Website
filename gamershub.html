@@ -1,0 +1,2805 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default" data-contrast="normal">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eco-Legends Hub - Ambururu Waterfalls & Resort | Ambururu, Siaya, Kenya</title>
+    <meta name="description" content="Experience the Eco-Legends Hub, a 3D immersive tribute to Ambururu’s conservation heroes, Kenyan icons like Wangari Maathai, and global eco-warriors with WebGL, AR, and real-time impact tracking.">
+    <meta name="keywords" content="Ambururu Waterfalls, Ambururu, Siaya, Kenya, conservation, tree planting, Wangari Maathai, Kenyan conservationists, eco-challenges, sustainability, Luo culture, eco-luxury, WebGL, AR, WebXR">
+    <meta name="author" content="Ambururu Waterfalls & Resort">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Eco-Legends Hub - Ambururu Waterfalls & Resort">
+    <meta property="og:description" content="A revolutionary platform celebrating conservation heroes through immersive 3D storytelling, AR quests, and Luo cultural heritage.">
+    <meta property="og:image" content="/assets/images/eco-legend-hero.webp">
+    <meta property="og:url" content="https://www.ambururuwaterfalls.com/heroes.html">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@AmbururuResort">
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Eco-Legends Hub - Ambururu Waterfalls & Resort",
+        "description": "A 3D tribute to Ambururu’s eco-legends and Kenyan conservation pioneers with interactive visuals, AR challenges, and real-time impact metrics.",
+        "url": "https://www.ambururuwaterfalls.com/heroes.html",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Ambururu Waterfalls & Resort",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "/assets/logo/logo.png"
+            }
+        },
+        "mainEntity": {
+            "@type": "CollectionPage",
+            "name": "Eco-Legends",
+            "description": "Interactive profiles, tree planting ledgers, and tributes to Kenyan conservationists."
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.ambururuwaterfalls.com"},
+                {"@type": "ListItem", "position": 2, "name": "Eco-Legends Hub", "item": "https://www.ambururuwaterfalls.com/heroes.html"}
+            ]
+        }
+    }
+    </script>
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="/assets/images/eco-legend-hero.webp" as="image" fetchpriority="high">
+    <link rel="preload" href="/assets/videos/eco-legend.mp4" as="video" fetchpriority="high">
+    <link rel="preload" href="/assets/fonts/playfair-display-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;800&family=Inter:wght@300;400;600;800&family=Poppins:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" integrity="sha256-5eicH5N76ZAJoHUMV0xR6/2l2NqaT4UdS6u0zZuQ/PQ=" crossorigin="anonymous">
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/vue@3.4.38/dist/vue.global.prod.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https:// Presetncdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe@1.6.0/dist/aframe.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoY6BL5c3Gqp3G5fF5qL4z3+xkJqU2K0up5r8M4=" crossorigin="">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-storage.js" defer></script>
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD" defer></script>
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- Critical CSS -->
+    <style>
+        :root {
+            --primary: #1a3b2e;
+            --secondary: #f2e8d5;
+            --accent: #b8860b;
+            --vibrant-accent: #2e8b57;
+            --dark: #0e1c15;
+            --light: #e9f1ea;
+            --luo-accent: #a61c4b;
+            --luo-sunset: #f28c38;
+            --shadow: rgba(0, 0, 0, 0.35);
+            --gradient: linear-gradient(135deg, var(--primary) 0%, var(--vibrant-accent) 100%);
+            --gradient-dark: linear-gradient(180deg, rgba(26, 59, 46, 0.92), rgba(46, 139, 87, 0.75));
+            --glow: 0 0 18px var(--vibrant-accent);
+            --luxury-overlay: rgba(26, 59, 46, 0.85);
+            --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            --glass-bg: rgba(233, 241, 234, 0.18);
+            --glass-border: rgba(233, 241, 234, 0.28);
+            --notification-bg: #2e8b57;
+            --badge-gold: #d4a017;
+            --badge-silver: #c0c0c0;
+            --badge-bronze: #cd7f32;
+            --high-contrast-bg: #000;
+            --high-contrast-text: #fff;
+            --correct: #28a745;
+            --incorrect: #dc3545;
+            --nebula-blue: #2b3a67;
+            --star-glow: rgba(255, 255, 255, 0.8);
+        }
+        [data-theme="luo"] {
+            --primary: #a61c4b;
+            --vibrant-accent: #f4c430;
+            --accent: #f28c38;
+            --gradient: linear-gradient(135deg, #a61c4b 0%, #f4c430 100%);
+            --gradient-dark: linear-gradient(180deg, rgba(166, 28, 75, 0.92), rgba(244, 196, 48, 0.75));
+            --luxury-overlay: rgba(166, 28, 75, 0.85);
+            --glow: 0 0 18px #f4c430;
+            --notification-bg: #f4c430;
+        }
+        [data-theme="dark"] {
+            --primary: #0a1410;
+            --secondary: #d9e2d5;
+            --light: #1f2a25;
+            --gradient-dark: linear-gradient(180deg, rgba(10, 20, 16, 0.92), rgba(31, 42, 37, 0.75));
+        }
+        [data-theme="light"] {
+            --primary: #e9f1ea;
+            --secondary: #1a3b2e;
+            --dark: #d9e2d5;
+            --gradient-dark: linear-gradient(180deg, rgba(233, 241, 234, 0.92), rgba(200, 210, 200, 0.75));
+        }
+        [data-contrast="high"] {
+            --primary: var(--high-contrast-bg);
+            --secondary: var(--high-contrast-text);
+            --vibrant-accent: #00ff00;
+            --accent: #ffff00;
+            --dark: #000;
+            --light: #fff;
+            --glass-bg: rgba(255, 255, 255, 0.8);
+            --glass-border: #fff;
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 140px;
+            font-size: clamp(14px, 1.4vw, 16px);
+            overscroll-behavior: none;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--secondary);
+            background: var(--dark);
+            line-height: 1.8;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            position: relative;
+        }
+        a, button {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            letter-spacing: 1.3px;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, .parallax-bg, .hero-canvas {
+                animation: none !important;
+                transition: none !important;
+                scroll-behavior: auto !important;
+                transform: none !important;
+            }
+        }
+        :focus {
+            outline: 3px solid var(--vibrant-accent);
+            outline-offset: 4px;
+        }
+        /* Visually Hidden Class for Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        /* Header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 6000;
+            background: var(--luxury-overlay);
+            backdrop-filter: blur(18px);
+            padding: 1.2rem 0;
+            box-shadow: 0 8px 20px var(--shadow);
+            transition: transform 0.6s ease, padding 0.4s ease;
+        }
+        .sticky-header.scrolled { padding: 0.8rem 0; }
+        .sticky-header.hidden { transform: translateY(-100%); }
+        .header-container {
+            max-width: 1800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2.5rem;
+        }
+        .brand { display: flex; align-items: center; }
+        .logo {
+            width: 90px;
+            height: 90px;
+            transition: var(--transition);
+            filter: drop-shadow(0 3px 10px var(--shadow));
+        }
+        .logo:hover {
+            transform: scale(1.2);
+            filter: brightness(1.25) drop-shadow(0 5px 15px var(--glow));
+        }
+        .brand h1 {
+            font-size: clamp(1.6rem, 3.2vw, 2rem);
+            color: var(--accent);
+            margin-left: 1.5rem;
+            text-shadow: 0 4px 8px var(--shadow);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            gap: 2.5rem;
+        }
+        nav ul li a {
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 0.8rem 1.2rem;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 4px;
+            bottom: 0;
+            left: 50%;
+            background: var(--vibrant-accent);
+            transition: width 0.5s ease, left 0.5s ease;
+        }
+        nav ul li a:hover::after, nav ul li a.active::after {
+            width: 100%;
+            left: 0;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--vibrant-accent);
+            text-shadow: 0 3px 6px var(--shadow);
+        }
+        .dropdown:hover .dropdown-menu {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .dropdown-menu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--luxury-overlay);
+            border-radius: 12px;
+            padding: 1.2rem;
+            box-shadow: 0 10px 25px var(--shadow);
+            min-width: 240px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            backdrop-filter: blur(12px);
+        }
+        .dropdown-menu li a {
+            font-size: 1rem;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+        }
+        .dropdown-menu li a:hover {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            transform: translateX(8px);
+        }
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--vibrant-accent);
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .menu-toggle:hover { transform: rotate(90deg); }
+        .controls {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        .language-toggle, .theme-toggle, .audio-toggle, .voice-toggle, .contrast-toggle, .admin-toggle, .knowledgehub-toggle {
+            position: relative;
+        }
+        .language-toggle select, .theme-toggle select, .audio-toggle button, .voice-toggle button, .contrast-toggle button, .admin-toggle button, .knowledgehub-toggle button {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--secondary);
+            font-size: 1rem;
+            padding: 0.8rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            appearance: none;
+        }
+        .language-toggle select, .theme-toggle select {
+            padding-right: 2rem;
+        }
+        .language-toggle select:hover, .theme-toggle select:hover, .audio-toggle button:hover, .voice-toggle button:hover, .contrast-toggle button:hover, .admin-toggle button:hover, .knowledgehub-toggle button:hover {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+        }
+        .language-toggle::after, .theme-toggle::after {
+            content: '\f078';
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--vibrant-accent);
+            position: absolute;
+            right: 0.8rem;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        /* Cosmic Background */
+        .cosmic-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: radial-gradient(circle at center, var(--nebula-blue) 0%, var(--dark) 100%);
+        }
+        .star-field {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .nebula-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><defs><radialGradient id="nebulaGradient" cx="50%" cy="50%" r="50%"><stop offset="0%" style="stop-color:rgba(43,58,103,0.3);stop-opacity:0.3"/><stop offset="100%" style="stop-color:rgba(43,58,103,0);stop-opacity:0"/></radialGradient></defs><circle cx="50%" cy="50%" r="50%" fill="url(#nebulaGradient)"/></svg>') no-repeat center center;
+            opacity: 0.4;
+            mix-blend-mode: screen;
+        }
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+            background: var(--gradient-dark);
+            isolation: isolate;
+        }
+        .hero-canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            will-change: transform;
+        }
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 2;
+            filter: brightness(0.6) contrast(1.2);
+            transition: filter 0.6s ease, transform 0.1s linear;
+        }
+        .hero:hover .hero-video { filter: brightness(0.8) contrast(1.3); transform: scale(1.05); }
+        .hero-overlay {
+            position: relative;
+            z-index: 4;
+            max-width: 1600px;
+            padding: 0 3rem;
+        }
+        .hero-overlay h1 {
+            font-size: clamp(4rem, 12vw, 7.5rem);
+            color: var(--secondary);
+            letter-spacing: 5px;
+            margin-bottom: 1.8rem;
+            text-shadow: 0 8px 20px var(--shadow);
+            line-height: 1.1;
+            animation: epicGlow 4s ease-in-out infinite;
+        }
+        @keyframes epicGlow {
+            0%, 100% { text-shadow: 0 8px 20px var(--shadow); }
+            50% { text-shadow: 0 8px 30px var(--glow); }
+        }
+        .hero-overlay .subtitle {
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            color: var(--vibrant-accent);
+            font-family: 'Roboto Mono', monospace;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .hero-ctas .button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1.4rem 3.5rem;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            box-shadow: 0 8px 22px var(--glow);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+        }
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent);
+            transition: left 0.7s ease;
+        }
+        .button:hover::before { left: 100%; }
+        .hero-ctas .button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+            box-shadow: 0 10px 30px rgba(166, 28, 75, 0.7);
+        }
+        .button.secondary {
+            background: transparent;
+            border: 4px solid var(--vibrant-accent);
+            color: var(--vibrant-accent);
+        }
+        .button.secondary:hover {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+        }
+        #particles-js {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 3;
+            pointer-events: none;
+        }
+        /* Sections */
+        .section {
+            position: relative;
+            overflow: hidden;
+            padding: 10rem 3rem;
+            background: transparent;
+        }
+        .section h2 {
+            font-size: clamp(3.5rem, 8vw, 5rem);
+            color: var(--vibrant-accent);
+            text-align: center;
+            margin-bottom: 4rem;
+            text-shadow: 0 5px 15px var(--shadow);
+        }
+        .parallax-bg {
+            position: absolute;
+            top: -25%;
+            left: 0;
+            width: 100%;
+            height: 150%;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.12;
+            transition: filter 0.7s ease;
+            will-change: filter;
+        }
+        .parallax-bg:hover { filter: brightness(1.5); }
+        /* Legends Section */
+        .legends .parallax-bg { background-image: url('/assets/images/legends-bg.webp'); }
+        .legend-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        .legend-controls input, .legend-controls select {
+            padding: 0.8rem;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+        .legend-grid {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        .legend-card {
+            background: var(--glass-bg);
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+            text-align: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .legend-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px var(--glow);
+        }
+        .legend-card .avatar {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1.2rem;
+            filter: grayscale(30%);
+            transition: filter 0.5s ease;
+        }
+        .legend-card:hover .avatar { filter: grayscale(0); }
+        .legend-card h3 {
+            font-size: 1.8rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 0.6rem;
+        }
+        .legend-card p {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 1.2rem;
+        }
+        .legend-card .story-button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+        .legend-card .story-button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* 3D Visualization */
+        .legend-3d {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+        /* Timeline Section */
+        .timeline .parallax-bg { background-image: url('/assets/images/timeline-bg.webp'); }
+        .timeline-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            padding: 2rem;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .timeline-item {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px var(--shadow);
+            backdrop-filter: blur(10px);
+            position: relative;
+            transition: transform 0.5s ease;
+        }
+        .timeline-item:hover { transform: translateY(-5px); }
+        .timeline-item h3 {
+            font-size: 1.6rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 0.6rem;
+        }
+        .timeline-item p {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        .timeline-item .date {
+            font-size: 1rem;
+            color: var(--accent);
+            font-family: 'Roboto Mono', monospace;
+            position: absolute;
+            top: -1.5rem;
+            left: 1.5rem;
+            background: var(--dark);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        /* Tree Ledger Section */
+        .tree-ledger .parallax-bg { background-image: url('/assets/images/trees-bg.webp'); }
+        .ledger-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            padding: 2rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+        }
+        .ledger-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .ledger-controls input, .ledger-controls select {
+            padding: 0.8rem;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+        .ledger-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        .ledger-table th, .ledger-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .ledger-table th {
+            font-size: 1.2rem;
+            color: var(--vibrant-accent);
+            text-transform: uppercase;
+        }
+        .ledger-table td {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        .ledger-table img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        .ledger-table .contributor {
+            display: flex;
+            align-items: center;
+        }
+        /* Kenyan Titans Section */
+        .kenyan-titans .parallax-bg { background-image: url('/assets/images/titan-parallax-bg.webp'); }
+        .titans-grid {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .titan-card {
+            background: var(--glass-bg);
+            padding: 2rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+            text-align: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .titan-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px var(--glow);
+        }
+        .titan-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            transition: transform 0.5s ease;
+        }
+        .titan-card:hover img { transform: scale(1.05); }
+        .titan-card h3 {
+            font-size: 1.8rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 0.6rem;
+        }
+        .titan-card p {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 1.2rem;
+        }
+        .titan-card .titan-button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+        .titan-card .titan-button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* Impact Section */
+        .impact .parallax-bg { background-image: url('/assets/images/impact-bg.webp'); }
+        .impact-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #impact-chart {
+            max-height: 400px;
+            margin-bottom: 2rem;
+            border-radius: 18px;
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+        .impact-controls {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+        .impact-controls button {
+            background: var(--glass-bg);
+            border: 2px solid var(--vibrant-accent);
+            color: var(--secondary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .impact-controls button.active {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+        }
+        .impact-controls button:hover {
+            background: var(--luo-accent);
+            color: var(--dark);
+            transform: scale(1.08);
+        }
+        .impact-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .stat-card {
+            background: var(--glass-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px var(--shadow);
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+        .stat-card h3 {
+            font-size: 1.5rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 0.5rem;
+        }
+        .stat-card .stat-value {
+            font-size: 2rem;
+            color: var(--secondary);
+            font-weight: 700;
+        }
+        /* Challenges Section */
+        .challenges .parallax-bg { background-image: url('/assets/images/challenges-bg.webp'); }
+        .challenge-grid {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        .challenge-card {
+            background: var(--glass-bg);
+            padding: 2rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+            text-align: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .challenge-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px var(--glow);
+        }
+        .challenge-card .badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            width: 50px;
+            height: 50px;
+            background: url('/assets/icons/eco-badge.svg') no-repeat center/contain;
+            transition: transform 0.5s ease;
+        }
+        .challenge-card:hover .badge { transform: rotate(20deg) scale(1.2); }
+        .challenge-card h3 {
+            font-size: 1.8rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 0.6rem;
+        }
+        .challenge-card p {
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 1.2rem;
+        }
+        .challenge-card .challenge-button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: var(--transition);
+        }
+        .challenge-card .challenge-button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* Leaderboard Section */
+        .leaderboard .parallax-bg { background-image: url('/assets/images/leaderboard-bg.webp'); }
+        .leaderboard-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            padding: 2rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+        }
+        .leaderboard-form {
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        .leaderboard-form input, .leaderboard-form select {
+            padding: 0.8rem;
+            width: 100%;
+            max-width: 300px;
+            border: 1px solid var(--glass-border);
+            border-radius: 8px;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        .leaderboard-table th, .leaderboard-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .leaderboard-table th {
+            font-size: 1.2rem;
+            color: var(--vibrant-accent);
+            text-transform: uppercase;
+        }
+        .leaderboard-table td {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        .leaderboard-table .rank {
+            display: flex;
+            align-items: center;
+        }
+        .leaderboard-table .rank img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        .leaderboard-table .badges {
+            display: flex;
+            gap: 0.5rem;
+        }
+        .leaderboard-table .badges span {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--badge-gold);
+        }
+        .leaderboard-table .badges .silver { background: var(--badge-silver); }
+        .leaderboard-table .badges .bronze { background: var(--badge-bronze); }
+        /* Luo Myths Section */
+        .luo-myths .parallax-bg { background-image: url('/assets/images/myths-bg.webp'); }
+        .myths-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .myths-carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 2rem;
+            padding-bottom: 2rem;
+            scroll-behavior: smooth;
+        }
+        .myth-card {
+            flex: 0 0 100%;
+            scroll-snap-align: center;
+            background: var(--glass-bg);
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+            text-align: center;
+        }
+        .myth-card h3 {
+            font-size: 2.2rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 1.2rem;
+        }
+        .myth-card p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+        }
+        .myth-card audio {
+            width: 100%;
+            border-radius: 12px;
+        }
+        .myths-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .myths-nav button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .myths-nav button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* Virtual Planting Section */
+        .virtual-plant .parallax-bg { background-image: url('/assets/images/planting-bg.webp'); }
+        .planting-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #planting-canvas {
+            width: 100%;
+            height: 400px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            margin-bottom: 2rem;
+        }
+        .planting-button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1.2rem 3rem;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            transition: var(--transition);
+        }
+        .planting-button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* Donation Section */
+        .donation .parallax-bg { background-image: url('/assets/images/donation-bg.webp'); }
+        .donation-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+        }
+        .donation-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .donation-form input, .donation-form select {
+            padding: 1rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 10px;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            font-size: 1rem;
+        }
+        .donation-form button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .donation-form button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        #paypal-button-container {
+            margin-top: 1.5rem;
+        }
+        .donation-ticker {
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--vibrant-accent);
+        }
+        /* Global Connect Section */
+        .global-connect .parallax-bg { background-image: url('/assets/images/global-bg.webp'); }
+        #world-map {
+            max-width: 1600px;
+            margin: 0 auto;
+            height: 700px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            position: relative;
+        }
+        .map-tooltip {
+            position: absolute;
+            background: var(--luxury-overlay);
+            color: var(--secondary);
+            padding: 0.8rem 1.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .map-tooltip.active { opacity: 1; }
+        /* Gallery Section */
+        .gallery .parallax-bg { background-image: url('/assets/images/gallery-bg.webp'); }
+        .gallery-form {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            background: var(--glass-bg);
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+        }
+        .gallery-form input, .gallery-form textarea {
+            width: 100%;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+        .gallery-form textarea { resize: vertical; }
+        .gallery-form button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        .gallery-form button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        .photo-entry {
+            position: relative;
+            overflow: hidden;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            transition: transform 0.5s ease;
+        }
+        .photo-entry:hover { transform: scale(1.05); }
+        .photo-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .photo-entry:hover .photo-img { transform: scale(1.15); }
+        .photo-entry .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--luxury-overlay);
+            color: var(--secondary);
+            padding: 1.2rem;
+            font-size: 1.1rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+        .photo-entry:hover .overlay {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+        }
+        .photo-entry .vote-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .photo-entry .vote-button:hover { background: var(--luo-accent); }
+        .photo-entry .vote-count {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        /* Pledge Section */
+        .pledge .parallax-bg { background-image: url('/assets/images/pledge-bg.webp'); }
+        .pledge-form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+        }
+        .pledge-form input, .pledge-form select, .pledge-form textarea {
+            width: 100%;
+            padding: 1.2rem;
+            margin-bottom: 1.2rem;
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            background: var(--glass-bg);
+            color: var(--secondary);
+            font-size: 1.1rem;
+        }
+        .pledge-form textarea { resize: vertical; }
+        .pledge-form button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1.2rem 3rem;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        .pledge-form button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* AR Section */
+        .ar .parallax-bg { background-image: url('/assets/images/ar-bg.webp'); }
+        .ar-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #ar-preview {
+            width: 100%;
+            height: 600px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px var(--shadow);
+        }
+        .ar-button {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1.2rem 3rem;
+            border-radius: 60px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin-top: 3rem;
+            transition: var(--transition);
+        }
+        .ar-button:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* Eco-Quiz Section */
+        .eco-quiz .parallax-bg { background-image: url('/assets/images/quiz-bg.webp'); }
+        .quiz-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--glass-bg);
+            padding: 2.5rem;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px var(--shadow);
+            backdrop-filter: blur(15px);
+        }
+        .quiz-progress {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+        .quiz-progress span {
+            font-size: 1.2rem;
+            color: var,(--vibrant-accent);
+        }
+        .quiz-question {
+            font-size: 1.8rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 1.5rem;
+        }
+        .quiz-options {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .quiz-options button {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--secondary);
+            padding: 1rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        .quiz-options button.correct { background: var(--correct); color: #fff; }
+        .quiz-options button.incorrect { background: var(--incorrect); color: #fff; }
+        .quiz-options button:hover {
+            background: var(--vibrant-accent);
+            color: var(--dark);
+        }
+        .quiz-result {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+            color: var(--secondary);
+            display: none;
+        }
+        .quiz-result.active { display: block; }
+        .quiz-next {
+            margin-top: 2rem;
+            background: var(--vibrant-accent);
+            color: var(--dark);
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+        .quiz-next:hover {
+            background: var(--luo-accent);
+            transform: scale(1.08);
+        }
+        /* Footer Section */
+        footer {
+            background: var(--dark);
+            padding: 3rem;
+            position: relative;
+            z-index: 10;
+        }
+        .footer-container {
+            max-width: 1600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .footer-section h3 {
+            font-size: 1.8rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 1.5rem;
+        }
+        .footer-section p {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        .footer-section ul {
+            list-style: none;
+        }
+        .footer-section ul li {
+            margin-bottom: 0.8rem;
+        }
+        .footer-section ul li a {
+            font-size: 1rem;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+        .footer-section ul li a:hover {
+            color: var(--vibrant-accent);
+            transform: translateX(10px);
+        }
+        .social-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            font-size: 1.6rem;
+            color: var(--secondary);
+            transition: var(--transition);
+        }
+        .social-links a:hover {
+            color: var(--vibrant-accent);
+            transform: scale(1.2);
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--glass-border);
+        }
+        .footer-bottom p {
+            font-size: 1rem;
+            color: var(--secondary);
+        }
+        .top-contributors {
+            display: flex;
+            overflow-x: auto;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .contributor-card {
+            background: var(--glass-bg);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px var(--shadow);
+            min-width: 150px;
+        }
+        .contributor-card img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+            object-fit: cover;
+        }
+        .contributor-card h4 {
+            font-size: 1.2rem;
+            color: var(--vibrant-accent);
+        }
+        /* Modal Section */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            backdrop-filter: blur(5px);
+            z-index: 8000;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal.active { display: flex; }
+        .modal-content {
+            background: var(--glass-bg);
+            padding: 3rem;
+            border-radius: 18px;
+            max-width: 90%;
+            width: 1000px;
+            position: relative;
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 25px var(--shadow);
+            overflow-y: auto;
+            max-height: 90vh;
+        }
+        .modal-content h3 {
+            font-size: 2.2rem;
+            color: var(--vibrant-accent);
+            margin-bottom: 1.5rem;
+        }
+        .modal-content p {
+            font-size: 1.2rem;
+            color: var(--secondary);
+            margin-bottom: 2rem;
+        }
+        .modal-close {
+            position: absolute;
+            top: 1.5rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--secondary);
+            font-size: 1.6rem;
+            transition: var(--transition);
+        }
+        .modal-close:hover {
+            color: var(--vibrant-accent);
+            transform: rotate(90deg);
+        }
+        .modal-video {
+            width: 100%;
+            border-radius: 12px;
+        }
+        /* Notification Section */
+        .notification {
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            background: var(--notification-bg);
+            color: var(--dark);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px var(--shadow);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            z-index: 10000;
+            opacity: 0;
+            transform: translateX(100%);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .notification.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .notification button {
+            background: none;
+            border: none;
+            color: var(--dark);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+        .notification button:hover { color: var(--luo-accent); }
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 5px;
+            background: var(--glass-bg);
+            position: relative;
+            margin-top: 1rem;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar .progress {
+            height: 100%;
+            width: 0;
+            background: var(--vibrant-accent);
+            transition: width 0.5s ease;
+        }
+        /* Ripple Effect */
+        .ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        .ripple::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: scale(0);
+            animation: ripple 0.6s linear;
+            pointer-events: none;
+        }
+        @keyframes ripple {
+            to { transform: scale(4); opacity: 0; }
+        }
+        /* Responsive Design */
+        @media (max-width: 1400px) {
+            .hero-overlay h1 { font-size: clamp(3.5rem, 10vw, 6rem); }
+            .legend-grid, .challenge-grid, .titans-grid, .photo-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            }
+            .header-container { padding: 0 1.5rem; }
+        }
+        @media (max-width: 1024px) {
+            .section { padding: 8rem 2rem; }
+            .ledger-controls, .leaderboard-form { flex-direction: column; gap: 1rem; }
+            .ledger-controls input, .ledger-controls select, .leaderboard-form input, .leaderboard-form select {
+                max-width: 100%;
+            }
+            #world-map { height: 500px; }
+            .hero-overlay h1 { font-size: clamp(3rem, 9vw, 5rem); }
+        }
+        @media (max-width: 767px) {
+            .menu-toggle { display: block; }
+            nav ul {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: var(--luxury-overlay);
+                padding: 2rem;
+                backdrop-filter: blur(12px);
+            }
+            nav ul.active { display: flex; }
+            .dropdown-menu {
+                position: static;
+                background: none;
+                box-shadow: none;
+                backdrop-filter: none;
+                padding: 0;
+            }
+            .hero-ctas { flex-direction: column; gap: 1rem; }
+            .controls { flex-direction: column; gap: 1rem; }
+            #world-map { height: 400px; }
+            .section { padding: 6rem 1rem; }
+            .notification { top: 1rem; right: 1rem; }
+        }
+        @media (max-width: 480px) {
+            .hero-overlay h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
+            .ledger-table th, .ledger-table td, .leaderboard-table th, .leaderboard-table td {
+                font-size: 0.9rem;
+                padding: 0.8rem;
+            }
+            .hero-ctas .button { padding: 1rem 2rem; font-size: 1rem; }
+            .section h2 { font-size: clamp(2.5rem, 6vw, 4rem); }
+        }
+        /* High Contrast Mode */
+        [data-contrast="high"] .hero-video,
+        [data-contrast="high"] .parallax-bg {
+            filter: contrast(1.5) brightness(0.8);
+        }
+        [data-contrast="high"] button, [data-contrast="high"] a {
+            border: 2px solid var(--high-contrast-text);
+        }
+    </style>
+</head>
+<body>
+    <!-- Cosmic Background -->
+    <div class="cosmic-background" aria-hidden="true">
+        <canvas id="star-field" class="star-field"></canvas>
+        <div class="nebula-overlay"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky-header" role="banner">
+        <div class="header-container">
+            <div class="brand">
+                <a href="#home"><img src="logo/RL3.png" onerror="this.src='logo/RL3.png.png'" alt="Ambururu Waterfalls Logo" class="logo" loading="lazy"></a>
+                <h1>Conservancy</h1>
+            </div>
+            <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
+            <nav role="navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" aria-label="Expand Conservation Menu" aria-expanded="false">Conservation</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#legends">Legends</a></li>
+                            <li><a href="#tree-ledger">Tree Ledger</a></li>
+                            <li><a href="#kenyan-titans">Kenyan Titans</a></li>
+                            <li><a href="#timeline">Timeline</a></li>
+                            <li><a href="#impact">Impact</a></li>
+                            <li><a href="#challenges">Challenges</a></li>
+                            <li><a href="#leaderboard">Leaderboard</a></li>
+                            <li><a href="#luo-myths">Luo Myths</a></li>
+                            <li><a href="#virtual-planting">Virtual Planting</a></li>
+                            <li><a href="#global-connect">Global Connect</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#donation">Donation</a></li>
+                            <li><a href="#pledge">Pledge</a></li>
+                            <li><a href="#ar">AR Experience</a></li>
+                            <li><a href="#eco-quiz">Eco-Challenges</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/dining.html">Resort</a></li>
+                    <li><a href="/knowledge.html">Guestbook</a></li>
+                </ul>
+            </nav>
+            <div class="controls">
+                <div class="language-toggle">
+                    <select id="language-select" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="sw">Swahili</option>
+                        <option value="luo">Luo</option>
+                    </select>
+                </div>
+                <div class="theme-toggle">
+                    <select id="theme-select" aria-label="Select Theme">
+                        <option value="default">Eco Theme</option>
+                        <option value="dark">Dark Theme</option>
+                        <option value="light">Light Theme</option>
+                        <option value="luo">Luo Theme</option>
+                    </select>
+                </div>
+                <div class="audio-toggle">
+                    <button id="audio-toggle" aria-label="Toggle Audio"><i class="fa fa-volume-up"></i></button>
+                </div>
+                <div class="voice-toggle">
+                    <button id="voice-toggle" aria-label="Toggle Voice Navigation"><i class="fa fa-microphone"></i></button>
+                </div>
+                <div class="contrast-toggle">
+                    <button id="contrast-toggle" aria-label="Toggle High Contrast"><i class="fas fa-adjust"></i></button>
+                </div>
+                <div class="admin-toggle">
+                    <button id="admin-toggle" aria-label="Toggle Admin Mode">Admin</button>
+                </div>
+                <div class="knowledgehub-toggle">
+                    <button id="knowledgehub-toggle" aria-label="Open Knowledge Hub" title="Knowledge Hub">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="5" width="26" height="20" rx="4" fill="#2e8b57" stroke="#b8860b" stroke-width="2"/>
+                            <path d="M7 9H25V23H7Z" fill="#fffde7"/>
+                            <path d="M11 13C13 11 19 11 21 13" stroke="#b8860b" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 16C17.5 14.5 21 14.5 22 16" stroke="#2e8b57" stroke-width="2" stroke-linecap="round"/>
+                            <ellipse cx="25" cy="9" rx="1.5" ry="0.8" fill="#b8860b"/>
+                            <path d="M26 8.7C26.5 8 28 8 28 9.2C28 10.4 26.5 10.4 26 9.6" stroke="#2e8b57" stroke-width="1"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="main" id="home">
+        <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+        <video class="hero-video" autoplay muted loop playsinline aria-hidden="true">
+            <source src="/videos/22.mp4" type="video/mp4">
+            <source src="/videos/22.mp4" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <div id="particles-js" aria-hidden="true"></div>
+        <div class="hero-overlay">
+            <h1 data-gs-title="Eco-Legends Hub">Eco-Legends Hub</h1>
+            <div class="subtitle">Carving Ambururu’s Eternal Green Legacy</div>
+            <div class="hero-ctas">
+                <button class="button ripple" onclick="startJourney()">→ Embark on the Quest</button>
+                <a href="#donation" class="button secondary ripple">→ Support Our Mission</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legends Section -->
+    <section class="section legends" id="legends">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Our Eco-Legends</h2>
+        <div class="legend-controls">
+            <input type="text" id="legend-search" placeholder="Search Legends" aria-label="Search Legends">
+            <select id="legend-sort" aria-label="Sort Legends">
+                <option value="name-asc">Name (A-Z)</option>
+                <option value="name-desc">Name (Z-A)</option>
+                <option value="impact-desc">Impact (High-Low)</option>
+            </select>
+        </div>
+        <div class="legend-grid" id="legend-grid">
+            <div class="legend-card" data-name="Esther Amollo" data-impact="Planted 500 trees" data-story="Esther’s dedication revitalized local forests." data-video="/assets/videos/esther.mp4">
+                <canvas class="legend-3d" data-id="esther" aria-hidden="true"></canvas>
+                <img class="avatar" src="/videos/nature-7171136.jpg" alt="Alex.O" loading="lazy">
+                <h3>Alex Omusula</h3>
+                <p>Planted 30 trees</p>
+                <button class="story-button ripple">Unveil Alex’s Story</button>
+            </div>
+            <div class="legend-card" data-name="Fidel O" data-impact="Protected 12 species" data-story="Fidel established bird sanctuaries in Siaya." data-video="/assets/videos/james.mp4">
+                <canvas class="legend-3d" data-id="james" aria-hidden="true"></canvas>
+                <img class="avatar" src="/videos/blue-tit-9506658.jpg" alt="Fidel O" loading="lazy">
+                <h3>Fidel O</h3>
+                <p>Protected 12 species</p>
+                <button class="story-button ripple">Unveil Fidel’s Story</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conservation Timeline Section -->
+    <section class="section timeline" id="timeline">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Conservation Milestones</h2>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="date">2005</span>
+                    <h3>Green Belt Movement Expansion</h3>
+                    <p>Wangari Maathai expands tree-planting efforts to Siaya, inspiring Ambururu’s eco-movement.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2015</span>
+                    <h3>Ambururu River Cleanup</h3>
+                    <p>Siaya Green Collective removes 2 tons of waste, restoring river ecosystems.</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="date">2023</span>
+                    <h3>Bird Sanctuary Established</h3>
+                    <p>Omusula establishes bird sanctuaries, protecting 12 species.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tree Ledger Section -->
+    <section class="section tree-ledger" id="tree-ledger">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Tree Planting Ledger</h2>
+        <div class="ledger-container">
+            <form class="form" id="ledger-form" style="display: none;" aria-label="Add Tree Ledger Contribution">
+                <input type="text" id="ledger-name" placeholder="Contributor Name" aria-label="Contributor Name" required>
+                <input type="number" id="ledger-trees" placeholder="Number of Trees Planted" min="1" aria-label="Number of Trees Planted" required>
+                <input type="text" id="ledger-species" placeholder="Tree Species" aria-label="Tree Species" required>
+                <input type="date" id="ledger-date" aria-label="Date of Planting" required>
+                <input type="file" id="ledger-file" accept="image/*" aria-label="Upload Photo of Planting">
+                <button type="submit" class="ripple">Add Contributor</button>
+                <div class="progress-bar"><div class="progress"></div></div>
+            </form>
+            <div class="ledger-controls">
+                <input type="text" id="ledger-search" placeholder="Search by name or date" aria-label="Search Ledger">
+                <select id="ledger-sort" aria-label="Sort Ledger">
+                    <option value="date-desc">Newest First</option>
+                    <option value="date-asc">Oldest First</option>
+                    <option value="trees-desc">Most Trees</option>
+                    <option value="trees-asc">Least Trees</option>
+                </select>
+            </div>
+            <table class="ledger-table" aria-label="Tree Planting Records">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Trees</th>
+                        <th>Species</th>
+                        <th>Date</th>
+                        <th>Photo</th>
+                    </tr> 
+                </thead>
+                <tbody id="ledger-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Kenyan Titans Section -->
+    <section class="section kenyan-titans" id="kenyan-titans">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Kenyan Conservation Titans</h2>
+        <div class="titans-grid">
+            <div class="titan-card">
+                <img src="/assets/titans/wangari.jpg" alt="Wangari Maathai" loading="lazy">
+                <h3>Wangari Maathai</h3>
+                <p>Founded the Green Belt Movement, planting millions of trees across Africa.</p>
+                <button class="titan-button ripple" data-story="Wangari’s legacy empowered women and restored ecosystems." data-video="/assets/videos/wangari.mp4">Discover Wangari’s Legacy</button>
+            </div>
+            <div class="titan-card">
+                <img src="/assets/titans/richard.jpg" alt="Richard Leakey" loading="lazy">
+                <h3>Richard Leakey</h3>
+                <p>Pioneered wildlife conservation, protecting Kenya’s biodiversity.</p>
+                <button class="titan-button ripple" data-story="Richard fought poing and saved endangered species." data-video="/assets/videos/leakey.mp4">Discover Richard’s Legacy</button>
+            </div>
+            <div class="titan-card">
+                <img src="/assets/titans/jane.jpg" alt="Jane Goodall" loading="lazy">
+                <h3>Jane Goodall</h3>
+                <p>Inspired global conservation through her Roots & Shoots program.</p>
+                <button class="titan-button ripple" data-story="Jane’s work fosters youth-led environmental action." data-video="/assets/videos/goodall.mp4">Discover Jane’s Legacy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="section impact" id="impact">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Eternal Impact</h2>
+        <div class="impact-container">
+            <canvas id="impact-chart" aria-label="Environmental Impact Metrics Chart"></canvas>
+            <table class="visually-hidden" aria-label="Impact Metrics Data">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody id="impact-table-body"></tbody>
+            </table>
+            <div class="impact-controls">
+                <button class="ripple active" data-metric="trees">Trees Planted</button>
+                <button class="ripple" data-metric="co2">CO2 Sequestered</button>
+                <button class="ripple" data-metric="water">Water Conserved</button>
+                <button class="ripple" data-metric="wildlife">Wildlife Protected</button>
+            </div>
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <h3>Trees Planted</h3>
+                    <div class="stat-value" data-target="1700">1500+</div>
+                </div>
+                <div class="stat-card">
+                    <h3>CO2 Sequestered (kg)</h3>
+                    <div class="stat-value" data-target="34000">30,000+</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Water Conserved (L)</h3>
+                    <div class="stat-value" data-target="500000">40,000+</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Wildlife Protected</h3>
+                    <div class="stat-value" data-target="12">10+</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="section challenges" id="challenges">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Eco-Challenges</h2>
+        <div class="challenge-grid">
+            <div class="challenge-card">
+                <div class="badge" aria-hidden="true"></div>
+                <h3>Plant 10 Trees</h3>
+                <p>Join our tree-planting challenge to restore Ambururu’s forests.</p>
+                <button class="challenge-button ripple" onclick="joinChallenge('plant-trees')">Join Challenge</button>
+            </div>
+            <div class="challenge-card">
+                <div class="badge" aria-hidden="true"></div>
+                <h3>River Cleanup</h3>
+                <p>Help clean 1 ton of waste from Ambururu’s rivers.</p>
+                <button class="challenge-button ripple" onclick="joinChallenge('river-cleanup')">Join Challenge</button>
+            </div>
+            <div class="challenge-card">
+                <div class="badge" aria-hidden="true"></div>
+                <h3>Wildlife Watch</h3>
+                <p>Monitor and protect endangered species in Siaya.</p>
+                <button class="challenge-button ripple" onclick="joinChallenge('wildlife-watch')">Join Challenge</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="section leaderboard" id="leaderboard">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Global Eco-Warriors</h2>
+        <div class="leaderboard-container">
+            <form class="leaderboard-form" aria-label="Leaderboard Controls">
+                <input type="text" id="leaderboard-search" placeholder="Search by name" aria-label="Search Leaderboard">
+                <select id="leaderboard-sort" aria-label="Sort Leaderboard">
+                    <option value="points-desc">Top Points</option>
+                    <option value="points-asc">Lowest Points</option>
+                    <option value="name-asc">A-Z</option>
+                    <option value="name-desc">Z-A</option>
+                </select>
+            </form>
+            <table class="leaderboard-table" aria-label="Eco-Warriors Leaderboard">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Points</th>
+                        <th>Badges</th>
+                    </tr>
+                </thead>
+                <tbody id="leaderboard-tbody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Luo Myths Section -->
+    <section class="section luo-myths" id="luo-myths">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Luo Myths & Legends</h2>
+        <div class="myths-container">
+            <div class="myths-carousel">
+                <div class="myth-card">
+                    <h3>The Spirit of Ambururu</h3>
+                    <p>A tale of the waterfall’s guardian who protects the forest.</p>
+                    <audio controls src="/syn/science-documentary-169621.mp3" aria-label="Audio narration of The Spirit of Ambururu">
+                        <track kind="captions" src="/assets/captions/spirit.vtt" srclang="en" label="English">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="myth-card">
+                    <h3>The Tree of Life</h3>
+                    <p>A sacred tree that connects the living and the ancestors.</p>
+                    <audio controls src="/syn/eona-emotional-ambient-pop-351436.mp3" aria-label="Audio narration of The Tree of Life">
+                        <track kind="captions" src="/assets/captions/tree.vtt" srclang="en" label="English">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="myths-nav">
+                <button class="prev ripple" aria-label="Previous Myth">← Prev</button>
+                <button class="next ripple" aria-label="Next Myth">Next →</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Planting Section -->
+    <section class="section virtual-plant" id="virtual-planting">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Virtual Tree Planting</h2>
+        <div class="planting-container">
+            <a-scene id="planting-canvas" embedded loading-screen="dotsColor: #2e8b57; backgroundColor: #1a3b2e" aria-label="Virtual Tree Planting Scene">
+                <a-camera position="0 1.6 0"></a-camera>
+                <a-entity gltf-model="url(/assets/models/tree.glb)" position="0 0 -5" scale="0.5 0.5 0.5"></a-entity>
+                <a-sky color="#1a3b2e"></a-sky>
+            </a-scene>
+            <button class="planting-button ripple" onclick="plantVirtualTree()">Plant a Virtual Tree</button>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="section donation" id="donation">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Support Our Mission</h2>
+        <div class="donation-container">
+            <form class="donation-form" aria-label="Donation Form">
+                <input type="text" id="donor-name" placeholder="Your Name" aria-label="Donor Name" required>
+                <input type="email" id="donor-email" placeholder="Your Email" aria-label="Donor Email" required>
+                <select id="donation-amount" aria-label="Select Donation Amount">
+                    <option value="10">$10 - Seedling</option>
+                    <option value="50">$50 - Sapling</option>
+                    <option value="100">$100 - Mature Tree</option>
+                    <option value="custom">Custom Amount</option>
+                </select>
+                <input type="number" id="custom-amount" placeholder="Custom Amount ($)" style="display: none;" aria-label="Custom Donation Amount" min="1">
+                <button type="submit" class="ripple">Donate Now</button>
+            </form>
+            <div id="paypal-button-container" aria-label="PayPal Donation Button"></div>
+            <div class="donation-ticker" aria-live="polite">Total Donations: $12,450</div>
+        </div>
+    </section>
+
+    <!-- Global Connect Section -->
+    <section class="section global-connect" id="global-connect">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Global Eco-Connect</h2>
+        <div id="world-map" aria-label="Interactive Map of Global Eco-Initiatives"></div>
+        <div class="map-tooltip" aria-live="polite"></div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Community Gallery</h2>
+        <form class="gallery-form" aria-label="Upload Photo to Gallery">
+            <input type="text" id="gallery-name" placeholder="Your Name" aria-label="Your Name" required>
+            <input type="file" id="gallery-file" accept="image/*" aria-label="Upload Photo" required>
+            <textarea id="gallery-caption" placeholder="Photo Caption" aria-label="Photo Caption" required></textarea>
+            <button type="submit" class="ripple">Upload Photo</button>
+        </form>
+        <div class="photo-gallery" id="photo-gallery" aria-label="Community Photo Gallery"></div>
+    </section>
+
+    <!-- Pledge Section -->
+    <section class="section pledge" id="pledge">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Eco-Pledge</h2>
+        <form class="pledge-form" aria-label="Make an Eco-Pledge">
+            <input type="text" id="pledge-name" placeholder="Your Name" aria-label="Your Name" required>
+            <input type="email" id="pledge-email" placeholder="Your Email" aria-label="Your Email" required>
+            <select id="pledge-type" aria-label="Select Pledge Type">
+                <option value="trees">Plant Trees</option>
+                <option value="cleanup">River Cleanup</option>
+                <option value="advocacy">Eco-Advocacy</option>
+            </select>
+            <textarea id="pledge-message" placeholder="Your Pledge" aria-label="Your Pledge" required></textarea>
+            <button type="submit" class="ripple">Take the Pledge</button>
+        </form>
+    </section>
+
+    <!-- AR Section -->
+    <section class="section ar" id="ar">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>AR Eco-Experience</h2>
+        <div class="ar-container">
+            <a-scene id="ar-preview" embedded loading-screen="dotsColor: #2e8b57; backgroundColor: #1a3b2e" aria-label="AR Eco-Experience Preview" vr-mode-ui="enabled: true">
+                <a-camera position="0 1.6 0"></a-camera>
+                <a-entity gltf-model="url(/assets/models/forest.glb)" position="0 0 -5" scale="0.5 0.5 0.5"></a-entity>
+                <a-sky color="#1a3b2e"></a-sky>
+            </a-scene>
+            <button class="ar-button ripple" onclick="startARExperience()">Launch AR Experience</button>
+        </div>
+    </section>
+
+    <!-- Eco-Quiz Section -->
+    <section class="section eco-quiz" id="eco-quiz">
+        <div class="parallax-bg" aria-hidden="true"></div>
+        <h2>Eco-Challenges Quiz</h2>
+        <div class="quiz-container">
+            <div class="quiz-progress">
+                <span id="quiz-current">1</span> / <span id="quiz-total">5</span>
+            </div>
+            <div class="quiz-question" id="quiz-question"></div>
+            <div class="quiz-options" id="quiz-options"></div>
+            <div class="quiz-result" id="quiz-result" aria-live="polite"></div>
+            <button class="quiz-next ripple" id="quiz-next">Next Question</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Ambururu Waterfalls</h3>
+                <p>Join us in preserving nature’s legacy at Siaya, Kenya.</p>
+                <div class="social-links">
+                    <a href="https://x.com/Ambururu_W" aria-label="Follow us on X"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://facebook.com/AmbururuWaterfalls" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://instagram.com/AmbururuResort" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#legends">Eco-Legends</a></li>
+                    <li><a href="#donation">Donate</a></li>
+                    <li><a href="dining.html">Resort</a></li>
+                    <li><a href="knowledge.html">Guestbook</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Top Contributors</h3>
+                <div class="top-contributors">
+                    <div class="contributor-card">
+                        <img src="/assets/contributors/1.jpg" alt="Esther Amollo" loading="lazy">
+                        <h4>Esther Amollo</h4>
+                    </div>
+                    <div class="contributor-card">
+                        <img src="/assets/contributors/2.jpg" alt="James Okoth" loading="lazy">
+                        <h4>James Okoth</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Ambururu Waterfalls Conservation All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Stories -->
+    <div class="modal" id="story-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close ripple" aria-label="Close Modal"><i class="fa fa-times"></i></button>
+            <h3 id="modal-title"></h3>
+            <p id="modal-story"></p>
+            <video id="modal-video" controls aria-label="Story video"></video>
+        </div>
+    </div>
+
+    <!-- Notification Element -->
+    <div class="notification" id="notification" role="alert" aria-live="assertive">
+        <span id="notification-message"></span>
+        <button class="ripple" aria-label="Close Notification"><i class="fa fa-times"></i></button>
+    </div>
+
+    <!-- JavaScript Section -->
+    <script type="module">
+        // Import Firebase modules
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js';
+        import { getFirestore, collection, addDoc, onSnapshot, query, orderBy } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-firestore.js';
+        import { getStorage, ref, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-storage.js';
+        import { getAuth, signInAnonymously } from 'https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js';
+
+        // Firebase configuration (replace with your actual config)
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const storage = getStorage(app);
+        const auth = getAuth(app);
+
+        // Sign in anonymously
+        signInAnonymously(auth).catch(error => console.error('Anonymous auth failed:', error));
+
+        // Utility Functions
+        function showNotification(message, type = "success") {
+            const notification = document.getElementById("notification");
+            const messageEl = document.getElementById("notification-message");
+            messageEl.textContent = message;
+            notification.classList.add("active", type);
+            setTimeout(() => notification.classList.remove("active", type), 5000);
+            notification.querySelector("button").addEventListener("click", () => notification.classList.remove("active", type));
+        }
+
+        function openModal(title, story, videoSrc) {
+            const modal = document.getElementById("story-modal");
+            const modalTitle = document.getElementById("modal-title");
+            const modalStory = document.getElementById("modal-story");
+            const modalVideo = document.getElementById("modal-video");
+            modalTitle.textContent = title;
+            modalStory.textContent = story;
+            modalVideo.src = videoSrc || '';
+            modal.classList.add("active");
+            modal.setAttribute("aria-hidden", "false");
+            modalVideo.focus();
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("story-modal");
+            modal.classList.remove("active");
+            modal.setAttribute("aria-hidden", "true");
+            document.getElementById("modal-video").src = "";
+        }
+
+        // Header Interactions
+        document.querySelector(".menu-toggle").addEventListener("click", () => {
+            const nav = document.querySelector("nav ul");
+            const isExpanded = nav.classList.toggle("active");
+            document.querySelector(".menu-toggle").setAttribute("aria-expanded", isExpanded);
+        });
+
+        document.querySelector(".modal-close").addEventListener("click", closeModal);
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && document.getElementById("story-modal").classList.contains("active")) closeModal();
+        });
+
+        // Theme and Contrast Toggle
+        document.getElementById("theme-select").addEventListener("change", (e) => {
+            document.documentElement.setAttribute("data-theme", e.target.value);
+        });
+
+        document.getElementById("contrast-toggle").addEventListener("click", () => {
+            const currentContrast = document.documentElement.getAttribute("data-contrast");
+            document.documentElement.setAttribute("data-contrast", currentContrast === "high" ? "normal" : "high");
+        });
+
+        // Audio Toggle
+        let isAudioOn = true;
+        document.getElementById("audio-toggle").addEventListener("click", () => {
+            isAudioOn = !isAudioOn;
+            const icon = document.getElementById("audio-toggle").querySelector("i");
+            icon.className = isAudioOn ? "fa fa-volume-up" : "fa fa-volume-mute";
+            document.querySelector(".hero-video").muted = !isAudioOn;
+        });
+
+        // Voice Navigation (placeholder)
+        document.getElementById("voice-toggle").addEventListener("click", () => {
+            showNotification("Voice navigation not implemented yet.");
+        });
+
+        // Admin Toggle
+        document.getElementById("admin-toggle").addEventListener("click", () => {
+            const form = document.getElementById("ledger-form");
+            form.style.display = form.style.display === "none" ? "block" : "none";
+        });
+
+        // Hero Section
+        function startJourney() {
+            document.querySelector("#legends").scrollIntoView({ behavior: "smooth" });
+            showNotification("Your eco-journey has begun!");
+        }
+
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: true },
+                size: { value: 3, random: true },
+                line_linked: { enable: false },
+                move: { enable: true, speed: 2, direction: "none", random: true }
+            },
+            interactivity: { detect_on: "canvas", events: { onhover: { enable: true, mode: "repulse" } } }
+        });
+
+        // Legends Section
+        document.querySelectorAll(".story-button").forEach(button => {
+            button.addEventListener("click", () => {
+                const card = button.closest(".legend-card");
+                const title = card.querySelector("h3").textContent;
+                const story = card.dataset.story;
+                const videoSrc = card.dataset.video;
+                openModal(title, story, videoSrc);
+            });
+        });
+
+        const legendsData = Array.from(document.querySelectorAll(".legend-card")).map(card => ({
+            name: card.dataset.name,
+            impact: card.dataset.impact,
+            element: card
+        }));
+
+        document.getElementById("legend-search").addEventListener("input", (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            legendsData.forEach(({ element, name, impact }) => {
+                const matches = name.toLowerCase().includes(searchTerm) || impact.toLowerCase().includes(searchTerm);
+                element.style.display = matches ? "" : "none";
+            });
+        });
+
+        document.getElementById("legend-sort").addEventListener("change", (e) => {
+            const [key, order] = e.target.value.split("-");
+            const sorted = [...legendsData].sort((a, b) => {
+                if (key === "name") return order === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+                if (key === "impact") return order === "desc" ? parseInt(b.impact) - parseInt(a.impact) : parseInt(a.impact) - parseInt(b.impact);
+            });
+            const grid = document.getElementById("legend-grid");
+            sorted.forEach(({ element }) => grid.appendChild(element));
+        });
+
+        // Tree Ledger Section
+        async function loadLedger() {
+            const q = query(collection(db, "ledger"), orderBy("date", "desc"));
+            onSnapshot(q, (snapshot) => {
+                const tbody = document.getElementById("ledger-tbody");
+                tbody.innerHTML = "";
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td class="contributor"><img src="${data.photo || '/assets/default-user.jpg'}" alt="${data.name}">${data.name}</td>
+                        <td>${data.trees}</td>
+                        <td>${data.species}</td>
+                        <td>${new Date(data.date).toLocaleDateString()}</td>
+                        <td><img src="${data.photo || '/assets/default-user.jpg'}" alt="Tree photo"></td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            }, error => console.error("Error loading ledger:", error));
+        }
+
+        document.getElementById("ledger-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const progressBar = document.querySelector(".progress-bar .progress");
+            progressBar.style.width = "0";
+            const name = document.getElementById("ledger-name").value;
+            const trees = parseInt(document.getElementById("ledger-trees").value);
+            const species = document.getElementById("ledger-species").value;
+            const date = document.getElementById("ledger-date").value;
+            const file = document.getElementById("ledger-file").files[0];
+            let photoUrl = "";
+            if (file) {
+                const storageRef = ref(storage, `ledger/${Date.now()}_${file.name}`);
+                progressBar.style.width = "50%";
+                await uploadBytes(storageRef, file);
+                photoUrl = await getDownloadURL(storageRef);
+                progressBar.style.width = "75%";
+            }
+            await addDoc(collection(db, "ledger"), { name, trees, species, date, photo: photoUrl });
+            progressBar.style.width = "100%";
+            showNotification("Contribution added successfully!");
+            e.target.reset();
+            setTimeout(() => progressBar.style.width = "0", 1000);
+        });
+
+        const ledgerData = [];
+        function updateLedgerDisplay() {
+            const tbody = document.getElementById("ledger-tbody");
+            tbody.innerHTML = "";
+            ledgerData.forEach(data => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td class="contributor"><img src="${data.photo || '/assets/default-user.jpg'}" alt="${data.name}">${data.name}</td>
+                    <td>${data.trees}</td>
+                    <td>${data.species}</td>
+                    <td>${new Date(data.date).toLocaleDateString()}</td>
+                    <td><img src="${data.photo || '/assets/default-user.jpg'}" alt="Tree photo"></td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        document.getElementById("ledger-search").addEventListener("input", (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = ledgerData.filter(item => 
+                item.name.toLowerCase().includes(searchTerm) || 
+                new Date(item.date).toLocaleDateString().includes(searchTerm)
+            );
+            ledgerData.length = 0;
+            ledgerData.push(...filtered);
+            updateLedgerDisplay();
+        });
+
+        document.getElementById("ledger-sort").addEventListener("change", (e) => {
+            const [key, order] = e.target.value.split("-");
+            ledgerData.sort((a, b) => {
+                if (key === "date") return order === "desc" ? new Date(b.date) - new Date(a.date) : new Date(a.date) - new Date(b.date);
+                if (key === "trees") return order === "desc" ? b.trees - a.trees : a.trees - b.trees;
+            });
+            updateLedgerDisplay();
+        });
+
+        // Titans Section
+        document.querySelectorAll(".titan-button").forEach(button => {
+            button.addEventListener("click", () => {
+                const title = button.parentElement.querySelector("h3").textContent;
+                const story = button.dataset.story;
+                const videoSrc = button.dataset.video;
+                openModal(title, story, videoSrc);
+            });
+        });
+
+        // Impact Section
+        const impactChart = new Chart(document.getElementById("impact-chart"), {
+            type: "bar",
+            data: {
+                labels: ["Trees Planted", "CO2 Sequestered (kg)", "Water Conserved (L)", "Wildlife Protected"],
+                datasets: [{
+                    label: "Impact Metrics",
+                    data: [1700, 34000, 500000, 12],
+                    backgroundColor: "rgba(46, 139, 87, 0.7)",
+                    borderColor: "rgba(46, 139, 87, 1)",
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: { y: { beginAtZero: true } },
+                animation: { duration: 2000, easing: "easeOutBounce" }
+            }
+        });
+
+        document.querySelectorAll(".impact-controls button").forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelector(".impact-controls .active").classList.remove("active");
+                button.classList.add("active");
+                const metric = button.dataset.metric;
+                let data, label;
+                switch (metric) {
+                    case "trees": data = [1700, 0, 0, 0]; label = "Trees Planted"; break;
+                    case "co2": data = [0, 34000, 0, 0]; label = "CO2 Sequestered (kg)"; break;
+                    case "water": data = [0, 0, 500000, 0]; label = "Water Conserved (L)"; break;
+                    case "wildlife": data = [0, 0, 0, 12]; label = "Wildlife Protected"; break;
+                }
+                impactChart.data.datasets[0].data = data;
+                impactChart.data.datasets[0].label = label;
+                impactChart.update();
+            });
+        });
+
+        function animateStats() {
+            document.querySelectorAll(".stat-value").forEach(stat => {
+                const target = parseInt(stat.dataset.target);
+                let current = 0;
+                const increment = target / 100;
+                const interval = setInterval(() => {
+                    current += increment;
+                    stat.textContent = Math.round(current).toLocaleString();
+                    if (current >= target) {
+                        stat.textContent = target.toLocaleString();
+                        clearInterval(interval);
+                    }
+                }, 20);
+            });
+        }
+
+        // Challenges Section
+        window.joinChallenge = function(challengeId) {
+            showNotification(`Joined ${challengeId.replace('-', ' ')} challenge!`);
+        };
+
+        // Leaderboard Section
+        async function loadLeaderboard() {
+            const q = query(collection(db, "leaderboard"), orderBy("points", "desc"));
+            onSnapshot(q, (snapshot) => {
+                const tbody = document.getElementById("leaderboard-tbody");
+                tbody.innerHTML = "";
+                snapshot.forEach((doc, index) => {
+                    const data = doc.data();
+                    const badges = data.badges ? data.badges.map(b => `<span class="${b}"></span>`).join("") : "";
+                    const row = document.createElement("tr");
+                    row.innerHTML = `
+                        <td class="rank"><img src="${data.photo || '/assets/default-user.jpg'}" alt="${data.name}">${index + 1}</td>
+                        <td>${data.name}</td>
+                        <td>${data.points}</td>
+                        <td class="badges">${badges}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            }, error => console.error("Error loading leaderboard:", error));
+        }
+
+        const leaderboardData = [];
+        function updateLeaderboardDisplay() {
+            const tbody = document.getElementById("leaderboard-tbody");
+            tbody.innerHTML = "";
+            leaderboardData.forEach((data, index) => {
+                const badges = data.badges ? data.badges.map(b => `<span class="${b}"></span>`).join("") : "";
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td class="rank"><img src="${data.photo || '/assets/default-user.jpg'}" alt="${data.name}">${index + 1}</td>
+                    <td>${data.name}</td>
+                    <td>${data.points}</td>
+                    <td class="badges">${badges}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        document.getElementById("leaderboard-search").addEventListener("input", (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = leaderboardData.filter(item => item.name.toLowerCase().includes(searchTerm));
+            leaderboardData.length = 0;
+            leaderboardData.push(...filtered);
+            updateLeaderboardDisplay();
+        });
+
+        document.getElementById("leaderboard-sort").addEventListener("change", (e) => {
+            const [key, order] = e.target.value.split("-");
+            leaderboardData.sort((a, b) => {
+                if (key === "points") return order === "desc" ? b.points - a.points : a.points - b.points;
+                if (key === "name") return order === "asc" ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
+            });
+            updateLeaderboardDisplay();
+        });
+
+        // Luo Myths Section
+        const carousel = document.querySelector(".myths-carousel");
+        const prevBtn = document.querySelector(".myths-nav .prev");
+        const nextBtn = document.querySelector(".myths-nav .next");
+        let currentIndex = 0;
+        const cards = carousel.children;
+
+        function updateCarousel() {
+            carousel.scrollTo({ left: cards[currentIndex].offsetLeft - (carousel.offsetWidth - cards[currentIndex].offsetWidth) / 2, behavior: "smooth" });
+        }
+
+        prevBtn.addEventListener("click", () => {
+            currentIndex = Math.max(0, currentIndex - 1);
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener("click", () => {
+            currentIndex = Math.min(cards.length - 1, currentIndex + 1);
+            updateCarousel();
+        });
+
+        const hammer = new Hammer(carousel);
+        hammer.on('swipeleft', () => nextBtn.click());
+        hammer.on('swiperight', () => prevBtn.click());
+
+        // Virtual Planting Section
+        window.plantVirtualTree = function() {
+            const sceneEl = document.querySelector("#planting-canvas");
+            const entity = document.createElement("a-entity");
+            entity.setAttribute("gltf-model", "url(/assets/models/tree.glb)");
+            entity.setAttribute("position", `${(Math.random() - 0.5) * 10} 0 ${(Math.random() - 0.5) * 10}`);
+            entity.setAttribute("scale", "0.5 0.5 0.5");
+            sceneEl.appendChild(entity);
+            showNotification("Virtual tree planted!");
+        };
+
+        // Donation Section
+        document.getElementById("donation-amount").addEventListener("change", (e) => {
+            const customInput = document.getElementById("custom-amount");
+            customInput.style.display = e.target.value === "custom" ? "block" : "none";
+        });
+
+        document.querySelector(".donation-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const name = document.getElementById("donor-name").value;
+            const email = document.getElementById("donor-email").value;
+            const amount = document.getElementById("donation-amount").value === "custom" ?
+                document.getElementById("custom-amount").value : document.getElementById("donation-amount").value;
+            // Simulate PayPal transaction (replace with actual PayPal SDK in production)
+            try {
+                await addDoc(collection(db, "donations"), { name, email, amount: parseFloat(amount), date: new Date() });
+                showNotification(`Thank you, ${name}, for donating $${amount}!`);
+                e.target.reset();
+            } catch (error) {
+                showNotification("Error processing donation.", "error");
+                console.error("Donation error:", error);
+            }
+        });
+
+        // Global Connect Section
+        const map = L.map('world-map').setView([0, 0], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Example markers for eco-initiatives
+        const ecoInitiatives = [
+            { lat: -0.0236, lng: 37.9062, name: "Kenya Green Initiative", desc: "Tree planting in Nairobi" },
+            { lat: 1.2921, lng: 36.8219, name: "Ambururu Eco Hub", desc: "Conservation in Siaya" }
+        ];
+
+        ecoInitiatives.forEach(initiative => {
+            L.marker([initiative.lat, initiative.lng]).addTo(map)
+                .bindPopup(`<b>${initiative.name}</b><br>${initiative.desc}`);
+        });
+
+        map.on('click', (e) => {
+            const tooltip = document.querySelector(".map-tooltip");
+            tooltip.textContent = `Lat: ${e.latlng.lat.toFixed(2)}, Lng: ${e.latlng.lng.toFixed(2)}`;
+            tooltip.style.left = `${e.originalEvent.pageX}px`;
+            tooltip.style.top = `${e.originalEvent.pageY}px`;
+            tooltip.classList.add("active");
+            setTimeout(() => tooltip.classList.remove("active"), 2000);
+        });
+
+        // Gallery Section
+        document.querySelector(".gallery-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const name = document.getElementById("gallery-name").value;
+            const file = document.getElementById("gallery-file").files[0];
+            const caption = document.getElementById("gallery-caption").value;
+            if (file) {
+                try {
+                    const storageRef = ref(storage, `gallery/${Date.now()}_${file.name}`);
+                    await uploadBytes(storageRef, file);
+                    const photoUrl = await getDownloadURL(storageRef);
+                    await addDoc(collection(db, "gallery"), { name, photo: photoUrl, caption, votes: 0, date: new Date() });
+                    showNotification("Photo uploaded successfully!");
+                    e.target.reset();
+                } catch (error) {
+                    showNotification("Error uploading photo.", "error");
+                    console.error("Gallery upload error:", error);
+                }
+            }
+        });
+
+        async function loadGallery() {
+            const q = query(collection(db, "gallery"), orderBy("votes", "desc"));
+            onSnapshot(q, (snapshot) => {
+                const gallery = document.getElementById("photo-gallery");
+                gallery.innerHTML = "";
+                snapshot.forEach(doc => {
+                    const data = doc.data();
+                    const entry = document.createElement("div");
+                    entry.className = "photo-entry";
+                    entry.innerHTML = `
+                        <img class="photo-img" src="${data.photo}" alt="${data.caption}" loading="lazy">
+                        <div class="overlay">${data.caption} by ${data.name}</div>
+                        <button class="vote-button ripple" onclick="votePhoto('${doc.id}')">Vote</button>
+                        <span class="vote-count">${data.votes} votes</span>
+                    `;
+                    gallery.appendChild(entry);
+                });
+            }, error => console.error("Error loading gallery:", error));
+        }
+
+        window.votePhoto = async function(photoId) {
+            try {
+                const photoRef = doc(db, "gallery", photoId);
+                await updateDoc(photoRef, { votes: increment(1) });
+                showNotification("Vote recorded!");
+            } catch (error) {
+                showNotification("Error recording vote.", "error");
+                console.error("Vote error:", error);
+            }
+        };
+
+        // Pledge Section
+        document.querySelector(".pledge-form").addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const name = document.getElementById("pledge-name").value;
+            const email = document.getElementById("pledge-email").value;
+            const type = document.getElementById("pledge-type").value;
+            const message = document.getElementById("pledge-message").value;
+            try {
+                await addDoc(collection(db, "pledges"), { name, email, type, message, date: new Date() });
+                showNotification("Pledge submitted successfully!");
+                e.target.reset();
+            } catch (error) {
+                showNotification("Error submitting pledge.", "error");
+                console.error("Pledge error:", error);
+            }
+        });
+
+        // AR Section
+        window.startARExperience = function() {
+            const sceneEl = document.querySelector("#ar-preview");
+            sceneEl.enterVR();
+            showNotification("AR Experience launched!");
+        };
+
+        // Eco-Quiz Section
+        const quizQuestions = [
+            {
+                question: "What is the main goal of the Green Belt Movement?",
+                options: ["Plant trees", "Clean rivers", "Protect wildlife", "Reduce plastic"],
+                correct: 0
+            },
+            {
+                question: "Which Kenyan conservationist won the Nobel Peace Prize?",
+                options: ["Wangari Maathai", "Richard Leakey", "Jane Goodall", "David Attenborough"],
+                correct: 0
+            },
+            {
+                question: "What tree species is commonly planted in Siaya?",
+                options: ["Acacia", "Pine", "Oak", "Bamboo"],
+                correct: 0
+            },
+            {
+                question: "How much CO2 can a mature tree sequester annually?",
+                options: ["10 kg", "20 kg", "30 kg", "40 kg"],
+                correct: 1
+            },
+            {
+                question: "What is the primary threat to Ambururu’s ecosystem?",
+                options: ["Deforestation", "Urbanization", "Overfishing", "Tourism"],
+                correct: 0
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function loadQuizQuestion() {
+            const questionEl = document.getElementById("quiz-question");
+            const optionsEl = document.getElementById("quiz-options");
+            const resultEl = document.getElementById("quiz-result");
+            const nextBtn = document.getElementById("quiz-next");
+            const current = quizQuestions[currentQuestion];
+            questionEl.textContent = current.question;
+            optionsEl.innerHTML = "";
+            current.options.forEach((option, index) => {
+                const btn = document.createElement("button");
+                btn.className = "ripple";
+                btn.textContent = option;
+                btn.addEventListener("click", () => checkAnswer(index));
+                optionsEl.appendChild(btn);
+            });
+            resultEl.textContent = "";
+            resultEl.className = "quiz-result";
+            document.getElementById("quiz-current").textContent = currentQuestion + 1;
+            document.getElementById("quiz-total").textContent = quizQuestions.length;
+            nextBtn.style.display = "none";
+        }
+
+        function checkAnswer(selected) {
+            const current = quizQuestions[currentQuestion];
+            const resultEl = document.getElementById("quiz-result");
+            const buttons = document.querySelectorAll(".quiz-options button");
+            buttons.forEach((btn, index) => {
+                btn.disabled = true;
+                if (index === current.correct) btn.classList.add("correct");
+                if (index === selected && index !== current.correct) btn.classList.add("incorrect");
+            });
+            if (selected === current.correct) {
+                score++;
+                resultEl.textContent = "Correct!";
+                resultEl.className = "quiz-result active correct";
+            } else {
+                resultEl.textContent = `Incorrect. The correct answer is ${current.options[current.correct]}.`;
+                resultEl.className = "quiz-result active incorrect";
+            }
+            document.getElementById("quiz-next").style.display = "block";
+        }
+
+        document.getElementById("quiz-next").addEventListener("click", () => {
+            currentQuestion++;
+            if (currentQuestion < quizQuestions.length) {
+                loadQuizQuestion();
+            } else {
+                showNotification(`Quiz completed! Your score: ${score}/${quizQuestions.length}`);
+                currentQuestion = 0;
+                score = 0;
+                loadQuizQuestion();
+            }
+        });
+
+        // Star Field Animation
+        const starFieldCanvas = document.getElementById("star-field");
+        const starCtx = starFieldCanvas.getContext("2d");
+        let stars = [];
+
+        function initStars() {
+            starFieldCanvas.width = window.innerWidth;
+            starFieldCanvas.height = window.innerHeight;
+            stars = Array.from({ length: 200 }, () => ({
+                x: Math.random() * starFieldCanvas.width,
+                y: Math.random() * starFieldCanvas.height,
+                size: Math.random() * 2,
+                speed: Math.random() * 0.5
+            }));
+        }
+
+        function animateStars() {
+            starCtx.clearRect(0, 0, starFieldCanvas.width, starFieldCanvas.height);
+            stars.forEach(star => {
+                star.y += star.speed;
+                if (star.y > starFieldCanvas.height) star.y = 0;
+                starCtx.fillStyle = "rgba(255, 255, 255, 0.8)";
+                starCtx.beginPath();
+                starCtx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                starCtx.fill();
+            });
+            requestAnimationFrame(animateStars);
+        }
+
+        window.addEventListener("resize", initStars);
+        initStars();
+        animateStars();
+
+        // Language Toggle
+        document.getElementById("language-select").addEventListener("change", (e) => {
+            const lang = e.target.value;
+            // Placeholder for translation logic
+            showNotification(`Language switched to ${lang.toUpperCase()}. Translation not implemented.`);
+        });
+
+        // Knowledge Hub Toggle
+        document.getElementById("knowledgehub-toggle").addEventListener("click", () => {
+            showNotification("Knowledge Hub not implemented yet.");
+        });
+
+        // Scroll Animations with GSAP
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.utils.toArray(".section").forEach(section => {
+            gsap.from(section, {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: section,
+                    start: "top 80%",
+                    toggleActions: "play none none none"
+                }
+            });
+        });
+
+        // Header Scroll Behavior
+        let lastScroll = 0;
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector(".sticky-header");
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.classList.add("hidden");
+            } else {
+                header.classList.remove("hidden");
+            }
+            lastScroll = currentScroll;
+            header.classList.toggle("scrolled", currentScroll > 50);
+        });
+
+        // Initialize
+        window.addEventListener("load", () => {
+            loadLedger();
+            loadLeaderboard();
+            loadGallery();
+            loadQuizQuestion();
+            animateStats();
+        });
+    </script>
+</body>
+</html>
