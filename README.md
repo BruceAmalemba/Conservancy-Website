@@ -42,16 +42,12 @@ Your work here isn’t just code—it’s a ripple effect, ensuring Ambururu’s
 ## 💬 Connect with Us
 
 We’re excited to hear your ideas, questions, or stories about Ambururu! Reach out:
-- **Email**: contact@ambururuconservancy.org (placeholder—let us know if you have a real one!)
+- **Email**: ambururuconservancy@gmail.com 
 - **GitHub Discussions**: Share thoughts or ask questions in our [Discussions](https://github.com/BruceAmalemba/Conservancy-Website/discussions)
 - **Facebook**: Follow [Ambururu Waterfall Resort](https://www.facebook.com/AmbururuWaterfallResort) for stunning photos and updates
-- **Twitter**: Tweet your support or ideas to `@AmbururuConservancy` (placeholder)
+- **Twitter**: Tweet your support or ideas to `@Ambururu_` 
 
 > **Got a spark of inspiration?** Post in Discussions or DM us on social media—we’d love to hear how Ambururu moves you!
-
-## 📜 License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to build, share, and contribute, with a nod to the Ambururu Waterfalls Conservancy.
 
 ## 🙏 Acknowledgments
 
